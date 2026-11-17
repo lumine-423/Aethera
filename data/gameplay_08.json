@@ -1,0 +1,28 @@
+{
+  "version":"playable-rules-08", "status":"provisional-game-design", "party_limit":2,
+  "actors":{
+    "rin":{"name":"凛零","role":"突击 / 解放","hp":46,"energy":65,"actions":{
+      "attack":{"name":"普攻","target":"enemy","effect":"damage","power":7,"cost":0,"gain":12,"hint":"对一名敌人造成7点伤害，恢复12能量。"},
+      "skill_1":{"name":"集中突破","target":"enemy","effect":"damage","power":15,"cost":20,"cooldown":1,"hint":"对一名敌人造成15点伤害；间隔1回合。"},
+      "skill_2":{"name":"掩护","target":"ally","effect":"shield","power":12,"cost":15,"hint":"为一名队友提供12点护盾，吸收后消失。"},
+      "guard":{"name":"防御","target":"self","effect":"guard","power":0,"cost":0,"gain":20,"hint":"下次敌方阶段受到的伤害减半，恢复20能量。"},
+      "liberate":{"name":"解放 · 鸟羽","target":"self","effect":"liberate","power":0,"cost":20,"hint":"本场切换鸟羽形态，占用一次行动。"},
+      "ultimate":{"name":"飞星","target":"enemy","effect":"damage","power":34,"cost":60,"released":true,"hint":"鸟羽形态：对一名敌人造成34点伤害。"}}},
+    "mingkong":{"name":"明空","role":"治疗 / 保护","hp":36,"energy":70,"actions":{
+      "attack":{"name":"基础援护","target":"ally","effect":"energy","power":18,"cost":0,"gain":8,"hint":"为一名队友恢复18能量，自身恢复8能量。"},
+      "skill_1":{"name":"温柔照料","target":"ally","effect":"heal","power":16,"cost":18,"hint":"为一名存活队友恢复16生命，不超过上限。"},
+      "skill_2":{"name":"守望","target":"ally","effect":"shield","power":16,"cost":16,"hint":"为一名队友提供16点护盾。"},
+      "guard":{"name":"防御","target":"self","effect":"guard","power":0,"cost":0,"gain":20,"hint":"下次敌方阶段受到的伤害减半，恢复20能量。"},
+      "ultimate":{"name":"同伴之光","target":"all_allies","effect":"heal","power":24,"cost":60,"hint":"为全体存活队友恢复24生命。"}}},
+    "ye":{"name":"叶","role":"调度 / 增益","hp":40,"energy":60,"actions":{
+      "attack":{"name":"基础援护","target":"ally","effect":"energy","power":15,"cost":0,"gain":12,"hint":"为一名队友恢复15能量，自身恢复12能量。"},
+      "skill_1":{"name":"精准调度","target":"ally","effect":"buff","power":5,"cost":16,"hint":"使一名队友下一次伤害行动增加5点伤害。"},
+      "skill_2":{"name":"应急处理","target":"ally","effect":"heal","power":12,"cost":14,"hint":"为一名存活队友恢复12生命。"},
+      "guard":{"name":"防御","target":"self","effect":"guard","power":0,"cost":0,"gain":20,"hint":"下次敌方阶段受到的伤害减半，恢复20能量。"},
+      "ultimate":{"name":"协同方案","target":"all_allies","effect":"energize","power":30,"cost":60,"hint":"全体存活队友恢复30能量，并获得一次5点伤害增益。"}}}
+  },
+  "missions":{
+    "training.basic":{"name":"校场演练","description":"观察敌方意图，练习输出与援护。可自由调整两人编队。","enemies":[{"id":"sentinel","name":"训练守卫","hp":32,"damage":5},{"id":"drone","name":"支援机","hp":25,"damage":4}]},
+    "training.pressure":{"name":"协同试炼","description":"更高压力的双目标战斗。准备防御、治疗与能量调度。","enemies":[{"id":"sentinel","name":"重装守卫","hp":45,"damage":8},{"id":"drone","name":"突击机","hp":36,"damage":6}]}
+  }
+}

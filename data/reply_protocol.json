@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "hidden_tags": [
+    "think",
+    "thinking",
+    "analysis",
+    "draft",
+    "reasoning",
+    "cot",
+    "summary",
+    "initvar",
+    "recap",
+    "simulation_thought",
+    "rehearsal",
+    "BTS"
+  ],
+  "structured_tags": [
+    "sumUp",
+    "pose",
+    "choices",
+    "dbNote",
+    "BTS"
+  ],
+  "unwrap_tags": [
+    "content"
+  ],
+  "variable_update": {
+    "tags": [
+      "UpdateVariable",
+      "VariableUpdate"
+    ],
+    "patch_tags": [
+      "JSONPatch"
+    ]
+  }
+}

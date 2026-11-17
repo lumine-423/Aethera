@@ -1,0 +1,158 @@
+{
+  "design_size": [
+    1672,
+    941
+  ],
+  "buttons": [
+    {
+      "id": "story",
+      "title": "剧情",
+      "surface": "hero",
+      "icon": "story",
+      "rect": [
+        849,
+        170,
+        813,
+        267
+      ],
+      "font": 112,
+      "icon_rect": [
+        122,
+        55,
+        170,
+        142
+      ],
+      "label_rect": [
+        359,
+        49,
+        355,
+        160
+      ]
+    },
+    {
+      "id": "archive",
+      "title": "资料库",
+      "surface": "secondary",
+      "icon": "archive",
+      "rect": [
+        794,
+        434,
+        482,
+        195
+      ],
+      "font": 52,
+      "icon_rect": [
+        76,
+        47,
+        86,
+        86
+      ],
+      "label_rect": [
+        259,
+        27,
+        170,
+        125
+      ]
+    },
+    {
+      "id": "battle",
+      "title": "作战",
+      "surface": "secondary",
+      "icon": "battle",
+      "rect": [
+        1183,
+        434,
+        481,
+        195
+      ],
+      "font": 57,
+      "icon_rect": [
+        76,
+        52,
+        90,
+        76
+      ],
+      "label_rect": [
+        283,
+        27,
+        153,
+        125
+      ]
+    },
+    {
+      "id": "inventory",
+      "title": "仓库",
+      "surface": "strip",
+      "icon": "inventory",
+      "rect": [
+        923,
+        635,
+        680,
+        129
+      ],
+      "font": 58,
+      "icon_rect": [
+        100,
+        24,
+        54,
+        65
+      ],
+      "label_rect": [
+        232,
+        10,
+        280,
+        99
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "设置",
+      "surface": "small",
+      "icon": "settings",
+      "rect": [
+        1061,
+        768,
+        265,
+        100
+      ],
+      "font": 27,
+      "icon_rect": [
+        57,
+        23,
+        32,
+        32
+      ],
+      "label_rect": [
+        149,
+        12,
+        92,
+        67
+      ]
+    }
+  ],
+  "status_rect": [
+    15,
+    736,
+    652,
+    163
+  ],
+  "theme_rect": [
+    1455,
+    43,
+    190,
+    67
+  ],
+  "motion": {
+    "enter_duration": 0.62,
+    "stagger": 0.07,
+    "hover_duration": 0.2,
+    "sheen_duration": 0.55,
+    "theme_duration": 0.4,
+    "wipe_duration": 0.84,
+    "wipe_stagger": 0.05,
+    "swap_at": 0.42,
+    "busy_until": 1.0,
+    "modal_open": 0.4,
+    "modal_close": 0.35
+  }
+}

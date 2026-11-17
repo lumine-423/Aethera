@@ -1,0 +1,1731 @@
+{
+  "_note": "Single art hookup point for every UI screen. kinds: full=Galgame/档案 full-body 立绘 (empty until the portrait workstation hands approved art over), bust=story half body, card=roster card art, avatar=small head. Fill a res:// path and every screen picks it up; missing or empty paths show a labeled placeholder. 2026-11-11: contest cast full/avatar point at res://assets/characters (tools/build_game_art.py); expressions and outfits are read through ui_data.gd art_path().",
+  "emotions": {
+    "smile": "res://assets/emotions/smile.png",
+    "speaking": "res://assets/emotions/speaking.png",
+    "puzzled": "res://assets/emotions/puzzled.png",
+    "surprised": "res://assets/emotions/surprised.png",
+    "bashful": "res://assets/emotions/bashful.png",
+    "disgust": "res://assets/emotions/disgust.png",
+    "angry": "res://assets/emotions/angry.png",
+    "sad": "res://assets/emotions/sad.png",
+    "star-eyes": "res://assets/emotions/star-eyes.png",
+    "confident": "res://assets/emotions/confident.png"
+  },
+  "characters": {
+    "rin": {
+      "full": "res://assets/characters/rin/daily/neutral.webp",
+      "bust": "res://assets/characters/rin/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/rin.webp",
+      "avatar": "res://assets/characters/rin/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.015,
+          "chin": 0.185,
+          "knee": 0.715,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.521
+        },
+        "daily_front_a": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.507
+        },
+        "daily_front_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.504
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.712,
+          "center": 0.531
+        },
+        "daily_side_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.714,
+          "center": 0.539
+        },
+        "casual": {
+          "top": 0.015,
+          "chin": 0.185,
+          "knee": 0.715,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.714,
+          "center": 0.48
+        },
+        "liberate": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.501
+        },
+        "liberate_side": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.547
+        },
+        "nude": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.712,
+          "center": 0.507
+        }
+      }
+    },
+    "merlin": {
+      "full": "res://assets/characters/merlin/daily/neutral.webp",
+      "bust": "res://assets/characters/merlin/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/merlin.webp",
+      "avatar": "res://assets/characters/merlin/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.015,
+          "chin": 0.19,
+          "knee": 0.72,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.718,
+          "center": 0.494
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.493
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.493
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.502
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.506
+        },
+        "casual": {
+          "top": 0.015,
+          "chin": 0.19,
+          "knee": 0.72,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.497
+        },
+        "liberate": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.718,
+          "center": 0.52
+        },
+        "liberate_side": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.713,
+          "center": 0.442
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.493
+        }
+      }
+    },
+    "mohua": {
+      "full": "res://assets/characters/mohua/daily/neutral.webp",
+      "bust": "res://assets/characters/mohua/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/mohua.webp",
+      "avatar": "res://assets/characters/mohua/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.01,
+          "chin": 0.185,
+          "knee": 0.725,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.716,
+          "center": 0.433
+        },
+        "daily_front_a": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.447
+        },
+        "daily_front_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.441
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.435
+        },
+        "daily_side_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.432
+        },
+        "casual": {
+          "top": 0.01,
+          "chin": 0.185,
+          "knee": 0.725,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.525
+        },
+        "liberate": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.713,
+          "center": 0.469
+        },
+        "liberate_side": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.46
+        },
+        "nude": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.713,
+          "center": 0.463
+        }
+      }
+    },
+    "bingtang": {
+      "full": "res://assets/characters/bingtang/daily/neutral.webp",
+      "bust": "res://assets/characters/bingtang/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/bingtang.webp",
+      "avatar": "res://assets/characters/bingtang/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.025,
+          "chin": 0.22,
+          "knee": 0.725,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.007,
+          "chin": 0.18,
+          "knee": 0.718,
+          "center": 0.522
+        },
+        "daily_front_a": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.715,
+          "center": 0.485
+        },
+        "daily_front_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.715,
+          "center": 0.506
+        },
+        "daily_side_a": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.484
+        },
+        "daily_side_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.488
+        },
+        "casual": {
+          "top": 0.025,
+          "chin": 0.22,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.714,
+          "center": 0.521
+        },
+        "liberate": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.716,
+          "center": 0.508
+        },
+        "liberate_side": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.716,
+          "center": 0.548
+        },
+        "nude": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.51
+        }
+      }
+    },
+    "anke": {
+      "full": "res://assets/characters/anke/daily/neutral.webp",
+      "bust": "res://assets/characters/anke/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/anke.webp",
+      "avatar": "res://assets/characters/anke/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.025,
+          "chin": 0.225,
+          "knee": 0.72,
+          "center": 0.51
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.497
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.427
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.498
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.444
+        },
+        "daily_side_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.714,
+          "center": 0.504
+        },
+        "casual": {
+          "top": 0.025,
+          "chin": 0.215,
+          "knee": 0.735,
+          "center": 0.51
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.5
+        },
+        "liberate": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.712,
+          "center": 0.472
+        },
+        "liberate_side": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.477
+        },
+        "nude": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.715,
+          "center": 0.442
+        }
+      }
+    },
+    "castor": {
+      "full": "res://assets/characters/castor/daily/neutral.webp",
+      "bust": "res://assets/characters/castor/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/castor.webp",
+      "avatar": "res://assets/characters/castor/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.015,
+          "chin": 0.2,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.718,
+          "center": 0.487
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.514
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.501
+        },
+        "daily_side_a": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.51
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.537
+        },
+        "casual": {
+          "top": 0.02,
+          "chin": 0.19,
+          "knee": 0.735,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.495
+        },
+        "liberate": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.713,
+          "center": 0.494
+        },
+        "liberate_side": {
+          "top": 0.007,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.5
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.507
+        }
+      }
+    },
+    "jian": {
+      "full": "res://assets/characters/jian/daily/neutral.webp",
+      "bust": "res://assets/characters/jian/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/jian.webp",
+      "avatar": "res://assets/characters/jian/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.725,
+          "center": 0.488
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.723,
+          "center": 0.492
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.724,
+          "center": 0.488
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.491
+        },
+        "daily_side_a": {
+          "top": 0.007,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.447
+        },
+        "daily_side_b": {
+          "top": 0.006,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.497
+        },
+        "casual": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.725,
+          "center": 0.488
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.724,
+          "center": 0.489
+        },
+        "liberate": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.724,
+          "center": 0.501
+        },
+        "liberate_side": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.557
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.725,
+          "center": 0.491
+        }
+      }
+    },
+    "mingkong": {
+      "full": "res://assets/characters/mingkong/daily/neutral.webp",
+      "bust": "res://assets/characters/mingkong/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/mingkong.webp",
+      "avatar": "res://assets/characters/mingkong/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.02,
+          "chin": 0.185,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.715,
+          "center": 0.497
+        },
+        "daily_front_a": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.715,
+          "center": 0.492
+        },
+        "daily_front_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.49
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.526
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.516
+        },
+        "casual": {
+          "top": 0.02,
+          "chin": 0.185,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.496
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.496
+        }
+      }
+    },
+    "alice": {
+      "full": "res://assets/characters/alice/daily/neutral.webp",
+      "bust": "res://assets/characters/alice/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/alice.webp",
+      "avatar": "res://assets/characters/alice/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.513
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.492
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.512
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.547
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.517
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.489
+        },
+        "casual": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.49
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.477
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.515
+        }
+      }
+    },
+    "lucifer": {
+      "full": "res://assets/characters/lucifer/daily/neutral.webp",
+      "bust": "res://assets/characters/lucifer/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/lucifer.webp",
+      "avatar": "res://assets/characters/lucifer/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.21,
+          "knee": 0.755,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.504
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.499
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.5
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.501
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.504
+        },
+        "casual": {
+          "top": 0.005,
+          "chin": 0.21,
+          "knee": 0.745,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.715,
+          "center": 0.491
+        },
+        "nude": {
+          "top": 0.009,
+          "chin": 0.18,
+          "knee": 0.712,
+          "center": 0.491
+        }
+      }
+    },
+    "ai": {
+      "full": "res://assets/characters/ai/daily/neutral.webp",
+      "bust": "res://assets/characters/ai/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/ai.webp",
+      "avatar": "res://assets/characters/ai/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.025,
+          "chin": 0.185,
+          "knee": 0.705,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.43
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.498
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.414
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.488
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.506
+        },
+        "casual": {
+          "top": 0.025,
+          "chin": 0.185,
+          "knee": 0.705,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.411
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.511
+        }
+      }
+    },
+    "ye": {
+      "full": "res://assets/characters/ye/daily/neutral.webp",
+      "bust": "res://assets/characters/ye/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/ye.webp",
+      "avatar": "res://assets/characters/ye/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.03,
+          "chin": 0.2,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.714,
+          "center": 0.48
+        },
+        "daily_front_a": {
+          "top": 0.007,
+          "chin": 0.178,
+          "knee": 0.709,
+          "center": 0.497
+        },
+        "daily_front_b": {
+          "top": 0.011,
+          "chin": 0.182,
+          "knee": 0.713,
+          "center": 0.485
+        },
+        "daily_side_a": {
+          "top": 0.013,
+          "chin": 0.184,
+          "knee": 0.716,
+          "center": 0.499
+        },
+        "daily_side_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.716,
+          "center": 0.48
+        },
+        "casual": {
+          "top": 0.03,
+          "chin": 0.2,
+          "knee": 0.73,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.012,
+          "chin": 0.183,
+          "knee": 0.717,
+          "center": 0.5
+        },
+        "nude": {
+          "top": 0.011,
+          "chin": 0.182,
+          "knee": 0.716,
+          "center": 0.501
+        }
+      }
+    },
+    "valkyrie": {
+      "full": "res://assets/characters/valkyrie/daily/neutral.webp",
+      "bust": "res://assets/characters/valkyrie/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/valkyrie.webp",
+      "avatar": "res://assets/characters/valkyrie/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.02,
+          "chin": 0.19,
+          "knee": 0.74,
+          "center": 0.5
+        },
+        "daily_default_b": {
+          "top": 0.018,
+          "chin": 0.188,
+          "knee": 0.717,
+          "center": 0.51
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.499
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.499
+        },
+        "daily_side_a": {
+          "top": 0.012,
+          "chin": 0.183,
+          "knee": 0.716,
+          "center": 0.528
+        },
+        "daily_side_b": {
+          "top": 0.012,
+          "chin": 0.183,
+          "knee": 0.716,
+          "center": 0.528
+        },
+        "casual": {
+          "top": 0.02,
+          "chin": 0.19,
+          "knee": 0.74,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.034,
+          "chin": 0.2,
+          "knee": 0.718,
+          "center": 0.498
+        },
+        "nude": {
+          "top": 0.033,
+          "chin": 0.199,
+          "knee": 0.717,
+          "center": 0.497
+        }
+      }
+    },
+    "alanya": {
+      "full": "res://assets/characters/alanya/daily/neutral.webp",
+      "bust": "res://assets/characters/alanya/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/alanya.webp",
+      "avatar": "res://assets/characters/alanya/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.47
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.514
+        },
+        "daily_front_a": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.713,
+          "center": 0.477
+        },
+        "daily_front_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.713,
+          "center": 0.456
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.722,
+          "center": 0.535
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.18,
+          "knee": 0.725,
+          "center": 0.54
+        },
+        "casual": {
+          "top": 0.014,
+          "chin": 0.185,
+          "knee": 0.719,
+          "center": 0.437
+        },
+        "casual_b": {
+          "top": 0.014,
+          "chin": 0.185,
+          "knee": 0.719,
+          "center": 0.437
+        },
+        "nude": {
+          "top": 0.013,
+          "chin": 0.184,
+          "knee": 0.715,
+          "center": 0.439
+        }
+      }
+    },
+    "vamana": {
+      "full": "res://assets/characters/vamana/daily/neutral.webp",
+      "bust": "res://assets/characters/vamana/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/vamana.webp",
+      "avatar": "res://assets/characters/vamana/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.02,
+          "chin": 0.189,
+          "knee": 0.716,
+          "center": 0.511
+        },
+        "daily_default_b": {
+          "top": 0.02,
+          "chin": 0.189,
+          "knee": 0.716,
+          "center": 0.511
+        },
+        "daily_front_a": {
+          "top": 0.01,
+          "chin": 0.181,
+          "knee": 0.715,
+          "center": 0.5
+        },
+        "daily_front_b": {
+          "top": 0.01,
+          "chin": 0.181,
+          "knee": 0.715,
+          "center": 0.5
+        },
+        "daily_side_a": {
+          "top": 0.014,
+          "chin": 0.184,
+          "knee": 0.714,
+          "center": 0.515
+        },
+        "daily_side_b": {
+          "top": 0.014,
+          "chin": 0.184,
+          "knee": 0.714,
+          "center": 0.515
+        },
+        "casual": {
+          "top": 0.019,
+          "chin": 0.189,
+          "knee": 0.717,
+          "center": 0.502
+        },
+        "casual_b": {
+          "top": 0.019,
+          "chin": 0.189,
+          "knee": 0.717,
+          "center": 0.502
+        },
+        "nude": {
+          "top": 0.019,
+          "chin": 0.189,
+          "knee": 0.717,
+          "center": 0.502
+        }
+      }
+    },
+    "xuanyuan": {
+      "full": "res://assets/characters/xuanyuan/daily/neutral.webp",
+      "bust": "res://assets/characters/xuanyuan/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/xuanyuan.webp",
+      "avatar": "res://assets/characters/xuanyuan/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.501
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.722,
+          "center": 0.502
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.499
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.499
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.518
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.502
+        },
+        "casual": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.498
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.493
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.5
+        }
+      }
+    },
+    "yanyuan": {
+      "full": "res://assets/characters/yanyuan/daily/neutral.webp",
+      "bust": "res://assets/characters/yanyuan/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/yanyuan.webp",
+      "avatar": "res://assets/characters/yanyuan/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.506
+        },
+        "daily_default_b": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.718,
+          "center": 0.512
+        },
+        "daily_front_a": {
+          "top": 0.011,
+          "chin": 0.183,
+          "knee": 0.718,
+          "center": 0.503
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.503
+        },
+        "daily_side_a": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.72,
+          "center": 0.504
+        },
+        "daily_side_b": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.718,
+          "center": 0.498
+        },
+        "casual": {
+          "top": 0.01,
+          "chin": 0.182,
+          "knee": 0.717,
+          "center": 0.5
+        },
+        "casual_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.715,
+          "center": 0.493
+        },
+        "nude": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.716,
+          "center": 0.5
+        }
+      }
+    },
+    "larentia": {
+      "full": "res://assets/characters/larentia/daily/neutral.webp",
+      "bust": "res://assets/characters/larentia/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/larentia.webp",
+      "avatar": "res://assets/characters/larentia/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.508
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.508
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.509
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.504
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.515
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.516
+        },
+        "casual": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.483
+        },
+        "casual_b": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.714,
+          "center": 0.507
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.177,
+          "knee": 0.714,
+          "center": 0.483
+        }
+      }
+    },
+    "yangxiang": {
+      "full": "res://assets/characters/yangxiang/daily/neutral.webp",
+      "bust": "res://assets/characters/yangxiang/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/yangxiang.webp",
+      "avatar": "res://assets/characters/yangxiang/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.713,
+          "center": 0.442
+        },
+        "daily_default_b": {
+          "top": 0.009,
+          "chin": 0.18,
+          "knee": 0.714,
+          "center": 0.426
+        },
+        "daily_front_a": {
+          "top": 0.008,
+          "chin": 0.179,
+          "knee": 0.713,
+          "center": 0.43
+        },
+        "daily_front_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.433
+        },
+        "daily_side_a": {
+          "top": 0.009,
+          "chin": 0.18,
+          "knee": 0.714,
+          "center": 0.43
+        },
+        "daily_side_b": {
+          "top": 0.007,
+          "chin": 0.178,
+          "knee": 0.712,
+          "center": 0.425
+        },
+        "casual": {
+          "top": 0.006,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.507
+        },
+        "casual_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.716,
+          "center": 0.493
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.507
+        }
+      }
+    },
+    "lufa": {
+      "full": "res://assets/characters/lufa/daily/neutral.webp",
+      "bust": "res://assets/characters/lufa/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/lufa.webp",
+      "avatar": "res://assets/characters/lufa/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.033,
+          "chin": 0.199,
+          "knee": 0.716,
+          "center": 0.504
+        },
+        "daily_default_b": {
+          "top": 0.033,
+          "chin": 0.199,
+          "knee": 0.716,
+          "center": 0.504
+        },
+        "daily_front_a": {
+          "top": 0.012,
+          "chin": 0.184,
+          "knee": 0.721,
+          "center": 0.503
+        },
+        "daily_front_b": {
+          "top": 0.012,
+          "chin": 0.184,
+          "knee": 0.721,
+          "center": 0.503
+        },
+        "daily_side_a": {
+          "top": 0.02,
+          "chin": 0.19,
+          "knee": 0.718,
+          "center": 0.504
+        },
+        "daily_side_b": {
+          "top": 0.02,
+          "chin": 0.19,
+          "knee": 0.718,
+          "center": 0.504
+        },
+        "casual": {
+          "top": 0.032,
+          "chin": 0.197,
+          "knee": 0.711,
+          "center": 0.504
+        },
+        "casual_b": {
+          "top": 0.032,
+          "chin": 0.197,
+          "knee": 0.711,
+          "center": 0.504
+        },
+        "nude": {
+          "top": 0.011,
+          "chin": 0.183,
+          "knee": 0.719,
+          "center": 0.503
+        }
+      }
+    },
+    "washake": {
+      "full": "res://assets/characters/washake/daily/neutral.webp",
+      "bust": "res://assets/characters/washake/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/washake.webp",
+      "avatar": "res://assets/characters/washake/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.524
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.46
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.52
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.72,
+          "center": 0.485
+        },
+        "daily_side_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.52
+        },
+        "daily_side_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.487
+        },
+        "casual": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.721,
+          "center": 0.483
+        },
+        "casual_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.523
+        },
+        "nude": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.718,
+          "center": 0.535
+        }
+      }
+    },
+    "edgar": {
+      "full": "res://assets/characters/edgar/daily/neutral.webp",
+      "bust": "res://assets/characters/edgar/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/edgar.webp",
+      "avatar": "res://assets/characters/edgar/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.718,
+          "center": 0.445
+        },
+        "daily_default_b": {
+          "top": 0.006,
+          "chin": 0.179,
+          "knee": 0.718,
+          "center": 0.484
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.443
+        },
+        "daily_front_b": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.717,
+          "center": 0.509
+        }
+      }
+    },
+    "victor": {
+      "full": "res://assets/characters/victor/daily/neutral.webp",
+      "bust": "res://assets/characters/victor/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/victor.webp",
+      "avatar": "res://assets/characters/victor/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.01,
+          "chin": 0.183,
+          "knee": 0.72,
+          "center": 0.511
+        },
+        "daily_default_b": {
+          "top": 0.006,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.52
+        },
+        "daily_front_a": {
+          "top": 0.011,
+          "chin": 0.183,
+          "knee": 0.717,
+          "center": 0.493
+        },
+        "daily_front_b": {
+          "top": 0.007,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.498
+        }
+      }
+    },
+    "drago": {
+      "full": "res://assets/characters/drago/daily/neutral.webp",
+      "bust": "res://assets/characters/drago/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/drago.webp",
+      "avatar": "res://assets/characters/drago/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.01,
+          "chin": 0.182,
+          "knee": 0.719,
+          "center": 0.458
+        },
+        "daily_default_b": {
+          "top": 0.006,
+          "chin": 0.18,
+          "knee": 0.72,
+          "center": 0.527
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.719,
+          "center": 0.5
+        },
+        "daily_front_b": {
+          "top": 0.007,
+          "chin": 0.179,
+          "knee": 0.716,
+          "center": 0.5
+        }
+      }
+    },
+    "tiya": {
+      "full": "res://assets/characters/tiya/daily/neutral.webp",
+      "bust": "res://assets/characters/tiya/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/tiya.webp",
+      "avatar": "res://assets/characters/tiya/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.007,
+          "chin": 0.18,
+          "knee": 0.72,
+          "center": 0.512
+        },
+        "daily_default_b": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.718,
+          "center": 0.524
+        },
+        "daily_front_a": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.499
+        },
+        "daily_front_b": {
+          "top": 0.01,
+          "chin": 0.182,
+          "knee": 0.716,
+          "center": 0.423
+        }
+      }
+    },
+    "xiaoai": {
+      "full": "res://assets/characters/xiaoai/daily/neutral.webp",
+      "bust": "res://assets/characters/xiaoai/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/xiaoai.webp",
+      "avatar": "res://assets/characters/xiaoai/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.719,
+          "center": 0.511
+        },
+        "daily_default_b": {
+          "top": 0.005,
+          "chin": 0.179,
+          "knee": 0.719,
+          "center": 0.507
+        },
+        "daily_front_a": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.716,
+          "center": 0.493
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.718,
+          "center": 0.497
+        }
+      }
+    },
+    "varsha": {
+      "full": "res://assets/characters/varsha/daily/neutral.webp",
+      "bust": "res://assets/characters/varsha/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/varsha.webp",
+      "avatar": "res://assets/characters/varsha/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.006,
+          "chin": 0.178,
+          "knee": 0.715,
+          "center": 0.535
+        },
+        "daily_default_b": {
+          "top": 0.013,
+          "chin": 0.184,
+          "knee": 0.716,
+          "center": 0.48
+        },
+        "daily_front_a": {
+          "top": 0.009,
+          "chin": 0.181,
+          "knee": 0.717,
+          "center": 0.503
+        },
+        "daily_front_b": {
+          "top": 0.005,
+          "chin": 0.178,
+          "knee": 0.717,
+          "center": 0.444
+        }
+      }
+    },
+    "satou": {
+      "full": "res://assets/characters/satou/daily/neutral.webp",
+      "bust": "res://assets/characters/satou/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/satou.webp",
+      "avatar": "res://assets/characters/satou/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.72,
+          "center": 0.515
+        },
+        "daily_default_b": {
+          "top": 0.008,
+          "chin": 0.18,
+          "knee": 0.717,
+          "center": 0.498
+        },
+        "daily_front_a": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.72,
+          "center": 0.499
+        },
+        "daily_front_b": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.719,
+          "center": 0.499
+        }
+      }
+    },
+    "solanu": {
+      "full": "res://assets/characters/solanu/daily/neutral.webp",
+      "bust": "res://assets/characters/solanu/daily/neutral.webp",
+      "card": "res://assets/ui/portraits/solanu.webp",
+      "avatar": "res://assets/characters/solanu/avatar.webp",
+      "framing": {
+        "daily": {
+          "top": 0.016,
+          "chin": 0.187,
+          "knee": 0.721,
+          "center": 0.425
+        },
+        "daily_default_b": {
+          "top": 0.013,
+          "chin": 0.185,
+          "knee": 0.72,
+          "center": 0.422
+        },
+        "daily_front_a": {
+          "top": 0.008,
+          "chin": 0.181,
+          "knee": 0.718,
+          "center": 0.424
+        },
+        "daily_front_b": {
+          "top": 0.011,
+          "chin": 0.182,
+          "knee": 0.713,
+          "center": 0.427
+        }
+      }
+    }
+  },
+  "silhouettes": {
+    "sil_child": {
+      "label": "小孩",
+      "full": "res://assets/characters/silhouettes/child.webp",
+      "bust": "res://assets/characters/silhouettes/child.webp",
+      "avatar": "res://assets/characters/silhouettes/child.webp",
+      "framing": {
+        "daily": {
+          "top": 0.136,
+          "chin": 0.28,
+          "knee": 0.73,
+          "center": 0.497
+        }
+      }
+    },
+    "sil_woman": {
+      "label": "女人",
+      "full": "res://assets/characters/silhouettes/woman.webp",
+      "bust": "res://assets/characters/silhouettes/woman.webp",
+      "avatar": "res://assets/characters/silhouettes/woman.webp",
+      "framing": {
+        "daily": {
+          "top": 0.052,
+          "chin": 0.211,
+          "knee": 0.706,
+          "center": 0.478
+        }
+      }
+    },
+    "sil_man": {
+      "label": "男人",
+      "full": "res://assets/characters/silhouettes/man.webp",
+      "bust": "res://assets/characters/silhouettes/man.webp",
+      "avatar": "res://assets/characters/silhouettes/man.webp",
+      "framing": {
+        "daily": {
+          "top": 0.013,
+          "chin": 0.184,
+          "knee": 0.718,
+          "center": 0.546
+        }
+      }
+    },
+    "sil_elder": {
+      "label": "老人",
+      "full": "res://assets/characters/silhouettes/elder.webp",
+      "bust": "res://assets/characters/silhouettes/elder.webp",
+      "avatar": "res://assets/characters/silhouettes/elder.webp",
+      "framing": {
+        "daily": {
+          "top": 0.046,
+          "chin": 0.207,
+          "knee": 0.706,
+          "center": 0.482
+        }
+      }
+    },
+    "sil_monster": {
+      "label": "魔物",
+      "full": "res://assets/characters/silhouettes/monster.webp",
+      "bust": "res://assets/characters/silhouettes/monster.webp",
+      "avatar": "res://assets/characters/silhouettes/monster.webp",
+      "framing": {
+        "daily": {
+          "top": 0.251,
+          "chin": 0.341,
+          "knee": 0.623,
+          "center": 0.35
+        }
+      }
+    }
+  }
+}

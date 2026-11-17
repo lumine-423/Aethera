@@ -1,0 +1,60 @@
+{
+  "app_name": "艾瑟拉",
+  "version": "4.0",
+  "version_code": 4,
+  "github_owner": "lumine-423",
+  "github_repo": "Aethera",
+  "github_branch": "main",
+  "configured": true,
+  "manifest_rel_path": "data/app_update.json",
+  "changelog": "4.0：立绘差分、魔物图鉴、新图标与Windows安装向导；同步双端安装包、更新清单和源码。",
+  "platforms": {
+    "android": {
+      "label": "手机版 (Android .apk)",
+      "extensions": [
+        ".apk"
+      ]
+    },
+    "windows": {
+      "label": "电脑版 (Windows)",
+      "extensions": [
+        ".pck",
+        ".zip",
+        ".exe",
+        ".msi"
+      ]
+    },
+    "macos": {
+      "label": "电脑版 (macOS)",
+      "extensions": [
+        ".pck",
+        ".dmg",
+        ".zip"
+      ]
+    },
+    "linux": {
+      "label": "电脑版 (Linux)",
+      "extensions": [
+        ".pck",
+        ".appimage",
+        ".x86_64",
+        ".tar.gz",
+        ".zip"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "name": "Aethera-v4.0-win64.exe",
+      "url": "https://github.com/lumine-423/Aethera/releases/download/v4.0/Aethera-v4.0-win64.exe"
+    },
+    {
+      "name": "Aethera-v4.0.apk",
+      "url": "https://github.com/lumine-423/Aethera/releases/download/v4.0/Aethera-v4.0.apk"
+    },
+    {
+      "name": "Aethera-4.0-win64-setup.exe",
+      "url": "https://github.com/lumine-423/Aethera/releases/download/v4.0/Aethera-4.0-win64-setup.exe"
+    }
+  ]
+}
