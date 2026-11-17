@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "rin.base.attack.space_cut.minimal_01",
+  "classification": "character_specific",
+  "actor_id": "rin",
+  "form_id": "base",
+  "action_id": "attack",
+  "type": "spatial_cut",
+  "fps": 24,
+  "duration_seconds": 0.625,
+  "frames": [
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-01.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-02.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-03.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-04.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-05.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-06.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-07.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-08.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-09.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-10.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-11.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-12.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-13.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-14.png",
+    "res://assets/effects/rin-space-minimal-24fps-01/frame-15.png"
+  ],
+  "reference_event": "target_hit",
+  "status": "candidate_not_accepted",
+  "notes": "用户认可简洁方向用于普攻；15张独立生图，尚待检查光点变化与消散"
+}

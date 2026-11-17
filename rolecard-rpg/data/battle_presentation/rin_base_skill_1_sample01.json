@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "rin.base.skill_1.sample01",
+  "classification": "character_specific",
+  "actor_id": "rin",
+  "form_id": "base",
+  "action_id": "skill_1",
+  "fps": 24,
+  "duration_seconds": 0.5,
+  "frames": [
+    "res://assets/effects/rin-skill1-24fps-01/frame-01.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-02.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-03.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-04.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-05.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-06.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-07.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-08.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-09.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-10.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-11.png",
+    "res://assets/effects/rin-skill1-24fps-01/frame-12.png"
+  ],
+  "reference_event": "target_hit",
+  "status": "candidate",
+  "notes": "技能表现候选，名称、映射、数值及目标未冻结。"
+}

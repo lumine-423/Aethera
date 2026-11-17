@@ -1,0 +1,41 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 当前地点 = getVal('stat_data.主角组.当前地点') || '';
+if (typeof 当前地点 !== 'string') {
+    当前地点 = String(当前地点 || '');
+}
+var regionRules = [
+    { keys: ['齐哈特'], entry: '魔物/齐哈特大沙漠' },
+    { keys: ['塞蕾特'], entry: '魔物/塞蕾特公国' },
+    { keys: ['龙渊'], entry: '魔物/龙渊帝国' },
+    { keys: ['哥塔薇亚'], entry: '魔物/哥塔薇亚帝国' },
+    { keys: ['秋津'], entry: '魔物/秋津国' },
+    { keys: ['吉万沙克蒂', '梵音林'], entry: '魔物/吉万沙克蒂' },
+    { keys: ['格洛里亚'], entry: '魔物/格洛里亚' },
+    { keys: ['奥马努特'], entry: '魔物/奥马努特' }
+];
+var matched = '';
+for (var i = 0; i < regionRules.length; i++) {
+    for (var j = 0; j < regionRules[i].keys.length; j++) {
+        if (当前地点.indexOf(regionRules[i].keys[j]) !== -1) {
+            matched = regionRules[i].entry;
+            break;
+        }
+    }
+    if (matched) break;
+}
+if (matched) {
+%>
+<rule_动态内容_<%= matched %>>
+<%- await getwi(matched) %>
+</rule_动态内容_<%= matched %>>
+<%
+}
+%>

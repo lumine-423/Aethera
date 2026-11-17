@@ -1,0 +1,126 @@
+<div class="rd" data-name="$1">
+  <div class="rd-stone">
+    <span class="rd-rp"></span><span class="rd-rp r2"></span><span class="rd-moon"></span>
+    <div class="rd-orb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 L14 9 L20 12 L14 15 L12 21 L10 15 L4 12 L10 9 Z"/></svg></div>
+  </div>
+  <div class="rd-said">
+    <div class="rd-who">$1</div>
+    <svg class="rd-sw" viewBox="0 0 200 10"><path d="M 2 3 Q 100 12 198 4"/><circle cx="198" cy="4" r="1.8"/></svg>
+    <div class="rd-bub">$2</div>
+  </div>
+</div>
+
+<style>
+.rd,.rd *{margin:0;padding:0;box-sizing:border-box}
+.rd{
+  --ac:#d8a84e;--ac2:#c9564a;--ac-s:rgba(216,168,78,.14);--ac-l:rgba(216,168,78,.38);
+  --ac-f:rgba(216,168,78,.16);
+  /* 0916b：气泡内部**透明**——透出背景色，只留金色描边；不再用实心夜模式底色，也不要投影 */
+  --bub:transparent;
+  --ink:#e2ddcf;--dim:#6b7d8f;--sh:none;
+  display:grid;grid-template-columns:104px 1fr;gap:16px;
+  margin:20px 0;align-items:start;
+  font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,Georgia,serif;
+}
+.rd-stone{position:relative;width:104px;height:104px;flex-shrink:0}
+.rd-stone .rd-rp{position:absolute;inset:0;border-radius:50%;border:1px solid var(--ac);opacity:0;animation:rdR 4.6s ease-out infinite}
+.rd-stone .rd-rp.r2{animation-delay:2.3s}
+@keyframes rdR{0%{transform:scale(.72);opacity:.5}100%{transform:scale(1.6);opacity:0}}
+.rd-stone .rd-orb{
+  position:absolute;inset:6px;border-radius:50%;overflow:hidden;
+  background:
+    radial-gradient(circle at 40% 30%,rgba(255,255,255,.14),transparent 52%),
+    radial-gradient(circle at 62% 70%,var(--ac-s),transparent 74%),
+    var(--bub);
+  border:2px solid var(--ac);display:grid;place-items:center;color:var(--ac);
+  box-shadow:0 4px 16px var(--ac-s);
+}
+.rd-stone .rd-orb img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.rd-stone .rd-orb svg{width:38px;height:38px;display:var(--rd-av-user-svg,block)}
+/* ── 0923 头像层：第 1 层专门留给「说话人是**玩家(user)**」时的 persona 原图 ──────
+   正则替换是静态的，拿不到 persona 的头像文件名 ⇒ 反过来做「变量交接」：
+   前端覆盖层（sigil-workbench.html 的 `mesSkinCss()`）往宿主 <html> 注一条
+     `.mes[is_user="true"]{--rd-av-user:url(<persona 原图>);--rd-av-user-svg:none}`
+   自定义属性会**继承**进气泡里的 .rd-orb，这里只用 var() 消费它。
+   变量没设（AI 消息 / 前端没开）⇒ 第 1 层是 none，视觉与 0917 版**一字不差**。
+   ★ 好处：与 user 叫什么名字**无关** —— persona 改名 / 换成别的名字照样显示。
+   ★ 变量名或这个三层结构改了，要同步 mesSkinCss()。 */
+.rd-stone .rd-orb{
+  background-image:var(--rd-av-user,none),
+    radial-gradient(circle at 40% 30%,rgba(255,255,255,.14),transparent 52%),
+    radial-gradient(circle at 62% 70%,var(--ac-s),transparent 74%);
+  background-size:cover,auto,auto;
+  background-position:50% 16%,0 0,0 0;
+  background-repeat:no-repeat,repeat,repeat;
+}
+.rd-stone .rd-moon{position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--ac);offset-path:circle(49px at 0 0);animation:rdO 9s linear infinite;opacity:.8}
+@keyframes rdO{to{offset-distance:100%}}
+.rd-said{min-width:0;padding-top:6px}
+.rd-who{font-size:17px;font-weight:700;letter-spacing:3px;color:var(--ac)}
+.rd-who::first-letter{font-size:23px}
+.rd-sw{width:min(200px,52%);height:10px;display:block;margin:2px 0 8px}
+.rd-sw path{stroke:var(--ac);fill:none;opacity:.7}
+.rd-sw circle{fill:var(--ac)}
+.rd-bub{
+  position:relative;background:var(--bub);border:1px solid var(--ac-l);
+  border-radius:4px 28px 28px 28px;box-shadow:var(--sh);
+  padding:14px 20px 14px 18px;
+  font-size:15px;line-height:2.05;letter-spacing:.4px;
+  color:var(--ink);
+}
+.rd-bub::before{content:'';position:absolute;left:-11px;top:1px;width:13px;height:13px;border-left:1px solid var(--ac-l);border-bottom:1px solid transparent;border-radius:0 0 0 15px}
+.rd-bub::after{content:'';position:absolute;right:11px;bottom:-4px;width:8px;height:8px;border-radius:50%;border:1px solid var(--ac-l);background:var(--bub)}
+@media(max-width:640px){
+  .rd{grid-template-columns:78px 1fr;gap:12px}
+  .rd-stone{width:78px;height:78px}
+  .rd-stone .rd-orb{inset:5px}
+  .rd-stone .rd-orb svg{width:26px;height:26px}
+  .rd-stone .rd-moon{offset-path:circle(36px at 0 0);width:5px;height:5px;margin:-2.5px 0 0 -2.5px}
+  .rd-bub{font-size:13.5px;padding:11px 15px}
+}
+/* ── 0917 说话人头像 ────────────────────────────────────────────────
+   机制：`$1`（【】里的名字）同时写进 `.rd` 的 data-name 属性，用属性选择器换头像。
+   ⚠ 这一份是**唯一源头** —— 卡里的那条「对话美化 · 涟漪学院风」由
+     `python tools/patch-card-mes-skin.py` 从这里同步，别只改卡里那份。
+   名字必须与「角色组」的键一致（凛零 / 梅林 / 墨华 / 冰糖 / 安克 / 茧 / 卡斯特 /
+   明空 / 叶 / 艾利丝 / 路西法 / 暧 / 瓦尔基里）。名字对不上就退回原来的星形纹样，
+   不会出错，只是没头像 —— 所以加了新角色记得回这里补一行。
+   ── 0923 补：**玩家(user) 那一侧不走这张名字表** ────────────────────
+   上面这套是「按名字写死网链」，对玩家没用（persona 名字随时会变、头像也是自己传的）。
+   玩家侧改用前端交接的 `--rd-av-user`（见下面 .rd-orb 那段注释）——
+   覆盖层把 persona 原图设在 `.mes[is_user="true"]` 上，继承下来即可，
+   与名字无关。两套并存：`--rd-av-user` 优先，没有就退回 `--rd-av`。 */
+.rd:is([data-name="凛零"],[data-name="梅林"],[data-name="墨华"],[data-name="冰糖"],[data-name="安克"],[data-name="茧"],[data-name="卡斯特"],[data-name="明空"],[data-name="叶"],[data-name="艾利丝"],[data-name="路西法"],[data-name="暧"],[data-name="瓦尔基里"],[data-name="埃德加·考文垂"],[data-name="小艾"],[data-name="德拉贡"],[data-name="瓦尔莎"],[data-name="维克托"],[data-name="缇雅"],[data-name="焰渊"],[data-name="筏摩娜"],[data-name="轩辕"],[data-name="阿兰雅"],[data-name="拉伦提娅"],[data-name="阳向"],[data-name="露珐"],[data-name="瓦沙克"],[data-name="佐藤澄"],[data-name="索拉努"]) .rd-orb svg{display:var(--rd-av-user-svg,none)}
+.rd:is([data-name="凛零"],[data-name="梅林"],[data-name="墨华"],[data-name="冰糖"],[data-name="安克"],[data-name="茧"],[data-name="卡斯特"],[data-name="明空"],[data-name="叶"],[data-name="艾利丝"],[data-name="路西法"],[data-name="暧"],[data-name="瓦尔基里"],[data-name="埃德加·考文垂"],[data-name="小艾"],[data-name="德拉贡"],[data-name="瓦尔莎"],[data-name="维克托"],[data-name="缇雅"],[data-name="焰渊"],[data-name="筏摩娜"],[data-name="轩辕"],[data-name="阿兰雅"],[data-name="拉伦提娅"],[data-name="阳向"],[data-name="露珐"],[data-name="瓦沙克"],[data-name="佐藤澄"],[data-name="索拉努"]) .rd-orb{
+  background-image:var(--rd-av-user,var(--rd-av));background-size:cover;background-position:50% 16%;background-repeat:no-repeat;
+}
+.rd[data-name="凛零"]{--rd-av:url('https://i.postimg.cc/zvgf4HpY/lin-ling.png')}
+.rd[data-name="梅林"]{--rd-av:url('https://i.postimg.cc/bwTDh4fg/mei-lin.png')}
+.rd[data-name="墨华"]{--rd-av:url('https://i.postimg.cc/fRKtN1QH/mo-hua.png')}
+.rd[data-name="冰糖"]{--rd-av:url('https://i.postimg.cc/L8RYG2wD/bing-tang.png')}
+.rd[data-name="安克"]{--rd-av:url('https://i.postimg.cc/jSKwBtmz/an-ke.png')}
+.rd[data-name="茧"]{--rd-av:url('https://i.postimg.cc/CxYB9SXv/jian.png')}
+.rd[data-name="卡斯特"]{--rd-av:url('https://i.postimg.cc/CxNBg9pH/ka-si-te.png')}
+.rd[data-name="明空"]{--rd-av:url('https://i.postimg.cc/GmQ8C6nX/ming-kong.png')}
+.rd[data-name="叶"]{--rd-av:url('https://i.postimg.cc/BnsLR4k1/ye.png')}
+.rd[data-name="艾利丝"]{--rd-av:url('https://i.postimg.cc/521YDbTC/ai-li-si.png')}
+.rd[data-name="路西法"]{--rd-av:url('https://i.postimg.cc/GmQ8C6nz/lu-xi-fa.png')}
+.rd[data-name="暧"]{--rd-av:url('https://i.postimg.cc/fRZt1Dpd/ai.png')}
+.rd[data-name="瓦尔基里"]{--rd-av:url('https://i.postimg.cc/Sxr2hHbt/wa-er-ji-li.png')}
+.rd[data-name="埃德加·考文垂"]{--rd-av:url('https://i.postimg.cc/yxXMS1C3/ai-de-jia-kao-wen-chui.png')}
+.rd[data-name="小艾"]{--rd-av:url('https://i.postimg.cc/Kj2XzKwT/xiao-ai.png')}
+.rd[data-name="德拉贡"]{--rd-av:url('https://i.postimg.cc/1XckNm18/de-la-gong.png')}
+.rd[data-name="瓦尔莎"]{--rd-av:url('https://i.postimg.cc/QC3LtBwT/wa-er-sha.png')}
+.rd[data-name="维克托"]{--rd-av:url('https://i.postimg.cc/hvBFjJ6x/wei-ke-tuo.png')}
+.rd[data-name="缇雅"]{--rd-av:url('https://i.postimg.cc/MHSkTcN0/ti-ya.png')}
+.rd[data-name="焰渊"]{--rd-av:url('https://i.postimg.cc/hvbk7DR1/yan-yuan.png')}
+.rd[data-name="筏摩娜"]{--rd-av:url('https://i.postimg.cc/mkNvFLW3/fa-mo-na.png')}
+.rd[data-name="轩辕"]{--rd-av:url('https://i.postimg.cc/90t6qmH7/xuan-yuan.png')}
+.rd[data-name="阿兰雅"]{--rd-av:url('https://i.postimg.cc/1XckNm1w/a-lan-ya.png')}
+.rd[data-name="拉伦提娅"]{--rd-av:url('https://i.postimg.cc/1t6yBGwq/la-lun-ti-ya.png')}
+.rd[data-name="阳向"]{--rd-av:url('https://i.postimg.cc/sgXyqd5F/yang-xiang.png')}
+.rd[data-name="露珐"]{--rd-av:url('https://i.postimg.cc/sgXyqd52/lu-fa.png')}
+.rd[data-name="瓦沙克"]{--rd-av:url('https://i.postimg.cc/9QMVK5yw/wa-sha-ke.png')}
+.rd[data-name="佐藤澄"]{--rd-av:url('https://i.postimg.cc/3xc7HSZW/zuo-teng-cheng.png')}
+.rd[data-name="索拉努"]{--rd-av:url('https://i.postimg.cc/6pmwNjhv/suo-la-nu.png')}
+</style>

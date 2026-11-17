@@ -1,0 +1,14 @@
+{
+ "starts": {
+  "click": 0,
+  "loop_a": 0.67,
+  "loop_b": 3.94,
+  "done": 9.34
+ },
+ "gain_db": {
+  "click": 0,
+  "loop_a": 0,
+  "loop_b": 0,
+  "done": 0
+ }
+}

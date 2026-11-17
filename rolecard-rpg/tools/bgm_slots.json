@@ -1,0 +1,612 @@
+{
+  "schema": "aethera-bgm-slots/1",
+  "source_doc": "rolecard-rpg/docs/bgm-requirements-full.md",
+  "categories": [
+    {
+      "id": "A",
+      "name": "A. 界面与核心玩法专曲",
+      "short_name": "界面与核心玩法",
+      "count": 4,
+      "description": "开场手书、坠湖标题页、1999风室内主页、刻印工坊"
+    },
+    {
+      "id": "B1",
+      "name": "B1. 国家与核心组织主题曲",
+      "short_name": "国家与核心组织",
+      "count": 8,
+      "description": "7 大国（塞蕾特、龙渊、哥塔薇亚、秋津、吉万沙克蒂、格洛里亚、奥马努特）＋ 蛇杖组织"
+    },
+    {
+      "id": "B2",
+      "name": "B2. 16 个具体地点场景曲",
+      "short_name": "具体地点场景",
+      "count": 16,
+      "description": "中央学院、卡米洛特宫、尼德霍格区、紫宸宫、灵山、基捷日、须弥王庭等 16 处重点地点"
+    },
+    {
+      "id": "C1",
+      "name": "C1. 重头剧情事件专曲",
+      "short_name": "重头剧情事件",
+      "count": 11,
+      "description": "archive.events 中 11 个最需要专属配乐的重头事件"
+    },
+    {
+      "id": "D",
+      "name": "D. 8 大特异点危机演出曲",
+      "short_name": "特异点危机",
+      "count": 4,
+      "description": "塔阿贝特/海坊主、奇美拉/巴蛇/腾蛇、舍罗婆、苏尔特尔/赤龙"
+    },
+    {
+      "id": "E",
+      "name": "E. 角色印象与情绪补位曲",
+      "short_name": "角色与情绪补位",
+      "count": 5,
+      "description": "日常下午茶、双女主羁绊、高压对峙、温柔夜谈、凯旋启程"
+    }
+  ],
+  "slots": [
+    {
+      "id": "UI-01",
+      "category": "A",
+      "name": "手书剪辑风开场动画（第 1 项改造）opening_screen.gd",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "需要强节奏剪辑感、画面卡点、起承转合，现有通用背景曲无法对齐手书分镜",
+      "style_hint": "偏文艺动漫/电影感弦乐＋钢琴＋清脆鼓点（前 15 秒静谧神秘→中段群像推进→尾段余韵留白）；可带微妙时计滴答或风声引子",
+      "loop_req": "固定时长（建议 60–90 秒），不循环，支持跳过时 0.6s 淡出",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "UI-02",
+      "category": "A",
+      "name": "坠湖主题标题页 · 黑夜/白昼伴奏变体（第 2 项改造）title_screen.gd",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "现沿用原卡 Main Theme（ENDER LILIES）；标题重构为白发女孩坠湖，黑白切换时可加空气感/水下空灵氛围层或独立主曲",
+      "style_hint": "空灵水琴/玻璃琴＋低吟大提琴＋轻飘女声哼鸣（无歌词）＋细腻钢琴延音，清冷、失重、宿命与唯美并存",
+      "loop_req": "无缝循环（Loop），建议 120–180 秒，音色干净不过载",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "UI-03",
+      "category": "A",
+      "name": "室内交互主页（《重返未来：1999》腔调）（第 3 项改造）home_screen.gd",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "需要“神秘学公馆/书房午后与雨夜”质感，支撑玩家长期停留与点按交互而不腻",
+      "style_hint": "神秘学室内爵士/轻复古 Chamber Jazz 或柔和大提琴＋木管＋老式钢琴＋壁炉/细雨环境底噪（昼偏暖光知性、夜偏壁炉暗金低回）",
+      "loop_req": "高耐听度，2–3 分钟以上平滑循环，中频温润、不抢对话与 SFX",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "UI-04",
+      "category": "A",
+      "name": "刻印工坊（常驻思考 + 激活高潮音效乐段）（第 4 项改造）workshop_screen.gd",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "现有只套用通用思考曲，缺少法阵点亮与铭刻完成瞬间的仪式感",
+      "style_hint": "① 工坊常态：微悬疑炼金氛围＋齿轮/竖琴/音叉拨弦（克制、专注）；② 激活演出段（10–15s 乐句或独立 Stinger）：和弦层层抬升→辉煌共鸣收束",
+      "loop_req": "① 无缝循环；② 短乐段不循环，可叠加混音",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-01",
+      "category": "B1",
+      "name": "塞蕾特公国",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "商贸强国、议会制、贵族学院与神秘学研究重镇，主线起点",
+      "style_hint": "欧陆新古典弦乐＋大键琴/钢琴＋温和圆号＋轻快拨弦｜情绪：典雅、学术秩序、暗流涌动、繁华",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-02",
+      "category": "B1",
+      "name": "龙渊帝国",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "千年尚武帝国，四大家系拱卫、先武后文、皇城威严",
+      "style_hint": "东方史诗民乐交响：古筝/琵琶/二胡＋大鼓＋厚重低音铜管｜情绪：威严、肃穆、千年厚重、凌厉武风",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-03",
+      "category": "B1",
+      "name": "哥塔薇亚帝国",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "极圈全民皆兵之国，冻湖白炉、冰晶冬宫、风雪与互助",
+      "style_hint": "斯拉夫/俄式阴郁凛冽管弦：小提琴悲歌＋手风琴/巴拉莱卡或冷冽合唱＋风雪氛围｜情绪：极寒、孤傲、钢铁纪律、炉火余温",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-04",
+      "category": "B1",
+      "name": "秋津国",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "海域岛国幕府体制，樱花剑道场、段位即权力",
+      "style_hint": "日式和风弦乐/民谣融合：尺八/三味线/十三弦筝＋和太鼓＋清透木琴｜情绪：清冷、孤樱、刀锋禅意、物哀",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-05",
+      "category": "B1",
+      "name": "吉万沙克蒂",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "精灵国度，九成巨林覆盖，生命精舍治疗圣地，反感人类侵扰",
+      "style_hint": "西塔琴/班苏里竹笛/竖琴/空灵林间打击＋温柔木管｜情绪：翠绿神秘、神圣自然、古老、略带疏离",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-06",
+      "category": "B1",
+      "name": "格洛里亚",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "火山荒原上的抗龙百年战国，众议会＋军团＋凯旋式",
+      "style_hint": "古罗马/地中海燃系军团交响：军鼓行进节奏＋宏大铜管＋弗拉门戈式拉丁拨弦点缀｜情绪：烈火、英雄主义、悲壮抗争、苍凉荣耀",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-07",
+      "category": "B1",
+      "name": "奥马努特",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "塞蕾特西方艺术附庸国，沙化危机东迁，华美与脆弱共存",
+      "style_hint": "中东/波斯或文艺复兴室内弦乐融合：乌德琴/竖琴/双簧管｜情绪：唯美浪漫、颓丽、失落故土的乡愁",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "FAC-08",
+      "category": "B1",
+      "name": "蛇杖（跨国禁忌组织）",
+      "priority": "高（第一批必找）",
+      "batch1": true,
+      "scene_desc": "知识与禁忌集合体、独立分部网络、地下实验与暗中调度",
+      "style_hint": "暗黑电子/悬疑室内乐混合：脉冲合成低音＋冰冷钢琴单音＋机械/滴答节奏＋弱弦乐张力｜情绪：禁忌、精密冷酷、机密、深不可测",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-01",
+      "category": "B2",
+      "name": "中央学院（塞蕾特）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "哥特石造主楼、钟楼地标、水池广场、工坊与校场",
+      "style_hint": "学院钟声感＋清新四重奏/木管＋年轻活力学院日常感",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-02",
+      "category": "B2",
+      "name": "卡米洛特宫（塞蕾特）",
+      "priority": "中",
+      "batch1": false,
+      "scene_desc": "圣剑剑庙、历代王座厅、授勋仪式（自定义开局起点）",
+      "style_hint": "庄严古风宫廷竖琴＋礼仪管风琴/弦乐，带一丝空虚权力感",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-03",
+      "category": "B2",
+      "name": "尼德霍格区（塞蕾特）",
+      "priority": "高优（第一批精选）",
+      "batch1": true,
+      "scene_desc": "晒不到太阳的洼地贫民窟、管网迷宫、地下拳赛、黑诊所",
+      "style_hint": "低音贝斯＋略带锈蚀感的流浪吉他/口琴/街头灰暗蓝调",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-04",
+      "category": "B2",
+      "name": "紫宸宫（龙渊）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "蟠龙石阶、重檐歇山、校场与正殿同轴（龙渊开局起点）",
+      "style_hint": "庄重宫廷雅乐：编钟/古琴＋沉缓大鼓＋大气弦乐留白",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-05",
+      "category": "B2",
+      "name": "灵山（龙渊）",
+      "priority": "高优（第一批精选）",
+      "batch1": true,
+      "scene_desc": "龙种轩辕封印之地、常年云雾、刻印石柱环山、擅闯者死",
+      "style_hint": "仙侠飘渺/幽深秘境感：竹笛/箫空鸣＋缓慢钵声＋云雾环境音",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-06",
+      "category": "B2",
+      "name": "基捷日（哥塔薇亚）",
+      "priority": "中",
+      "batch1": false,
+      "scene_desc": "冻湖石城、昼夜不熄“白炉”群、炉政配给与雪夜尖塔",
+      "style_hint": "工业机械微脉动＋清冷玻璃琴/弦乐＋雪夜炉火暖意微光",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-07",
+      "category": "B2",
+      "name": "阿拉提尔（哥塔薇亚）",
+      "priority": "中",
+      "batch1": false,
+      "scene_desc": "极北冰原神圣禁地、透蓝巨型温热冰柱林、柱隙透天光",
+      "style_hint": "极简高灵性空灵曲：水滴晶莹合成音＋高音女声泛音/长音圣咏",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-08",
+      "category": "B2",
+      "name": "须弥王庭（吉万沙克蒂）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "悬于巨木之冠、白墙金顶、藤桥花云、生命精舍（开局起点）",
+      "style_hint": "空中花园般华美空灵：竖琴滑音＋清脆风铃＋柔美竹笛",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-09",
+      "category": "B2",
+      "name": "塞建陀砦（吉万沙克蒂）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "林沙交界防线、不息火沟、守林军团常年警戒魔物潮",
+      "style_hint": "边塞备战感：密集帧鼓/军鼓底衬＋拉弦紧绷感＋警戒哨音氛围",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-10",
+      "category": "B2",
+      "name": "堤丰之喉（格洛里亚）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "活火山赤红天光、琉璃焦山、赤龙巢域与火山灰（开局起点）",
+      "style_hint": "灼热荒凉险地：低沉铜管长音＋岩浆翻涌低频＋炽烈切分打击",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-11",
+      "category": "B2",
+      "name": "库利亚（格洛里亚）",
+      "priority": "中",
+      "batch1": false,
+      "scene_desc": "黑色玄武岩众议大厅、顶敞镌刻百年战殁者姓名",
+      "style_hint": "悲壮纪念堂肃穆感：慢板低音弦乐＋沉稳哀悼号角",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-12",
+      "category": "B2",
+      "name": "云樱（秋津国）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "依山面海城下町、白墙灰瓦樱阶、幕府天守与剑道场（开局起点）",
+      "style_hint": "和风柔美旅情：钢琴＋古筝/三味线＋春风落樱般柔和节奏",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-13",
+      "category": "B2",
+      "name": "地下市场（奥马努特）",
+      "priority": "中",
+      "batch1": false,
+      "scene_desc": "港区三层回廊黑市、暗红灯笼、黑话“艺术品”暗流交易",
+      "style_hint": "迷离诡谲异域集市：低音乌德琴/手鼓＋暗巷爵士萨克斯或神秘拨弦",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-14",
+      "category": "B2",
+      "name": "齐哈特大沙漠（奥马努特西）",
+      "priority": "高优（第一批精选）",
+      "batch1": true,
+      "scene_desc": "极端昼灼夜冻、流沙故城遗迹、数十场沙暴、唯一独立魔物区",
+      "style_hint": "苍茫酷烈大漠风情：胡笳/杜读管苍凉吹奏＋风沙环境质感＋低沉沙鼓",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "LOC-15",
+      "category": "B2",
+      "name": "梵音林（吉万沙克蒂深处）",
+      "priority": "高优",
+      "batch1": false,
+      "scene_desc": "九成国土覆林、高等魔物禁区、生命之神所居圣林",
+      "style_hint": "幽深神妙森林氛围（原卡 14 首无森林/精灵秘境专曲，暂只能回退 Windborne Hymn / Good Morning）",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": "orig-plgpzp"
+    },
+    {
+      "id": "LOC-16",
+      "category": "B2",
+      "name": "天国岛（塞蕾特海域）",
+      "priority": "高优（第一批精选）",
+      "batch1": true,
+      "scene_desc": "整岛废弃、残破研究所与圆形巨坑、世界底层遗迹",
+      "style_hint": "寂静废墟＋诡异回忆感：钢琴孤音＋远处海浪＋隐约不协和金属残响",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-01",
+      "category": "C1",
+      "name": "101 Project L / 119 世界诞生之前",
+      "priority": "高（第一批精选）",
+      "batch1": true,
+      "scene_desc": "齐哈特故城研究所 / 天国岛废弃研究所（凛零、明空、路西法）｜世界观底层揭秘！需要从寂静荒凉慢慢翻涌出“尘封真相大白”的震撼感，现有 Humidity 偏轻度侦探，气场不够宏大",
+      "style_hint": "氛围科幻神秘感＋钢琴主题逐渐推入震撼悲悯弦乐",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-02",
+      "category": "C1",
+      "name": "102–107 更纪战争（六人回忆篇）",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "塞蕾特公国（安克/冰糖/瓦尔基里/叶/卡斯特/凛零）｜1008 年持续五年的残酷战争个人告白，6 个人各自承受不同伤痕；现有 degree45/Harmonious 共 2 首容易听重",
+      "style_hint": "寻找 1–2 首战争回忆钢琴＋大提琴哀歌（带一点冷火余灰与宿命交错感）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-03",
+      "category": "C1",
+      "name": "111 平民的尊严",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "塞蕾特·中央学院（凛零、梅林）｜塞蕾特开局首幕主事件！学生派系反抗与热血抗争；需要既有校园少年感又有破局爆发力的反抗主旋律",
+      "style_hint": "燃系钢琴弦乐摇滚或学院青春热血交响",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-04",
+      "category": "C1",
+      "name": "112 非人类开膛手",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "奥马努特（明空、路西法、暧）｜奥马努特开局首幕（连环凶案侦查＋龙种与魔物本质对比）；需要真正的“哥特雨夜罪案悬疑＋压抑惊悚感”",
+      "style_hint": "大提琴拨弦悬疑、雨夜时钟节拍、冷冽诡谲暗黑室内乐",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-05",
+      "category": "C1",
+      "name": "116 早发白帝城",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "龙渊·灵山（破三封印战腾蛇救轩辕）｜从云山破封→云雾龙蛇大敌→千年龙种重见天日，是东方高光篇章",
+      "style_hint": "国风仙侠破阵高燃战斗/破封曲（唢呐/琵琶/古筝＋宏大交响合唱）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-06",
+      "category": "C1",
+      "name": "117 立下誓约的那一天",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "龙渊·紫宸宫（初代四龙种：焰渊/轩辕/路西法/暧）｜千年爱恨纠葛清算与皇帝密位交接，情绪极度复杂（创伤净化、和解或决裂）",
+      "style_hint": "东方苍凉宿命交响抒情（二胡/箫主奏＋厚重管弦，悲欣交集）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-07",
+      "category": "C1",
+      "name": "120 剑与秤的盟约",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "龙渊·紫宸宫（塞蕾特使团×龙渊国宴/论剑/逛街）｜三段式大型外交互动事件：外交礼仪博弈、巅峰切磋、市井欢畅，曲调跨度大",
+      "style_hint": "可复用 FAC-02（紫宸）、LOC-01（轻快）外，建议补一首明快欢腾东方市井集市曲",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-08",
+      "category": "C1",
+      "name": "122 自灰烬中归来",
+      "priority": "高（第一批精选）",
+      "batch1": true,
+      "scene_desc": "格洛里亚·堤丰之喉（拉伦提娅、露珐、茧）｜百年抗龙终局！火山决战→消灭/净化赤龙→露珐从灰烬苏醒，史诗闭环",
+      "style_hint": "双段或两首：火山末日决战合唱 + 灰烬新生微光钢琴/大提琴奇迹曲",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-09",
+      "category": "C1",
+      "name": "123 落樱与锈刃",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "秋津国·云樱（安克 vs 阳向，佐藤本家清洗）｜姐弟雪夜/落樱宿命刀光对决＋解开心结，武士悲壮感最重",
+      "style_hint": "和风高速剑戟对决曲（三味线急奏＋尺八裂帛感＋电吉他/弦乐，收尾温柔樱花雨）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-10",
+      "category": "C1",
+      "name": "124 衔尾之蛇",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "千年前塞蕾特公国（艾利丝、瓦沙克、时空列车）｜时空列车穿梭千年＋亲手种下历史起源“蛇杖” 的奇幻闭环",
+      "style_hint": "奇幻时钟/蒸汽列车推进感（管弦华尔兹或钟表圆舞曲＋宿命循环主题）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "EVT-11",
+      "category": "C1",
+      "name": "125 钟摆停驻之日",
+      "priority": "高（第一批精选）",
+      "batch1": true,
+      "scene_desc": "不限（艾利丝、梅林、叶、瓦沙克，家庭团聚）｜全剧重要亲情＆世界线真相大团圆，十年离别母女重逢、揭示跨世界线代价",
+      "style_hint": "极高泪点治愈主题：清澈钢琴＋温热四重奏大提琴渐渐推向开阔天际（带时钟停摆余韵）",
+      "loop_req": "按剧情段落循环或单次推进",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "BOSS-01",
+      "category": "D",
+      "name": "沙漠亡魂与诡异幻境危机曲（塔阿贝特（齐哈特沙暴幽魂骑士）、海坊主（秋津夜海巨浪海怪））",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "空甲雾气、深海黑暗浪墙、夜雾吞噬",
+      "style_hint": "低沉压迫管风琴/深水沉闷低音＋令人毛骨悚然的环境回响＋重节奏压进",
+      "loop_req": "危机演出循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "BOSS-02",
+      "category": "D",
+      "name": "毒沼凶兽与天灾异变曲（奇美拉（雷火三首巨兽）、巴蛇（南山剧毒山脊巨蛇）、腾蛇（灵山云雾飞蛇））",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "雷火劈裂、毒雾漫山、云海穿梭巨影",
+      "style_hint": "高速张力交响金属或急促工业弦乐群（突出庞然怪兽带来的破坏力）",
+      "loop_req": "危机演出循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "BOSS-03",
+      "category": "D",
+      "name": "远古神兽试炼曲（舍罗婆（梵音林八足古木鹿角神兽））",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "与巨林融为一体、古老威仪非纯恶意",
+      "style_hint": "宏伟古老自然交响：部落大鼓＋低音人声合唱＋空灵角笛（偏神圣压迫而非邪恶）",
+      "loop_req": "危机演出循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "BOSS-04",
+      "category": "D",
+      "name": "熔岩巨人与狂龙天灾决战曲（苏尔特尔（堤丰之喉黑曜火焰剑巨人）、赤龙（百年发疯守护巨龙））",
+      "priority": "极高（第一批精选）",
+      "batch1": true,
+      "scene_desc": "熔岩河畔、遮天烈焰、昔日守护者堕落疯狂",
+      "style_hint": "终极神曲定位：大型混声拉丁语风合唱＋炽热铜管齐奏＋悲怆高音提琴穿插",
+      "loop_req": "危机演出循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "CHAR-01",
+      "category": "E",
+      "name": "日常治愈·下午茶/闲聊多首替换曲",
+      "priority": "高（第一批精选）",
+      "batch1": true,
+      "scene_desc": "全员日常对话（现有 Good Morning / 皇家萌卫 / Goat Chill 各仅 1 首，长玩必腻）",
+      "style_hint": "建议再补 2–3 首不同节奏的清新木吉他/轻钢琴/八音盒日常曲（学院午后、轻松逛街、温馨陪伴）",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "CHAR-02",
+      "category": "E",
+      "name": "双女主核心记忆/羁绊印象曲",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "凛零、梅林、艾瑟拉标题联动主题变奏",
+      "style_hint": "与标题《白发小女孩坠湖》同源的纯音乐旋律变奏（清澈钢琴＋柔和提琴），用于核心羁绊确认/结局回望",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "CHAR-03",
+      "category": "E",
+      "name": "黑化/真相崩溃/高压对峙情绪曲",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "焰渊精神污染、路西法/暧龙种本性显露、蛇杖人体实验揭露",
+      "style_hint": "心理惊悚系：轻微失准钢琴＋低频心跳脉冲＋高频金属耳鸣/拉弦摩擦张力（弥补现有 Cabrito Park 单曲撑场容易单一的局限）",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "CHAR-04",
+      "category": "E",
+      "name": "温柔夜谈与亲密悸动曲",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "舰桥/室内夜景深度交谈、好感关键告白",
+      "style_hint": "暧昧温润深夜钢琴独奏或慢板大提琴二重奏（比 Seaside Town 更有情感温度）",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    },
+    {
+      "id": "CHAR-05",
+      "category": "E",
+      "name": "凯旋/新章启程鼓舞曲",
+      "priority": "中高",
+      "batch1": false,
+      "scene_desc": "地区危局解除、大型事件收官、启程前往下一国",
+      "style_hint": "明亮昂扬凯旋交响（铜管弦乐齐鸣，给人“跨过章节、奔赴下一片大地”的成就感）",
+      "loop_req": "无缝循环",
+      "recommended_original_fallback": ""
+    }
+  ],
+  "covered_events_c2": [
+    {
+      "event": "108 无法之地（尼德霍格区）",
+      "track_title": "用 LOC-03 尼德霍格区 + Humidity / Combat Beneath the Waves"
+    },
+    {
+      "event": "109 夜枭（塞蕾特派系围剿）",
+      "track_title": "用 FAC-01 + Humidity / Frozen World"
+    },
+    {
+      "event": "110 蛇杖（蛇杖资料库探源）",
+      "track_title": "用 FAC-08 蛇杖 + luminous / Humidity"
+    },
+    {
+      "event": "113 归巢鸟（墨华返乡甲等武人）",
+      "track_title": "用 FAC-02 龙渊 + Combat Beneath the Waves"
+    },
+    {
+      "event": "114 埋下未来的种子（阿兰雅游历加冕长老）",
+      "track_title": "用 LOC-08 须弥王庭 + Good Morning / Windborne Hymn"
+    },
+    {
+      "event": "115 森林会记住一切（梵音林净化与筏摩娜）",
+      "track_title": "用 LOC-15 梵音林（建议新配森林曲，暂用 Windborne Hymn / degree45） + Harmonious"
+    },
+    {
+      "event": "118 塞建陀砦保卫战（黑雾气柱与魔物潮）",
+      "track_title": "用 LOC-09 塞建陀砦 + Frozen World"
+    },
+    {
+      "event": "121 止水与烈风（拉伦提娅与茧体术切磋）",
+      "track_title": "用 LOC-10 / 通用热血对决曲 Combat Beneath the Waves"
+    }
+  ]
+}

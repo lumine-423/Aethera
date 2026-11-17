@@ -1,0 +1,1252 @@
+{
+  "temperature": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0,
+  "top_p": 1,
+  "top_k": 0,
+  "top_a": 0,
+  "min_p": 0,
+  "repetition_penalty": 1,
+  "max_context_unlocked": true,
+  "tool_reasoning_mode": "disabled",
+  "openai_max_context": 2000000,
+  "openai_max_tokens": 65535,
+  "names_behavior": 0,
+  "send_if_empty": "",
+  "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
+  "new_chat_prompt": "",
+  "new_group_chat_prompt": "",
+  "new_example_chat_prompt": "",
+  "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
+  "bias_preset_selected": "Default (none)",
+  "wi_format": "{0}",
+  "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
+  "personality_format": "[{{char}}'s personality: {{personality}}]",
+  "group_nudge_prompt": "",
+  "stream_openai": true,
+  "assistant_prefill": "",
+  "assistant_impersonation": "",
+  "use_sysprompt": true,
+  "squash_system_messages": true,
+  "media_inlining": false,
+  "inline_image_quality": "auto",
+  "continue_prefill": false,
+  "continue_postfix": " ",
+  "function_calling": false,
+  "tool_call_recurse_limit": 5,
+  "show_thoughts": true,
+  "reasoning_effort": "low",
+  "verbosity": "auto",
+  "enable_web_search": false,
+  "seed": -1,
+  "n": 1,
+  "request_images": false,
+  "request_image_aspect_ratio": "",
+  "request_image_resolution": "",
+  "image_inlining": false,
+  "video_inlining": false,
+  "wrap_in_quotes": false,
+  "prompts": [
+    {
+      "identifier": "hotaru_meta",
+      "name": "🌟 预设总纲与双轨使用说明",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 5,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "{{//\n=============================================================================\n【Hotaru 预设】v2.0 通用全场景版（基于原 Hotaru 双轨结构重修）\n适用范围：任意酒馆角色卡 / 任意世界观体裁（奇幻、现代、科幻、古风、悬疑、日常），兼容纯文本卡与自带状态栏/前端卡。\n核心修复与升级：\n1. 彻底清除“把正文锁进 simulation_thought”与多头思维链冲突，避免折叠/原生推理导致空回；\n2. 补齐 Persona Description 内置锚点与 ST 标准 Built-ins，合并重复前缀系统消息；\n3. 剔除所有单卡/单场景残留与旧版“极其”误删正则，并默认关闭前端/MVU专属格式以免污染纯文本卡；\n4. 参考 梦鲸思客 / 创世回廊 / Kemini 的可复用结构与 TW CoT 设计规范重构双轨。\n=============================================================================\n【双轨切换（二选一）】\n- 轨一【标准文学叙事轨】：日常流畅演绎、偏文学质感与人物张力（开启 hotaru_track1_core + hotaru_cot_track1，关闭轨二条目）。\n- 轨二【全真因果演进轨 · 默认开】：强调企图隔离、信息迷雾、真实阻力与物理闭环（开启 hotaru_track2_preflight + hotaru_track2_laws + hotaru_cot_track2，关闭轨一条目）。\n【常用选一开关】\n- 人称：第一人称 / 第二人称 / 第三人称（默认开）\n- 节奏：微观细腻（默认开）/ 流畅推进（可选开）\n- 文风：自然电影流（默认开）/ 克制硬核白描流（可选开）\n- 思维预算：默认随双轨 CoT；可按需改开【极速紧凑档】或【深度全维档】\n- 可选扩展：MVU状态兼容 / VN前端视口 / 分支选项 / 摘要 / 场外复盘模式 / Assistant起手预填充\n=============================================================================\n}}",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "main",
+      "name": "Main Prompt（通用演绎总纲）",
+      "system_prompt": true,
+      "role": "system",
+      "content": "[ROLEPLAY_ENGINE_CONTRACT]\n你正在运行纯文本互动小说与角色扮演推演会话。在本会话中：\n1. 核心职责：你是第三方的故事叙述者与世界舞台导演，负责根据角色设定、世界观设定与既定对话历史，持续推进真实、细腻、前后自洽的虚构剧情。\n2. 纯文本规范：所有内容仅以自然叙事文字呈现。不调用任何外部工具或函数，不输出命令行/代码运行回执，不在正文前后附加AI身份声明、说教点评或出戏问答（除非用户显式开启了场外讨论模式）。\n3. 尊重虚构语境：小说内部的冲突、对抗、欺瞒、误解、困境或复杂人性博弈属于戏剧矛盾的自然展开，应在故事内部依角色性格与因果落地解决，不做脱离剧情的现代伦理说教。\n4. 角色主体：非玩家角色拥有独立思考与性格；同时绝对尊重玩家对 {{user}} 自身意识、语言与后续决定的主权。",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 10,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_track1_core",
+      "name": "🎭【轨一·标准叙事（二选一）】文学观测导演与文字盟约",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 20,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[TRACK_1_LITERARY_NARRATOR]\n作为世界观测者与文学叙事导演，你与玩家共同遵循以下【创作盟约】，确保任意题材的角色扮演都能保持流畅生动与鲜活人味：\n1. 场景内感知视角：只描写当下在场人物真正看得到、听得到、触碰得到的事物；时间、距离与数量用生活化感知与参照物表达（如“没过多久”、“抬手可及”），不用测绘式精准读数破坏沉浸感。\n2. 人物质感三七开：角色设定标签只占言行底色的约三成，其余七成由对方的身份、经历、当下处境与具体利益填充。人先是活生生的普通人，其次才是人设特征；同一特质要用不同方式自然流露，允许人物保留留白。\n3. 态度流动与混杂：人物对 {{user}} 及他人的看法随近事自然浮动，允许欣赏中带戒备、嘴硬却照旧做事、偶尔让步或反悔；严禁无缘由的盲从神化、极端妖魔化或态度的永久冻结。\n4. 历史即黑名单：回看近两三轮历史，避免复用相同的道具小动作、同款比喻或重复句式；让对话与场面自然推陈出新。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_track2_preflight",
+      "name": "🛡️【轨二·全真演进（二选一，默认开）】仿真舞台引擎总控",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 22,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[TRACK_2_SIMULATION_STAGE_KERNEL]\n[MODE: CONTINUOUS_CAUSAL_SANDBOX]\n当前运行【全真因果闭环推演轨】。请以精密舞台沙盒内核驱动整场故事演进：\n1. 纯文本叙事交付：本引擎不执行真实终端指令或代码调用；一切系统校验只在正文前的 `<think>...</think>` 思考块中静默完成，闭合思考标签后必须完整、流畅、可读地输出正式小说正文，绝对严禁把正式剧情写进思考标签里，也严禁只输出回执而不写正文。\n2. 物理与状态守恒：人物所处位置、手持物件、衣着破损、体力消耗、伤口痛感与现场环境光线声响严格继承自前文与最新输入，不得凭空刷新、失忆吞设定或瞬间瞬移。\n3. 自然感官呈现：用具体的材质阻力、温度冷暖、视线明暗、声响远近与角色动作结果承载戏剧张力，不靠空洞形容词强行渲染气氛。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_track2_laws",
+      "name": "🧭【轨二·核心法则】企图隔离 · 认知迷雾 · 去中心化",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 24,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[CAUSAL_AND_EPISTEMIC_LAWS]\n【一 · 企图与结果隔离】\n将 {{user}} 的发言与举动解析为角色在现场做出的“行动尝试 / 意图表达”，而非已经强制成功的世界定律或心理控制：\n- 依据角色能力、物理条件、社交筹码、情绪门槛与现场阻力决定真实结果；\n- 拒绝廉价爽文式通融：犹豫、僵持、被拒、代价、误判或挫败均为正常且有价值的剧情走向，不因“想让故事好看或好推”而强行妥协角色底线。\n\n【二 · 严格认知迷雾】\n场上任何角色（含 {{user}} 的同伴或对手）均受限于感官与情报渠道：\n- 未曾亲眼所见、亲耳所闻或通过合理渠道获知的信息，一律按“毫不知情”处理；\n- 若某角色提及或看穿他人隐秘，必须存在前文已铺垫或现场可察觉的客观依据（如破绽、传闻、微表情或物证），严禁神棍式读心。\n\n【三 · 去中心化与群像自治】\n世界并非只围绕 {{user}} 旋转。在场外角色有各自的日程、烦恼与目标；无需出场的角色该退场就退场，不强行每轮刷脸或围着 {{user}} 充当捧哏。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "nsfw",
+      "name": "Auxiliary Prompt（备用辅助位 · 默认空）",
+      "system_prompt": true,
+      "role": "system",
+      "content": "",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 30,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "enhanceDefinitions",
+      "name": "Enhance Definitions（默认关）",
+      "system_prompt": true,
+      "role": "system",
+      "content": "",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 35,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "worldInfoBefore",
+      "name": "World Info (↑Char)",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "charDescription",
+      "name": "Character Description",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "charPersonality",
+      "name": "Character Personality",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "scenario",
+      "name": "Character Scenario",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "personaDescription",
+      "name": "Persona Description",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "worldInfoAfter",
+      "name": "World Info (↓Char)",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "dialogueExamples",
+      "name": "Chat Examples",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "hotaru_wrap_history_start",
+      "name": "📜【历史前置】既定前史境界 (<story_history>)",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 110,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[ESTABLISHED_CHRONICLE_START]\n以下历史区域为截至本轮前已客观发生的故事历史、对话与既定现场事实，须严格承接：\n<story_history>",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "chatHistory",
+      "name": "Chat History",
+      "system_prompt": true,
+      "marker": true
+    },
+    {
+      "identifier": "hotaru_wrap_history_end",
+      "name": "📜【历史收束】当下现实交汇点 (</story_history>)",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 115,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "</story_history>\n[ESTABLISHED_CHRONICLE_END]\n前序事件至此收敛于当下瞬间的现场。所有时间推进、空间变化与后续演绎紧接历史末条客观展开。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_worldbook_anchor",
+      "name": "📜【权威】世界书与人物底层设定锚定",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 120,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[CANON_AUTHORITY]\n上文注入的世界书条目与角色卡底层设定具备最高事实约束力：\n1. 严格遵循既有世界观规则、能力上限、地理势力与人际关系基础，不得擅自吃书或临时改写核心逻辑；\n2. 对角色设定中未详述的日常细节，可顺着其身份与时代背景自然延展，保持整体自洽。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_latest_turn_anchor",
+      "name": "🎯【涉入】最新输入客观定性 + OOC场外指导拦截",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 125,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[LATEST_INPUT_PROTOCOL]\n历史末尾最新的 {{user}} 消息代表玩家扮演的角色在现场刚刚做出的言行尝试：\n1. 禁止代行主权：严禁擅自代替 {{user}} 说话、决定心理态度或替 {{user}} 完成尚未做出的后续行动；\n2. 场外指导识别（OOC Intercept）：若玩家输入中含有括号包裹的创作调度指令（如 `(OOC: ...)`、`（请跳过等待直接推进到傍晚）`、`[场外: ...]`），须将其当作导演调控要求默默落实到剧情安排中，但绝对禁止让场上角色开口谈论或复述这些括号指令。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_pov_first",
+      "name": "👤【人称-三选一】第一人称主视角（“我”）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 130,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[POV_FIRST_PERSON]\n全篇叙事视角锁定为第一人称。所有旁白、动作感知与环境观察均以“我”（即 {{user}} 所扮演角色）的主观视野展开。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_pov_second",
+      "name": "👥【人称-三选一】第二人称代入视角（“你”）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 131,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[POV_SECOND_PERSON]\n全篇叙事视角锁定为第二人称。旁白中使用“你”代指 {{user}} 所扮演角色，只写“你”的所见所闻及外部角色的真实反馈，不替“你”越俎代庖作心理独白。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_pov_third",
+      "name": "🌐【人称-三选一】第三人称全景限知视角（默认开）",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 132,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[POV_THIRD_PERSON]\n全篇叙事视角采用第三人称限知视角。直呼角色姓名或合宜称谓，不在旁白中跳脱出现第一人称“我”或第二人称“你”，保持自然沉浸的小说阅读体感（兼容现代、幻想、古风、悬疑等各类题材）。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_lang_chinese",
+      "name": "📚【语言-三选一】简体中文输出（默认开）",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 140,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[OUTPUT_LANGUAGE_ZH_CN]\n全篇正文使用地道流畅的简体中文输出。用词贴合作品自身时代与世界背景，避免生硬外语直译腔或无关现代网络梗混入古典/异界作品。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_lang_bilingual_jp",
+      "name": "🇯🇵【语言-三选一】中日双语台词对照",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 141,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[BILINGUAL_DIALOGUE_JP]\n仅非玩家角色的发言采用“隐藏日语原台词 + 中文正式对白”双行对照模式（旁白仍保持纯中文）：\n1. 先输出隐藏注释行：`<!-- jp: 「自然な日本語のセリフ」 -->`（注释内只写纯日语台词，不附额外标签）；\n2. 紧接下一行输出中文正式对白，遵循当前卡片对白格式；示例：\n<!-- jp: 「今日は少し風が冷たいですね。」 -->\n「今天风有点凉呢。」",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_lang_bilingual_en",
+      "name": "🇺🇸【语言-三选一】中英双语台词对照",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 142,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[BILINGUAL_DIALOGUE_EN]\n仅非玩家角色的发言采用“隐藏英语原台词 + 中文正式对白”双行对照模式（旁白仍保持纯中文）：\n1. 先输出隐藏注释行：`<!-- en: \"Natural English line.\" -->`；\n2. 紧接下一行输出中文正式对白，遵循当前卡片对白格式；示例：\n<!-- en: \"The wind feels a bit chilly today.\" -->\n「今天风有点凉呢。」",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_tempo_slow",
+      "name": "⏳【节奏-二选一】微观细腻演进（默认开 · 防突发打断）",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 150,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[PACING_MICRO_HOLD]\n除非玩家明确要求快进或换场，否则保持克制沉稳的微观演进节奏：\n1. 充分写透当前交锋、沉默停顿与细微动作反馈，不擅自替剧情跳跃时间段或快进结束当前场面；\n2. 防机械突发打断：当人物正处于关键谈判、悬疑对峙、情绪临界或深度交谈途中时，禁止凭空编造敲门声、手机响、意外事故等俗套突发外力强行中断现场。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_tempo_fast",
+      "name": "⏩【节奏-二选一】流畅推进节奏",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 151,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[PACING_STEADY_ADVANCE]\n鼓励剧情高效推进：在确保关键转折、人物对话与过渡合情合理的前提下，可果断略过无意义的琐碎耗时流程，推动事件进入下一阶段矛盾或明确落点。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_temporal_weather",
+      "name": "🌦️【世界】时间流动与环境感官联动",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 155,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[TEMPORAL_ENVIRONMENT_CONTINUITY]\n1. 时间自然流逝：同一场景连续多轮交涉后，天色、室内光线、烛火/炉温或喧闹度应有自然微调，避免时间永远定格在第一分钟；\n2. 环境物理联动：天气冷热、雨雪湿气、地形狭促或空间噪音应自然影响人物的呼吸白雾、衣物贴合感、音量与动作重心，自然融入叙事而非单列天气播报。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_interaction_staging",
+      "name": "🎭【互动】对白呼吸感 · 留白防抢话 · 多人自然交错",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 160,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[INTERACTION_AND_STAGING]\n1. 行动留白与真实收尾：正文写到在场人物做出具体反应、话语或可察觉的动作后即可收笔，严禁代替 {{user}} 说话或接续行动，也不要总是停在“他看着你，等待你回答”这种僵硬等待句式上；\n2. 多人场景调度：若在场角色达到两人及以上，避免按固定顺序像点名般轮流发声。根据当时焦点由 1~2 名核心角色主导发言，其余人以神情眼神、走位小动作保持存在感，且鼓励 NPC 之间自然接话、互怼或交换眼色；\n3. 对白生活化：台词贴合角色身份、处境与当下情绪重心，快节奏交锋时允许出现连续纯对白段落，不必每句话后都强塞一次叹气、捋头发或看一眼。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_style_cinematic",
+      "name": "🎬【文风-二选一】自然电影质感流（默认开）",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 170,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[STYLE_CINEMATIC_NATURAL]\n以好读、耐看、富有画面感与临场呼吸感为准则：\n1. Show, Don't Tell：用可见动作、环境切入光影、声音起伏与对白停顿传达情绪和状态变化，遇事直接描写现场，不代读者做结论总结；\n2. 句式呼吸感：长短句与节奏随剧情张力灵活切换——闲谈松弛、追逐简短急促、安静时留出空白感，杜绝从头到尾一个调子的均匀散文腔；\n3. 初登场与视觉呈现：当新场景或新角色初次显现时，借助动态光影或人物自然动作顺势带出整体样貌神韵与空间格局，不采用证件照式静态五官/服饰罗列。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_style_sketch",
+      "name": "🖋️【文风-二选一】克制硬核白描流（动词驱动 · 零冗余修辞）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 171,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[STYLE_CONCISE_SKETCH]\n采用高纯度克制白描笔触：\n1. 极度节制形容词、排比、抒情意象与拟人比喻，以精准动词、光影纵深与物件物理位移支撑画面；\n2. 对话简练生活化，去掉无用寒暄与心理说明文，让行为和后果自己说话。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_anti_cliche_core",
+      "name": "🚫【排雷总纲】去二元转折 · 去套路八股 · 去旁白评价",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 180,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[PROSE_ANTI_CLICHE_BLACKLIST]\n严厉回避下列网文与 AI 常见套话，直接写发生了什么：\n1. 禁用否定对比句式：严禁“不是……而是……”、“并非……反而……”、“没有……只有……”、“与其说……不如说……”等用“并非X而是Y”凑篇幅的写法，直接正面写 Y；\n2. 禁用机械八股词：严禁“嘴角勾起一抹弧度/玩味”、“眸底闪过暗芒/一丝精光”、“指节因用力而泛白”、“胸口剧烈起伏”、“空气仿佛在这一刻凝固”、“空气中弥漫着……气息”、“暗潮汹涌”、“宛如一头幼兽/小猫”；\n3. 禁用语气副词偷懒：严禁使用“他冷冷地说道”、“她语气平淡地说”、“声音里透着一丝委屈”等标签词替读者定性情绪。把情绪藏进措辞长短、停顿断句和具体动作里；\n4. 禁上帝总结：严禁在场景末尾写哲理升华或旁白点评（如“有些改变已经悄然发生”、“他知道这只是个开始”），写到动作落定即止。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_physical_realism",
+      "name": "⚙️【质感】物理受力与空间细节真实反馈",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 185,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[PHYSICAL_OBJECT_VERACITY]\n描绘动作接触、物件操作、打斗博弈或环境互动时，用具体物理受力和声学触感替代笼统过程概述：\n捕捉重量沉落时的重心偏移、衣料摩擦与褶皱紧绷、鞋底踏过不同地面的回响、器物碰撞时的震颤回弹、风温湿度与皮肤表层的真实触觉反应，让一切动作落在实处。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_mvu_protocol",
+      "name": "⚙️【可选·MVU变量卡】条件状态更新兼容（纯文本卡自动跳过）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 205,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[CONDITIONAL_MVU_COMPAT]\n仅当当前对话上下文（世界书/系统栏/前置楼层）中**已明确注入**角色卡自带的变量状态栏或更新规范时，才严格遵循该卡自带格式在回复最末附上对应的状态变量更新块，且仅做必要的客观数值/字段差分分析（严禁将正文复述进分析块，也严禁在正文中泄露字段代码）。\n若当前是一张没有状态栏系统的纯文本角色卡，则**完全跳过本条**，绝对禁止自行凭空捏造变量标签或补丁块！",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_format_vn",
+      "name": "🎨【可选·VN前端视口】场景/在场/插画与表情台词格式",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 210,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[OPTIONAL_VN_VIEWPORT_FORMAT]\n仅当你在游玩自带可视化前端（如场景背景图/立绘差分/CG触发器）的专属角色卡时启用本条；具体标签名、服装枚举与可用表情清单均以该角色卡自身说明/世界书规定为准：\n1. 若地点转移，按卡片约定单独成行标注 `<场景>...</场景>`；若在场人物或装束变化，标注 `<在场>...</在场>`；仅在关键剧情且卡片有对应资源时触发 `<插画>...</插画>`；\n2. 若卡片规定 `【角色名|表情】：“台词”` 发言格式，严格遵守该卡提供的合法表情列表，旁白不加方括号。若当前卡片未作约定，切勿擅自强套标签。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_options",
+      "name": "🔀【可选·交互】文末分支行动选项 (<选项>)",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 215,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[OPTIONAL_BRANCH_OPTIONS]\n在正式小说正文完全结束之后，换行生成 2~4 条自然贴合当下情境、不同性格取向或风险策略的简短行动备选，包裹在 `<选项>` 与 `</选项>` 标签内，每行以 `- ` 开头。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_summary_micro",
+      "name": "📝【可选·记忆】每轮微观事实摘要 (<summary>)",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 220,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[OPTIONAL_MICRO_SUMMARY]\n在正文（及可能存在的可选选项）完整闭合后，在末尾另起一段生成约 80~150 字的客观事实纪要，包裹在 `<summary>...</summary>` 标签内，简明记录本轮发生的关键事件、地点时间变动与人际线索，便于长对话远期压缩记忆。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_summary_macro",
+      "name": "💨【可选·阶段大总结】暂停正文输出全局复盘 (<recap>)",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 225,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[MANUAL_GLOBAL_RECAP]\n本轮暂停继续新剧情，请对截至目前全部既定历史进行结构化全局梳理，按如下格式输出在 `<recap>...</recap>` 中：\n- 【阶段主线脉络】：梳理核心事件推进与重要转折；\n- 【人物关系与立场变化】：总结各主要角色当前对局势及彼此的态度、共识或裂痕；\n- 【未收束线索与即时处境】：列出尚待解决的伏笔与当前时空落点。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_meta_pause",
+      "name": "🗯️【可选·场外复盘/拷打模式】暂停演绎直接沟通",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 230,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[META_ANALYSIS_PAUSE]\n当前已手动切换为【场外导演复盘模式】：\n暂停小说正文叙事与所有格式/字数约束，直接以客观清醒的作者协作者角度，围绕玩家最新提问分析剧情逻辑漏洞、角色动机自洽度或文风卡点，不擅自继续剧情正文。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_cot_compact",
+      "name": "⚡【思维预算-可选】极速紧凑思考档（3-5句规划）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 240,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[THINKING_BUDGET_COMPACT]\n思考规划采用极速紧凑档：在 `<think>...</think>` 中仅用 3~5 句短语快速敲定现场位置、角色此刻直接反应、避雷点与切入动作，闭合思考块后立刻输出正文，减少等待延迟。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_cot_expanded",
+      "name": "🧠【思维预算-可选】深度全维思考档（长线博弈）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 241,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[THINKING_BUDGET_EXPANDED]\n思考规划采用深度全维档：在 `<think>...</think>` 中充分推演多方潜台词、长期伏笔回收、物理细节衔接与信息迷雾边界（上限约 600 字内），闭合思考块后立刻写出凝练有力的高质量正文。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_cot_track1",
+      "name": "🌀【轨一CoT】轻量通用叙事思考链 (<think>)",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 245,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[TRACK_1_COT_SKELETON]\n正式动笔前，请在 `<think>...</think>` 内进行简明高效的 4 步规划（约 150~320 字，不写长篇废话；若开启了原生产出思考通道则同理保持精炼，切勿把正文塞进思考标签内）：\n1. [时空与在场]：简核当前时间流速、环境细节与实际在场人员；\n2. [心态与迷雾]：聚焦当下主要角色（基于其人设七成生活感与三成底色），确认其仅掌握哪些情报、当下混杂心态与第一反应；\n3. [黑名单去重]：检查近几轮出现过哪些高频词、重复道具或套路动作（含“不是…而是…”、嘴角/指节套话），本轮明确换写法；\n4. [切入与留白]：定下流畅自然的开篇镜头，以及写到何处将互动权自然交还 {{user}}。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_cot_track2",
+      "name": "⚙️【轨二CoT】全真因果闭环推演思考链 (<think>)",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 246,
+      "injection_trigger": [],
+      "role": "system",
+      "content": "[TRACK_2_COT_SKELETON]\n正式动笔前，请在 `<think>...</think>` 内严格按以下 7 步完成紧凑自检（约 200~450 字短句要点，**绝不可把正式剧情正文写进思考标签里**）：\n1. [时空现场]：核对上次落点至今的时间推移、具体地点、光照气候及人物物理位置；\n2. [世界书与设定校验]：确认本轮不可违背的世界规则、能力条件与角色既有底线；\n3. [企图vs现实判定]：拆解 {{user}} 最新举动的意图与方式——依双方状态、现场距离、技能条件或谈话筹码，判定应当自然推进、遭遇合理阻力还是失败/产生代价；\n4. [认知迷雾与自治]：列出在场人物实际上“知道什么 / 不知道什么”，以及除 {{user}} 外他自己当下正在盘算或处理的事务；\n5. [历史黑名单与反八股]：标出前几轮高频词与已用桥段并禁用，自查是否会落入“不是…而是…”、语气副词修饰或结尾说教；\n6. [条件外挂检查]：若当前卡确实启用了状态栏或可选前端/摘要，核对本轮状态变动要点；若为普通纯文本卡（未启用外挂），直接记“纯文本卡，跳过状态外挂”——严禁凭空造标签；\n7. [起笔与交权锚]：确定第一个具体画面/台词切入点，以及结尾停在某人动作/开口的自然交接点（防抢话）。",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "jailbreak",
+      "name": "🚀【后置执行锁】统一交付顺序与防空回守门 (Post-History)",
+      "system_prompt": true,
+      "role": "system",
+      "content": "[FINAL_EXECUTION_GATE]\n【交付纪律 · 防空回硬约束】\n1. 思考外置隔离：规划思考仅简明存于 `<think>...</think>` 内部（或原生思考通道中）；闭合思考标签之后，**必须立刻在正文中完整输出流畅可见的小说正文**！\n2. 严禁空回或自吞：绝不可只在思考块里写剧情，绝不可在没有任何正式故事内容的情况下结束回复，绝不输出伪造的命令行日志、工具调用请求或英文免责模板。\n3. 可选尾块后置：仅当相关可选条目确实处于开启状态且适用于当前角色卡时，才在正文完全结束后按需附加 `<选项>`、`<summary>...</summary>` 或状态更新块；默认状态下直接输出纯净高质量正文即可。",
+      "enabled": true,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 260,
+      "forbid_overrides": false
+    },
+    {
+      "identifier": "hotaru_opt_prefill_assistant",
+      "name": "⚓【可选·Assistant起手预填充】部分反代防空回锁（按需开）",
+      "enabled": false,
+      "injection_position": 0,
+      "injection_depth": 4,
+      "injection_order": 270,
+      "injection_trigger": [],
+      "role": "assistant",
+      "content": "<think>\n[时空与因果核对完毕，简要完成规划后立刻在思考外写出完整小说正文]",
+      "system_prompt": false,
+      "marker": false,
+      "forbid_overrides": false
+    }
+  ],
+  "prompt_order": [
+    {
+      "character_id": 100000,
+      "order": [
+        {
+          "identifier": "hotaru_meta",
+          "enabled": true
+        },
+        {
+          "identifier": "main",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_track1_core",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_track2_preflight",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_track2_laws",
+          "enabled": true
+        },
+        {
+          "identifier": "nsfw",
+          "enabled": false
+        },
+        {
+          "identifier": "enhanceDefinitions",
+          "enabled": false
+        },
+        {
+          "identifier": "worldInfoBefore",
+          "enabled": true
+        },
+        {
+          "identifier": "charDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charPersonality",
+          "enabled": true
+        },
+        {
+          "identifier": "scenario",
+          "enabled": true
+        },
+        {
+          "identifier": "personaDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoAfter",
+          "enabled": true
+        },
+        {
+          "identifier": "dialogueExamples",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_wrap_history_start",
+          "enabled": true
+        },
+        {
+          "identifier": "chatHistory",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_wrap_history_end",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_worldbook_anchor",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_latest_turn_anchor",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_pov_first",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_pov_second",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_pov_third",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_lang_chinese",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_lang_bilingual_jp",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_lang_bilingual_en",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_tempo_slow",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_tempo_fast",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_temporal_weather",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_interaction_staging",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_style_cinematic",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_style_sketch",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_anti_cliche_core",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_physical_realism",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_opt_mvu_protocol",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_format_vn",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_options",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_summary_micro",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_summary_macro",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_meta_pause",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_compact",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_expanded",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_track1",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_track2",
+          "enabled": true
+        },
+        {
+          "identifier": "jailbreak",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_opt_prefill_assistant",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "character_id": 100001,
+      "order": [
+        {
+          "identifier": "hotaru_meta",
+          "enabled": true
+        },
+        {
+          "identifier": "main",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_track1_core",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_track2_preflight",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_track2_laws",
+          "enabled": true
+        },
+        {
+          "identifier": "nsfw",
+          "enabled": false
+        },
+        {
+          "identifier": "enhanceDefinitions",
+          "enabled": false
+        },
+        {
+          "identifier": "worldInfoBefore",
+          "enabled": true
+        },
+        {
+          "identifier": "charDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "charPersonality",
+          "enabled": true
+        },
+        {
+          "identifier": "scenario",
+          "enabled": true
+        },
+        {
+          "identifier": "personaDescription",
+          "enabled": true
+        },
+        {
+          "identifier": "worldInfoAfter",
+          "enabled": true
+        },
+        {
+          "identifier": "dialogueExamples",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_wrap_history_start",
+          "enabled": true
+        },
+        {
+          "identifier": "chatHistory",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_wrap_history_end",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_worldbook_anchor",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_latest_turn_anchor",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_pov_first",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_pov_second",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_pov_third",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_lang_chinese",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_lang_bilingual_jp",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_lang_bilingual_en",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_tempo_slow",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_tempo_fast",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_temporal_weather",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_interaction_staging",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_style_cinematic",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_style_sketch",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_anti_cliche_core",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_physical_realism",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_opt_mvu_protocol",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_format_vn",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_options",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_summary_micro",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_summary_macro",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_opt_meta_pause",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_compact",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_expanded",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_track1",
+          "enabled": false
+        },
+        {
+          "identifier": "hotaru_cot_track2",
+          "enabled": true
+        },
+        {
+          "identifier": "jailbreak",
+          "enabled": true
+        },
+        {
+          "identifier": "hotaru_opt_prefill_assistant",
+          "enabled": false
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "regex_scripts": [
+      {
+        "id": "955823fa-3866-4f8b-b04d-684fdbf32d2e",
+        "scriptName": "Hotaru-思维链内部尖括号剥离",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/<(?!\\/?(?:think|thinking|draft)\\b)([^<>]*?)>(?=(?:(?!<(?:think|thinking|draft)\\b)[\\s\\S])*?<\\/(?:think|thinking|draft)>)/gi",
+        "trimStrings": [],
+        "replaceString": "$1",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "markdownOnly": true,
+        "promptOnly": false
+      },
+      {
+        "id": "01930842-5284-4dc6-8e6e-181f310d5362",
+        "scriptName": "Hotaru-思维链折叠(前端显示)",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/<(?:think|thinking|draft)>([\\s\\S]*?)<\\/(?:think|thinking|draft)>/gi",
+        "trimStrings": [],
+        "replaceString": "<details class=\"st_custom_reasoning\" style=\"display: block; margin: 8px 0; border: none; background: transparent;\"><summary style=\"list-style: none; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; user-select: none; padding: 6px 13px; border-radius: 6px; background: linear-gradient(180deg, rgba(46, 46, 46, 0.92) 0%, rgba(38, 38, 38, 0.96) 100%); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); font-size: 13.5px; font-weight: 500; color: rgba(225, 225, 225, 0.88); width: fit-content; outline: none;\"><span>思考过程</span><svg class=\"st_arrow_icon\" style=\"width: 11px; height: 11px; fill: rgba(200, 200, 200, 0.7); transition: transform 0.2s ease;\" viewBox=\"0 0 320 512\"><path d=\"M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z\"/></svg></summary><div class=\"st_reasoning_body\" style=\"margin-top: 10px; margin-bottom: 8px; margin-left: 2px; padding: 4px 0 4px 16px; border-left: 2px solid rgba(255, 255, 255, 0.18); font-size: 0.94em; color: rgba(205, 205, 205, 0.8); line-height: 1.45; overflow-wrap: anywhere; white-space: pre-line;\">$1</div></details><style>details.st_custom_reasoning summary::-webkit-details-marker { display: none; }details.st_custom_reasoning[open] summary svg.st_arrow_icon { transform: rotate(180deg); }details.st_custom_reasoning summary:hover { background: rgba(55, 55, 55, 0.95); }</style>",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "markdownOnly": true,
+        "promptOnly": false
+      },
+      {
+        "id": "39a45d5b-06ff-4c4b-8b66-8d981b8191ac",
+        "scriptName": "Hotaru-提示词历史净化(仅发包隐藏CoT)",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/<(?:think|thinking|draft|simulation_thought|rehearsal|telemetry_receipt|disclaimer|Reference_Example|convergence_check)>[\\s\\S]*?<\\/(?:think|thinking|draft|simulation_thought|rehearsal|telemetry_receipt|disclaimer|Reference_Example|convergence_check)>\\n?|<\\/?Interleaving>\\n?/gi",
+        "trimStrings": [],
+        "replaceString": "",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "markdownOnly": false,
+        "promptOnly": true
+      },
+      {
+        "id": "b7a9c2d1-30eb-48c7-9567-bfad5c260bdf",
+        "scriptName": "Hotaru-本轮摘要折叠(显示)",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gi",
+        "trimStrings": [],
+        "replaceString": "<details><summary>本轮摘要</summary>\n$1\n</details>",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "markdownOnly": true,
+        "promptOnly": false
+      },
+      {
+        "id": "ae91c759-78ab-4634-a9ac-f4f593813049",
+        "scriptName": "Hotaru-近10层去摘要(发包防冗余)",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/(?<!<details>\\s*)<summary>([\\s\\S]*?)<\\/summary>/gi",
+        "trimStrings": [],
+        "replaceString": "",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 10,
+        "markdownOnly": false,
+        "promptOnly": true
+      },
+      {
+        "id": "7687ff98-abd6-4830-92ee-5551f5fec00e",
+        "scriptName": "Hotaru-远期仅保留摘要(发包压缩)",
+        "disabled": false,
+        "runOnEdit": true,
+        "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*?)<\\/summary>[\\s\\S]*/gi",
+        "trimStrings": [],
+        "replaceString": "<summary>\n$1\n</summary>",
+        "placement": [
+          2
+        ],
+        "substituteRegex": 0,
+        "minDepth": 11,
+        "maxDepth": null,
+        "markdownOnly": false,
+        "promptOnly": true
+      },
+      {
+        "id": "4716d54a-8da3-479b-ad78-95c2e503071c",
+        "scriptName": "Hotaru-最新输入标签包裹(按需自启)",
+        "disabled": true,
+        "runOnEdit": true,
+        "findRegex": "^([\\s\\S]*)$",
+        "trimStrings": [],
+        "replaceString": "<interactive_input>\n$1\n</interactive_input>",
+        "placement": [
+          1
+        ],
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": 1,
+        "markdownOnly": false,
+        "promptOnly": true
+      }
+    ],
+    "SPreset": {
+      "ChatSquash": {
+        "enabled": false,
+        "separate_chat_history": true,
+        "parse_clewd": false,
+        "role": "assistant",
+        "stop_string": "User:",
+        "user_prefix": "\n\nUser:",
+        "user_suffix": "",
+        "char_prefix": "\n\nAssistant:",
+        "char_suffix": "",
+        "prefix_system": "",
+        "suffix_system": "",
+        "enable_squashed_separator": false,
+        "squashed_separator_regex": false,
+        "squashed_separator_string": "",
+        "squashed_post_script_enable": false,
+        "squashed_post_script": "",
+        "user_role_system": false,
+        "enable_stop_string": true
+      },
+      "RegexBinding": {
+        "regexes": [
+          {
+            "id": "955823fa-3866-4f8b-b04d-684fdbf32d2e",
+            "scriptName": "Hotaru-思维链内部尖括号剥离",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/<(?!\\/?(?:think|thinking|draft)\\b)([^<>]*?)>(?=(?:(?!<(?:think|thinking|draft)\\b)[\\s\\S])*?<\\/(?:think|thinking|draft)>)/gi",
+            "trimStrings": [],
+            "replaceString": "$1",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": null,
+            "markdownOnly": true,
+            "promptOnly": false
+          },
+          {
+            "id": "01930842-5284-4dc6-8e6e-181f310d5362",
+            "scriptName": "Hotaru-思维链折叠(前端显示)",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/<(?:think|thinking|draft)>([\\s\\S]*?)<\\/(?:think|thinking|draft)>/gi",
+            "trimStrings": [],
+            "replaceString": "<details class=\"st_custom_reasoning\" style=\"display: block; margin: 8px 0; border: none; background: transparent;\"><summary style=\"list-style: none; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; user-select: none; padding: 6px 13px; border-radius: 6px; background: linear-gradient(180deg, rgba(46, 46, 46, 0.92) 0%, rgba(38, 38, 38, 0.96) 100%); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); font-size: 13.5px; font-weight: 500; color: rgba(225, 225, 225, 0.88); width: fit-content; outline: none;\"><span>思考过程</span><svg class=\"st_arrow_icon\" style=\"width: 11px; height: 11px; fill: rgba(200, 200, 200, 0.7); transition: transform 0.2s ease;\" viewBox=\"0 0 320 512\"><path d=\"M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z\"/></svg></summary><div class=\"st_reasoning_body\" style=\"margin-top: 10px; margin-bottom: 8px; margin-left: 2px; padding: 4px 0 4px 16px; border-left: 2px solid rgba(255, 255, 255, 0.18); font-size: 0.94em; color: rgba(205, 205, 205, 0.8); line-height: 1.45; overflow-wrap: anywhere; white-space: pre-line;\">$1</div></details><style>details.st_custom_reasoning summary::-webkit-details-marker { display: none; }details.st_custom_reasoning[open] summary svg.st_arrow_icon { transform: rotate(180deg); }details.st_custom_reasoning summary:hover { background: rgba(55, 55, 55, 0.95); }</style>",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": null,
+            "markdownOnly": true,
+            "promptOnly": false
+          },
+          {
+            "id": "39a45d5b-06ff-4c4b-8b66-8d981b8191ac",
+            "scriptName": "Hotaru-提示词历史净化(仅发包隐藏CoT)",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/<(?:think|thinking|draft|simulation_thought|rehearsal|telemetry_receipt|disclaimer|Reference_Example|convergence_check)>[\\s\\S]*?<\\/(?:think|thinking|draft|simulation_thought|rehearsal|telemetry_receipt|disclaimer|Reference_Example|convergence_check)>\\n?|<\\/?Interleaving>\\n?/gi",
+            "trimStrings": [],
+            "replaceString": "",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": null,
+            "markdownOnly": false,
+            "promptOnly": true
+          },
+          {
+            "id": "b7a9c2d1-30eb-48c7-9567-bfad5c260bdf",
+            "scriptName": "Hotaru-本轮摘要折叠(显示)",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gi",
+            "trimStrings": [],
+            "replaceString": "<details><summary>本轮摘要</summary>\n$1\n</details>",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": null,
+            "markdownOnly": true,
+            "promptOnly": false
+          },
+          {
+            "id": "ae91c759-78ab-4634-a9ac-f4f593813049",
+            "scriptName": "Hotaru-近10层去摘要(发包防冗余)",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/(?<!<details>\\s*)<summary>([\\s\\S]*?)<\\/summary>/gi",
+            "trimStrings": [],
+            "replaceString": "",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": 10,
+            "markdownOnly": false,
+            "promptOnly": true
+          },
+          {
+            "id": "7687ff98-abd6-4830-92ee-5551f5fec00e",
+            "scriptName": "Hotaru-远期仅保留摘要(发包压缩)",
+            "disabled": false,
+            "runOnEdit": true,
+            "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*?)<\\/summary>[\\s\\S]*/gi",
+            "trimStrings": [],
+            "replaceString": "<summary>\n$1\n</summary>",
+            "placement": [
+              2
+            ],
+            "substituteRegex": 0,
+            "minDepth": 11,
+            "maxDepth": null,
+            "markdownOnly": false,
+            "promptOnly": true
+          },
+          {
+            "id": "4716d54a-8da3-479b-ad78-95c2e503071c",
+            "scriptName": "Hotaru-最新输入标签包裹(按需自启)",
+            "disabled": true,
+            "runOnEdit": true,
+            "findRegex": "^([\\s\\S]*)$",
+            "trimStrings": [],
+            "replaceString": "<interactive_input>\n$1\n</interactive_input>",
+            "placement": [
+              1
+            ],
+            "substituteRegex": 0,
+            "minDepth": null,
+            "maxDepth": 1,
+            "markdownOnly": false,
+            "promptOnly": true
+          }
+        ]
+      },
+      "MacroNest": false,
+      "ToolBindings": {},
+      "MessageInjections": {}
+    }
+  }
+}

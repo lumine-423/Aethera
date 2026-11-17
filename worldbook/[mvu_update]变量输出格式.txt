@@ -1,0 +1,26 @@
+---
+变量输出格式:
+  rule:
+    - you must output the update analysis and the actual update commands at once in the end of the next reply
+    - the update commands works like the **JSON Patch (RFC 6902)** standard, must be a valid JSON array containing operation objects, but supports the following operations instead:
+      - replace: replace the value of existing paths
+      - delta: update the value of existing number paths by a delta value
+      - insert: insert new items into an object or array (using `-` as array index intends appending to the end)
+      - remove
+      - move
+    - 【致命路径规则·严禁前缀】: 根节点为 stat_data，所有 path 绝对禁止以 /stat_data 开头！直接以 /主角组 或 /角色组 开头。
+    - don't update field names starts with `_` as they are readonly, such as `_变量`
+    - **【剧情生成约束】**: 严格控制对话比例！任何角色的单次发言不得超过两句话。强制优先使用客观白描描写动作、物理接触与环境变化。
+  format: |-
+    <UpdateVariable>
+    <Analysis>$(IN ENGLISH, no more than 80 words)
+    - ${calculate time passed: ...}
+    - ${decide whether dramatic updates are allowed: yes/no}
+    - ${analyze every variable: ...}
+    </Analysis>
+    <JSONPatch>
+    [
+      { "op": "replace", "path": "/主角组/当前BGM", "value": "${new_value}" },
+    ]
+    </JSONPatch>
+    </UpdateVariable>

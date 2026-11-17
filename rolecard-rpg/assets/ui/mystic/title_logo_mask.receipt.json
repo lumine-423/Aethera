@@ -1,0 +1,18 @@
+{
+  "source": "workspaces/frontend-ui/materials/ui-title-main-star-20261114/exact-r6/title-aethera-original-chinese-r6.png",
+  "source_sha256": "f722df69bede1a91a4b23a4bd5f8dee23bc942d547e6f3fe290fbc6b8192c9b6",
+  "crop_box_xyxy": [
+    185,
+    67,
+    1486,
+    905
+  ],
+  "paper_level": 1.0,
+  "ink_level": 0.0,
+  "output": "assets/ui/mystic/title_logo_mask.png",
+  "output_size": [
+    1301,
+    838
+  ],
+  "output_sha256": "6c088dc8df32ee161521ab18fe908138cead96a90675f89b1d76c36c8416617c"
+}

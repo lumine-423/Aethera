@@ -1,0 +1,3857 @@
+{
+ "_note": "Extracted from sigil-workbench.html PATTERN_DEFS by tools/extract_workshop_parts.js. Do not hand-edit; re-run the extractor.",
+ "source": "F:/sigil-circuit/sigil-workbench.html",
+ "scale": 1.45,
+ "link_gap": 38,
+ "link_gap_core": 52,
+ "order": [
+  "core.space",
+  "core.still",
+  "core.motion",
+  "core.life",
+  "core.force",
+  "core.build",
+  "core.release",
+  "outer.corridor",
+  "outer.domain",
+  "outer.burst",
+  "outer.flow",
+  "outer.suspend",
+  "outer.mold",
+  "outer.beam",
+  "micro.shift",
+  "micro.freeze",
+  "micro.shock",
+  "micro.feed",
+  "micro.anchor",
+  "micro.fuse",
+  "micro.overload",
+  "core.lust"
+ ],
+ "patterns": {
+  "core.space": {
+   "kind": "core",
+   "nature": "空间",
+   "cost": 3,
+   "shorthand": "开阖",
+   "name": "核纹·傲慢【开阖】",
+   "desc": "操控空间形态的原点之核：扭曲、切开、交换与位移，幅度随魔力增长。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    },
+    {
+     "id": "s1",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s2",
+     "x": 0,
+     "y": 52,
+     "a": 180
+    },
+    {
+     "id": "s3",
+     "x": -52,
+     "y": 0,
+     "a": 270
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 27
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -20,
+         -20
+        ],
+        [
+         20,
+         -20
+        ],
+        [
+         20,
+         20
+        ],
+        [
+         -20,
+         20
+        ],
+        [
+         -20,
+         -20
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -11
+        ],
+        [
+         11,
+         0
+        ],
+        [
+         0,
+         11
+        ],
+        [
+         -11,
+         0
+        ],
+        [
+         0,
+         -11
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 2.6
+    }
+   ]
+  },
+  "core.still": {
+   "kind": "core",
+   "nature": "静止",
+   "cost": 3,
+   "shorthand": "凝封",
+   "name": "核纹·嫉妒【凝封】",
+   "desc": "停滞与极寒之核：冻结、凝滞、缓速——绝对的静即是绝对的冷。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 26,
+     "y": -45,
+     "a": 30
+    },
+    {
+     "id": "s1",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s2",
+     "x": 26,
+     "y": 45,
+     "a": 150
+    },
+    {
+     "id": "s3",
+     "x": -26,
+     "y": 45,
+     "a": 210
+    },
+    {
+     "id": "s4",
+     "x": -52,
+     "y": 0,
+     "a": 270
+    },
+    {
+     "id": "s5",
+     "x": -26,
+     "y": -45,
+     "a": 330
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 28
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -24
+        ],
+        [
+         20.8,
+         -12
+        ],
+        [
+         20.8,
+         12
+        ],
+        [
+         0,
+         24
+        ],
+        [
+         -20.8,
+         12
+        ],
+        [
+         -20.8,
+         -12
+        ],
+        [
+         0,
+         -24
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin",
+      "dash"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 10
+    },
+    {
+     "cls": [],
+     "card": true,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 4.5
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -24,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 20.8,
+     "cy": -12,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 20.8,
+     "cy": 12,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 24,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -20.8,
+     "cy": 12,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -20.8,
+     "cy": -12,
+     "r": 2
+    }
+   ]
+  },
+  "core.motion": {
+   "kind": "core",
+   "nature": "运动",
+   "cost": 3,
+   "shorthand": "进燃",
+   "name": "核纹·愤怒【进燃】",
+   "desc": "运动与火焰之核：冲击、加速、灼烧——躁动不息，永不温吞。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    },
+    {
+     "id": "s1",
+     "x": 45,
+     "y": -26,
+     "a": 60
+    },
+    {
+     "id": "s2",
+     "x": 45,
+     "y": 26,
+     "a": 120
+    },
+    {
+     "id": "s3",
+     "x": 0,
+     "y": 52,
+     "a": 180
+    },
+    {
+     "id": "s4",
+     "x": -45,
+     "y": 26,
+     "a": 240
+    },
+    {
+     "id": "s5",
+     "x": -45,
+     "y": -26,
+     "a": 300
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 27
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -26
+        ],
+        [
+         1.29,
+         -23.6
+        ],
+        [
+         2.63,
+         -21.37
+        ],
+        [
+         3.98,
+         -19.27
+        ],
+        [
+         5.33,
+         -17.26
+        ],
+        [
+         6.64,
+         -15.31
+        ],
+        [
+         7.88,
+         -13.38
+        ],
+        [
+         9.01,
+         -11.42
+        ],
+        [
+         10,
+         -9.41
+        ],
+        [
+         10.83,
+         -7.3
+        ],
+        [
+         11.46,
+         -5.05
+        ],
+        [
+         11.86,
+         -2.63
+        ],
+        [
+         12,
+         0
+        ],
+        [
+         11.9,
+         2.4
+        ],
+        [
+         11.6,
+         4.58
+        ],
+        [
+         11.11,
+         6.56
+        ],
+        [
+         10.44,
+         8.33
+        ],
+        [
+         9.61,
+         9.9
+        ],
+        [
+         8.63,
+         11.25
+        ],
+        [
+         7.49,
+         12.4
+        ],
+        [
+         6.22,
+         13.33
+        ],
+        [
+         4.83,
+         14.06
+        ],
+        [
+         3.32,
+         14.58
+        ],
+        [
+         1.71,
+         14.9
+        ],
+        [
+         0,
+         15
+        ],
+        [
+         -1.71,
+         14.9
+        ],
+        [
+         -3.32,
+         14.58
+        ],
+        [
+         -4.83,
+         14.06
+        ],
+        [
+         -6.22,
+         13.33
+        ],
+        [
+         -7.49,
+         12.4
+        ],
+        [
+         -8.63,
+         11.25
+        ],
+        [
+         -9.61,
+         9.9
+        ],
+        [
+         -10.44,
+         8.33
+        ],
+        [
+         -11.11,
+         6.56
+        ],
+        [
+         -11.6,
+         4.58
+        ],
+        [
+         -11.9,
+         2.4
+        ],
+        [
+         -12,
+         0
+        ],
+        [
+         -11.86,
+         -2.63
+        ],
+        [
+         -11.46,
+         -5.05
+        ],
+        [
+         -10.83,
+         -7.3
+        ],
+        [
+         -10,
+         -9.41
+        ],
+        [
+         -9.01,
+         -11.42
+        ],
+        [
+         -7.88,
+         -13.38
+        ],
+        [
+         -6.64,
+         -15.31
+        ],
+        [
+         -5.33,
+         -17.26
+        ],
+        [
+         -3.98,
+         -19.27
+        ],
+        [
+         -2.62,
+         -21.37
+        ],
+        [
+         -1.29,
+         -23.6
+        ],
+        [
+         0,
+         -26
+        ],
+        [
+         0,
+         -26
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": true,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 5
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -16,
+         -7
+        ],
+        [
+         -21,
+         -12
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         16,
+         -7
+        ],
+        [
+         21,
+         -12
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "core.life": {
+   "kind": "core",
+   "nature": "生命",
+   "cost": 3,
+   "shorthand": "生夺",
+   "name": "核纹·暴食【生夺】",
+   "desc": "生命之核：治疗、汲取与肉体强化——给予与夺取同为一体。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s1",
+     "x": -26,
+     "y": 45,
+     "a": 210
+    },
+    {
+     "id": "s2",
+     "x": -26,
+     "y": -45,
+     "a": 330
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 26
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 19
+    },
+    {
+     "cls": [],
+     "card": true,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 12
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         1.66,
+         0.1
+        ],
+        [
+         3.15,
+         0.39
+        ],
+        [
+         4.44,
+         0.84
+        ],
+        [
+         5.52,
+         1.44
+        ],
+        [
+         6.38,
+         2.17
+        ],
+        [
+         7,
+         3
+        ],
+        [
+         7.37,
+         3.91
+        ],
+        [
+         7.48,
+         4.89
+        ],
+        [
+         7.31,
+         5.91
+        ],
+        [
+         6.85,
+         6.94
+        ],
+        [
+         6.09,
+         7.98
+        ],
+        [
+         5,
+         9
+        ],
+        [
+         3.71,
+         9.63
+        ],
+        [
+         2.37,
+         10.01
+        ],
+        [
+         1,
+         10.17
+        ],
+        [
+         -0.37,
+         10.11
+        ],
+        [
+         -1.71,
+         9.84
+        ],
+        [
+         -3,
+         9.38
+        ],
+        [
+         -4.2,
+         8.72
+        ],
+        [
+         -5.3,
+         7.89
+        ],
+        [
+         -6.25,
+         6.89
+        ],
+        [
+         -7.04,
+         5.74
+        ],
+        [
+         -7.63,
+         4.44
+        ],
+        [
+         -8,
+         3
+        ],
+        [
+         -8.11,
+         1.27
+        ],
+        [
+         -7.94,
+         -0.38
+        ],
+        [
+         -7.53,
+         -1.95
+        ],
+        [
+         -6.89,
+         -3.41
+        ],
+        [
+         -6.04,
+         -4.72
+        ],
+        [
+         -5,
+         -5.88
+        ],
+        [
+         -3.8,
+         -6.84
+        ],
+        [
+         -2.44,
+         -7.59
+        ],
+        [
+         -0.97,
+         -8.11
+        ],
+        [
+         0.61,
+         -8.37
+        ],
+        [
+         2.27,
+         -8.34
+        ],
+        [
+         4,
+         -8
+        ],
+        [
+         4.96,
+         -7.69
+        ],
+        [
+         5.83,
+         -7.27
+        ],
+        [
+         6.61,
+         -6.75
+        ],
+        [
+         7.3,
+         -6.15
+        ],
+        [
+         7.89,
+         -5.48
+        ],
+        [
+         8.38,
+         -4.75
+        ],
+        [
+         8.76,
+         -3.98
+        ],
+        [
+         9.04,
+         -3.19
+        ],
+        [
+         9.2,
+         -2.38
+        ],
+        [
+         9.25,
+         -1.56
+        ],
+        [
+         9.19,
+         -0.77
+        ],
+        [
+         9,
+         0
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -25,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 21,
+     "cy": 12,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -21,
+     "cy": 12,
+     "r": 2.2
+    }
+   ]
+  },
+  "core.force": {
+   "kind": "core",
+   "nature": "力场",
+   "cost": 3,
+   "shorthand": "坠引",
+   "name": "核纹·懒惰【坠引】",
+   "desc": "力场之核：引力、斥力、重压与磁场——拉、推、压、悬。",
+   "anchor": 48,
+   "reach": 58,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    },
+    {
+     "id": "s1",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s2",
+     "x": 0,
+     "y": 52,
+     "a": 180
+    },
+    {
+     "id": "s3",
+     "x": -52,
+     "y": 0,
+     "a": 270
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 25
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 12
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "ellipse",
+     "cx": 0,
+     "cy": 0,
+     "rx": 26,
+     "ry": 9,
+     "rot": -22
+    },
+    {
+     "cls": [
+      "rim",
+      "thin",
+      "dash"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "ellipse",
+     "cx": 0,
+     "cy": 0,
+     "rx": 26,
+     "ry": 9,
+     "rot": 38
+    },
+    {
+     "cls": [
+      "ln"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -34
+        ],
+        [
+         0,
+         -24
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         -3.5,
+         -28
+        ],
+        [
+         0,
+         -23
+        ],
+        [
+         3.5,
+         -28
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "core.build": {
+   "kind": "core",
+   "nature": "构建",
+   "cost": 3,
+   "shorthand": "构解",
+   "name": "核纹·贪婪【构解】",
+   "desc": "构建之核：解析物质构造并构筑、转化——已理解之物无所不可造。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 36.8,
+     "y": -36.8,
+     "a": 45
+    },
+    {
+     "id": "s1",
+     "x": 36.8,
+     "y": 36.8,
+     "a": 135
+    },
+    {
+     "id": "s2",
+     "x": -36.8,
+     "y": 36.8,
+     "a": 225
+    },
+    {
+     "id": "s3",
+     "x": -36.8,
+     "y": -36.8,
+     "a": 315
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 27
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -20,
+         -13
+        ],
+        [
+         -20,
+         -20
+        ],
+        [
+         -13,
+         -20
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         13,
+         -20
+        ],
+        [
+         20,
+         -20
+        ],
+        [
+         20,
+         -13
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         20,
+         13
+        ],
+        [
+         20,
+         20
+        ],
+        [
+         13,
+         20
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         -13,
+         20
+        ],
+        [
+         -20,
+         20
+        ],
+        [
+         -20,
+         13
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -10
+        ],
+        [
+         10,
+         0
+        ],
+        [
+         0,
+         10
+        ],
+        [
+         -10,
+         0
+        ],
+        [
+         0,
+         -10
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -27,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 27,
+     "cy": 0,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 27,
+     "r": 2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -27,
+     "cy": 0,
+     "r": 2
+    }
+   ]
+  },
+  "core.release": {
+   "kind": "core",
+   "nature": "输出",
+   "cost": 3,
+   "shorthand": "释雷",
+   "name": "核纹·色欲【释雷】",
+   "desc": "纯粹输出之核：雷霆、闪光、热流——存在须臾，闪烁瞬息。",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    },
+    {
+     "id": "s1",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s2",
+     "x": 0,
+     "y": 52,
+     "a": 180
+    },
+    {
+     "id": "s3",
+     "x": -52,
+     "y": 0,
+     "a": 270
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 27
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         5,
+         -26
+        ],
+        [
+         -8,
+         -3
+        ],
+        [
+         -1,
+         -3
+        ],
+        [
+         -5,
+         18
+        ],
+        [
+         10,
+         -5
+        ],
+        [
+         2,
+         -5
+        ],
+        [
+         5,
+         -26
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -17,
+         -17
+        ],
+        [
+         -22,
+         -22
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         17,
+         -17
+        ],
+        [
+         22,
+         -22
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         -21,
+         2
+        ],
+        [
+         -28,
+         2
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         21,
+         2
+        ],
+        [
+         28,
+         2
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "outer.corridor": {
+   "kind": "outer",
+   "nature": "空间",
+   "cost": 2,
+   "shorthand": "回廊",
+   "name": "外纹·傲慢【回廊】",
+   "desc": "空间折叠路径：隔空、绕障、远程作用；射程极远，无需直视。",
+   "anchor": 0,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -54,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -8,
+         -2
+        ],
+        [
+         -16,
+         -42
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         8,
+         -2
+        ],
+        [
+         16,
+         -42
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -10,
+         -12
+        ],
+        [
+         10,
+         -12
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -13,
+         -30
+        ],
+        [
+         13,
+         -30
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -16,
+         -42
+        ],
+        [
+         16,
+         -42
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "outer.domain": {
+   "kind": "outer",
+   "nature": "静止",
+   "cost": 2,
+   "shorthand": "封界",
+   "name": "外纹·嫉妒【封界】",
+   "desc": "划域固定：效果成为结界与阵地；范围极大，机动性差，维持需驻留。",
+   "anchor": 0,
+   "reach": 52,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -46,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim",
+      "dash"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -24,
+         -8
+        ],
+        [
+         -19.2,
+         -12.68
+        ],
+        [
+         -14.4,
+         -16.32
+        ],
+        [
+         -9.6,
+         -18.92
+        ],
+        [
+         -4.8,
+         -20.48
+        ],
+        [
+         0,
+         -21
+        ],
+        [
+         4.8,
+         -20.48
+        ],
+        [
+         9.6,
+         -18.92
+        ],
+        [
+         14.4,
+         -16.32
+        ],
+        [
+         19.2,
+         -12.68
+        ],
+        [
+         24,
+         -8
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -24,
+     "cy": -8,
+     "r": 2.6
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 24,
+     "cy": -8,
+     "r": 2.6
+    },
+    {
+     "cls": [
+      "tick"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -22
+        ],
+        [
+         0,
+         -29
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -3,
+     "r": 2
+    }
+   ]
+  },
+  "outer.burst": {
+   "kind": "outer",
+   "nature": "运动",
+   "cost": 2,
+   "shorthand": "迸发",
+   "name": "外纹·愤怒【迸发】",
+   "desc": "一次性爆发释放：威力极盛，持续极短，耗用峰值最高——打完即空。",
+   "anchor": 0,
+   "reach": 58,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -56,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -14,
+         -14
+        ],
+        [
+         0,
+         -26
+        ],
+        [
+         14,
+         -14
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -9,
+         -24
+        ],
+        [
+         0,
+         -33
+        ],
+        [
+         9,
+         -24
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -50
+        ],
+        [
+         8,
+         -37
+        ],
+        [
+         -8,
+         -37
+        ],
+        [
+         0,
+         -50
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    }
+   ]
+  },
+  "outer.flow": {
+   "kind": "outer",
+   "nature": "生命",
+   "cost": 2,
+   "shorthand": "流转",
+   "name": "外纹·暴食【流转】",
+   "desc": "沿生命与流体蔓延：扩散、传染、循环再生；蔓延中等，可被切断。",
+   "anchor": 0,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -6,
+         -1
+        ],
+        [
+         -8.13,
+         -3.27
+        ],
+        [
+         -9.57,
+         -5.56
+        ],
+        [
+         -10.36,
+         -7.86
+        ],
+        [
+         -10.56,
+         -10.15
+        ],
+        [
+         -10.21,
+         -12.41
+        ],
+        [
+         -9.38,
+         -14.63
+        ],
+        [
+         -8.1,
+         -16.78
+        ],
+        [
+         -6.44,
+         -18.85
+        ],
+        [
+         -4.45,
+         -20.83
+        ],
+        [
+         -2.18,
+         -22.69
+        ],
+        [
+         0.32,
+         -24.42
+        ],
+        [
+         3,
+         -26
+        ],
+        [
+         5.29,
+         -27.54
+        ],
+        [
+         7.19,
+         -29.15
+        ],
+        [
+         8.69,
+         -30.83
+        ],
+        [
+         9.81,
+         -32.56
+        ],
+        [
+         10.58,
+         -34.32
+        ],
+        [
+         11,
+         -36.13
+        ],
+        [
+         11.09,
+         -37.95
+        ],
+        [
+         10.85,
+         -39.78
+        ],
+        [
+         10.31,
+         -41.61
+        ],
+        [
+         9.48,
+         -43.43
+        ],
+        [
+         8.37,
+         -45.23
+        ],
+        [
+         7,
+         -47
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         7,
+         -5
+        ],
+        [
+         5.49,
+         -6.75
+        ],
+        [
+         4.45,
+         -8.5
+        ],
+        [
+         3.83,
+         -10.23
+        ],
+        [
+         3.59,
+         -11.96
+        ],
+        [
+         3.7,
+         -13.68
+        ],
+        [
+         4.13,
+         -15.38
+        ],
+        [
+         4.82,
+         -17.05
+        ],
+        [
+         5.74,
+         -18.7
+        ],
+        [
+         6.86,
+         -20.33
+        ],
+        [
+         8.13,
+         -21.92
+        ],
+        [
+         9.53,
+         -23.48
+        ],
+        [
+         11,
+         -25
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": -9,
+     "cy": -12,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 2,
+     "cy": -25,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 10,
+     "cy": -42,
+     "r": 2.2
+    }
+   ]
+  },
+  "outer.suspend": {
+   "kind": "outer",
+   "nature": "力场",
+   "cost": 2,
+   "shorthand": "悬架",
+   "name": "外纹·懒惰【悬架】",
+   "desc": "力场悬置维持：效果持续化、消耗平摊；瞬时威力下调，适合长期阵地。",
+   "anchor": 0,
+   "reach": 54,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -50,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         0,
+         -20
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -16,
+         -28
+        ],
+        [
+         -12.8,
+         -26.56
+        ],
+        [
+         -9.6,
+         -25.44
+        ],
+        [
+         -6.4,
+         -24.64
+        ],
+        [
+         -3.2,
+         -24.16
+        ],
+        [
+         0,
+         -24
+        ],
+        [
+         3.2,
+         -24.16
+        ],
+        [
+         6.4,
+         -24.64
+        ],
+        [
+         9.6,
+         -25.44
+        ],
+        [
+         12.8,
+         -26.56
+        ],
+        [
+         16,
+         -28
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -42
+        ],
+        [
+         6,
+         -34
+        ],
+        [
+         0,
+         -26
+        ],
+        [
+         -6,
+         -34
+        ],
+        [
+         0,
+         -42
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    }
+   ]
+  },
+  "outer.mold": {
+   "kind": "outer",
+   "nature": "构建",
+   "cost": 2,
+   "shorthand": "铸形",
+   "name": "外纹·贪婪【铸形】",
+   "desc": "固化为造物：效果被铸成武器、工具、机械——魔力冻结在物内，可保存转交。",
+   "anchor": 0,
+   "reach": 54,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -50,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -18,
+         -1
+        ],
+        [
+         -8,
+         -40
+        ],
+        [
+         8,
+         -40
+        ],
+        [
+         18,
+         -1
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -18,
+         -1
+        ],
+        [
+         18,
+         -1
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -12,
+         -14
+        ],
+        [
+         12,
+         -14
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -27,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -35,
+     "r": 2.2
+    }
+   ]
+  },
+  "outer.beam": {
+   "kind": "outer",
+   "nature": "输出",
+   "cost": 2,
+   "shorthand": "导束",
+   "name": "外纹·色欲【导束】",
+   "desc": "聚束导流：效果压缩成精准指向的一条线；穿透极强，散射极小。",
+   "anchor": 0,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 14,
+     "a": 180
+    },
+    {
+     "id": "exit",
+     "x": 0,
+     "y": -58,
+     "a": 0
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -14,
+         -2
+        ],
+        [
+         -3,
+         -32
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         14,
+         -2
+        ],
+        [
+         3,
+         -32
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -4
+        ],
+        [
+         0,
+         -42
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -50
+        ],
+        [
+         -5,
+         -40
+        ],
+        [
+         5,
+         -40
+        ],
+        [
+         0,
+         -50
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    }
+   ]
+  },
+  "micro.shift": {
+   "kind": "micro",
+   "nature": "空间",
+   "cost": 1,
+   "shorthand": "偏折",
+   "name": "缀纹·傲慢【偏折】",
+   "desc": "附加错位：落点可小幅偏移，或获得一次短距瞬移。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "ln"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -8,
+         -2
+        ],
+        [
+         2,
+         -2
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -2,
+         -10
+        ],
+        [
+         8,
+         -10
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         3,
+         -5
+        ],
+        [
+         8,
+         -11
+        ],
+        [
+         1.5,
+         -10.5
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "micro.freeze": {
+   "kind": "micro",
+   "nature": "静止",
+   "cost": 1,
+   "shorthand": "驻影",
+   "name": "缀纹·嫉妒【驻影】",
+   "desc": "附加定格：目标被短暂定身一瞬，或效果被拍下延迟重演。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -7,
+     "r": 5.5
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -7,
+     "r": 2
+    },
+    {
+     "cls": [
+      "rim",
+      "thin",
+      "dash"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         4,
+         -19
+        ],
+        [
+         13,
+         -19
+        ],
+        [
+         13,
+         -10
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "micro.shock": {
+   "kind": "micro",
+   "nature": "运动",
+   "cost": 1,
+   "shorthand": "震芯",
+   "name": "缀纹·愤怒【震芯】",
+   "desc": "附加震荡：冲击波、破防、麻痹；对持械者格外有效。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -2,
+     "r": 2.2
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -6,
+         -4
+        ],
+        [
+         6,
+         6
+        ],
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         6
+        ],
+        [
+         -4,
+         null
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim",
+      "thin",
+      "dash"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -11,
+         -4
+        ],
+        [
+         11,
+         11
+        ],
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         11
+        ],
+        [
+         -4,
+         null
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "micro.feed": {
+   "kind": "micro",
+   "nature": "生命",
+   "cost": 1,
+   "shorthand": "反哺",
+   "name": "缀纹·暴食【反哺】",
+   "desc": "附加回馈：效果产生的一部分伤害、治疗或能量回流使用者。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "ln"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         7,
+         -17
+        ],
+        [
+         3.73,
+         -16.8
+        ],
+        [
+         0.92,
+         -16.24
+        ],
+        [
+         -1.42,
+         -15.38
+        ],
+        [
+         -3.3,
+         -14.26
+        ],
+        [
+         -4.7,
+         -12.95
+        ],
+        [
+         -5.63,
+         -11.5
+        ],
+        [
+         -6.07,
+         -9.97
+        ],
+        [
+         -6.04,
+         -8.41
+        ],
+        [
+         -5.52,
+         -6.88
+        ],
+        [
+         -4.5,
+         -5.43
+        ],
+        [
+         -3,
+         -4.12
+        ],
+        [
+         -1,
+         -3
+        ],
+        [
+         0.23,
+         -2.62
+        ],
+        [
+         1.39,
+         -2.47
+        ],
+        [
+         2.48,
+         -2.52
+        ],
+        [
+         3.48,
+         -2.74
+        ],
+        [
+         4.37,
+         -3.12
+        ],
+        [
+         5.13,
+         -3.63
+        ],
+        [
+         5.74,
+         -4.24
+        ],
+        [
+         6.19,
+         -4.93
+        ],
+        [
+         6.45,
+         -5.67
+        ],
+        [
+         6.52,
+         -6.45
+        ],
+        [
+         6.38,
+         -7.23
+        ],
+        [
+         6,
+         -8
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         8,
+         -19
+        ],
+        [
+         2,
+         -12
+        ],
+        [
+         10,
+         -10
+        ],
+        [
+         8,
+         -19
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    }
+   ]
+  },
+  "micro.anchor": {
+   "kind": "micro",
+   "nature": "力场",
+   "cost": 1,
+   "shorthand": "重锚",
+   "name": "缀纹·懒惰【重锚】",
+   "desc": "附加锚定：效果不可被移动或驱散；对沉重巨大之物增幅。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -15,
+     "r": 3
+    },
+    {
+     "cls": [
+      "ln"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         -12
+        ],
+        [
+         0,
+         -1
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -4.5,
+         -8
+        ],
+        [
+         4.5,
+         -8
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -5,
+         -1
+        ],
+        [
+         -8,
+         -5
+        ]
+       ],
+       "closed": false
+      },
+      {
+       "pts": [
+        [
+         5,
+         -1
+        ],
+        [
+         8,
+         -5
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "micro.fuse": {
+   "kind": "micro",
+   "nature": "构建",
+   "cost": 1,
+   "shorthand": "嵌合",
+   "name": "缀纹·贪婪【嵌合】",
+   "desc": "附加复合：与另一枚既有刻印并联协作，或复制所触之物的一项性质。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -5,
+     "r": 4.5
+    },
+    {
+     "cls": [
+      "rim",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "circle",
+     "cx": 0,
+     "cy": -13,
+     "r": 4.5
+    }
+   ]
+  },
+  "micro.overload": {
+   "kind": "micro",
+   "nature": "输出",
+   "cost": 1,
+   "shorthand": "过载",
+   "name": "缀纹·色欲【过载】",
+   "desc": "附加超频：威能短时大增，随后刻印过热进入冷却——代价自负。",
+   "anchor": 0,
+   "reach": 24,
+   "slots": [
+    {
+     "id": "root",
+     "x": 0,
+     "y": 12,
+     "a": 180
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         3,
+         -17
+        ],
+        [
+         -4,
+         -8
+        ],
+        [
+         0,
+         -8
+        ],
+        [
+         -3,
+         0
+        ],
+        [
+         5,
+         -9
+        ],
+        [
+         1,
+         -9
+        ],
+        [
+         3,
+         -17
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "ln",
+      "thin"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         -4,
+         -21
+        ],
+        [
+         0,
+         -24
+        ],
+        [
+         4,
+         -21
+        ]
+       ],
+       "closed": false
+      }
+     ]
+    }
+   ]
+  },
+  "core.lust": {
+   "kind": "core",
+   "nature": "特殊",
+   "cost": 0,
+   "shorthand": "情欲",
+   "name": "核纹·特殊【情欲】",
+   "desc": "作弊般的神秘核纹，如果你有想做的什么事情的话......",
+   "anchor": 48,
+   "reach": 56,
+   "slots": [
+    {
+     "id": "s0",
+     "x": 0,
+     "y": -52,
+     "a": 0
+    },
+    {
+     "id": "s1",
+     "x": 52,
+     "y": 0,
+     "a": 90
+    },
+    {
+     "id": "s2",
+     "x": 0,
+     "y": 52,
+     "a": 180
+    },
+    {
+     "id": "s3",
+     "x": -52,
+     "y": 0,
+     "a": 270
+    }
+   ],
+   "glyph": [
+    {
+     "cls": [
+      "halo"
+     ],
+     "card": false,
+     "tone": true,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         20
+        ],
+        [
+         -2.99,
+         17.12
+        ],
+        [
+         -5.94,
+         14.45
+        ],
+        [
+         -8.81,
+         11.97
+        ],
+        [
+         -11.56,
+         9.63
+        ],
+        [
+         -14.13,
+         7.4
+        ],
+        [
+         -16.5,
+         5.25
+        ],
+        [
+         -18.62,
+         3.14
+        ],
+        [
+         -20.44,
+         1.04
+        ],
+        [
+         -21.94,
+         -1.09
+        ],
+        [
+         -23.06,
+         -3.29
+        ],
+        [
+         -23.76,
+         -5.58
+        ],
+        [
+         -24,
+         -8
+        ],
+        [
+         -23.84,
+         -10.17
+        ],
+        [
+         -23.38,
+         -12.16
+        ],
+        [
+         -22.64,
+         -13.98
+        ],
+        [
+         -21.67,
+         -15.63
+        ],
+        [
+         -20.48,
+         -17.09
+        ],
+        [
+         -19.13,
+         -18.38
+        ],
+        [
+         -17.62,
+         -19.47
+        ],
+        [
+         -16,
+         -20.37
+        ],
+        [
+         -14.3,
+         -21.08
+        ],
+        [
+         -12.54,
+         -21.59
+        ],
+        [
+         -10.77,
+         -21.9
+        ],
+        [
+         -9,
+         -22
+        ],
+        [
+         -7.79,
+         -21.94
+        ],
+        [
+         -6.67,
+         -21.76
+        ],
+        [
+         -5.63,
+         -21.47
+        ],
+        [
+         -4.67,
+         -21.07
+        ],
+        [
+         -3.79,
+         -20.58
+        ],
+        [
+         -3,
+         -20
+        ],
+        [
+         -2.29,
+         -19.33
+        ],
+        [
+         -1.67,
+         -18.59
+        ],
+        [
+         -1.13,
+         -17.78
+        ],
+        [
+         -0.67,
+         -16.91
+        ],
+        [
+         -0.29,
+         -15.98
+        ],
+        [
+         0,
+         -15
+        ],
+        [
+         0.29,
+         -15.98
+        ],
+        [
+         0.67,
+         -16.91
+        ],
+        [
+         1.13,
+         -17.78
+        ],
+        [
+         1.67,
+         -18.59
+        ],
+        [
+         2.29,
+         -19.33
+        ],
+        [
+         3,
+         -20
+        ],
+        [
+         3.79,
+         -20.58
+        ],
+        [
+         4.67,
+         -21.07
+        ],
+        [
+         5.63,
+         -21.47
+        ],
+        [
+         6.67,
+         -21.76
+        ],
+        [
+         7.79,
+         -21.94
+        ],
+        [
+         9,
+         -22
+        ],
+        [
+         10.77,
+         -21.9
+        ],
+        [
+         12.54,
+         -21.59
+        ],
+        [
+         14.3,
+         -21.08
+        ],
+        [
+         16,
+         -20.37
+        ],
+        [
+         17.62,
+         -19.47
+        ],
+        [
+         19.13,
+         -18.38
+        ],
+        [
+         20.48,
+         -17.09
+        ],
+        [
+         21.67,
+         -15.63
+        ],
+        [
+         22.64,
+         -13.98
+        ],
+        [
+         23.38,
+         -12.16
+        ],
+        [
+         23.84,
+         -10.17
+        ],
+        [
+         24,
+         -8
+        ],
+        [
+         23.76,
+         -5.58
+        ],
+        [
+         23.06,
+         -3.29
+        ],
+        [
+         21.94,
+         -1.09
+        ],
+        [
+         20.44,
+         1.04
+        ],
+        [
+         18.62,
+         3.14
+        ],
+        [
+         16.5,
+         5.25
+        ],
+        [
+         14.13,
+         7.4
+        ],
+        [
+         11.56,
+         9.63
+        ],
+        [
+         8.81,
+         11.97
+        ],
+        [
+         5.94,
+         14.45
+        ],
+        [
+         2.99,
+         17.12
+        ],
+        [
+         0,
+         20
+        ],
+        [
+         0,
+         20
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "rim"
+     ],
+     "card": false,
+     "tone": false,
+     "t": "path",
+     "polys": [
+      {
+       "pts": [
+        [
+         0,
+         20
+        ],
+        [
+         -2.99,
+         17.12
+        ],
+        [
+         -5.94,
+         14.45
+        ],
+        [
+         -8.81,
+         11.97
+        ],
+        [
+         -11.56,
+         9.63
+        ],
+        [
+         -14.13,
+         7.4
+        ],
+        [
+         -16.5,
+         5.25
+        ],
+        [
+         -18.62,
+         3.14
+        ],
+        [
+         -20.44,
+         1.04
+        ],
+        [
+         -21.94,
+         -1.09
+        ],
+        [
+         -23.06,
+         -3.29
+        ],
+        [
+         -23.76,
+         -5.58
+        ],
+        [
+         -24,
+         -8
+        ],
+        [
+         -23.84,
+         -10.17
+        ],
+        [
+         -23.38,
+         -12.16
+        ],
+        [
+         -22.64,
+         -13.98
+        ],
+        [
+         -21.67,
+         -15.63
+        ],
+        [
+         -20.48,
+         -17.09
+        ],
+        [
+         -19.13,
+         -18.38
+        ],
+        [
+         -17.62,
+         -19.47
+        ],
+        [
+         -16,
+         -20.37
+        ],
+        [
+         -14.3,
+         -21.08
+        ],
+        [
+         -12.54,
+         -21.59
+        ],
+        [
+         -10.77,
+         -21.9
+        ],
+        [
+         -9,
+         -22
+        ],
+        [
+         -7.79,
+         -21.94
+        ],
+        [
+         -6.67,
+         -21.76
+        ],
+        [
+         -5.63,
+         -21.47
+        ],
+        [
+         -4.67,
+         -21.07
+        ],
+        [
+         -3.79,
+         -20.58
+        ],
+        [
+         -3,
+         -20
+        ],
+        [
+         -2.29,
+         -19.33
+        ],
+        [
+         -1.67,
+         -18.59
+        ],
+        [
+         -1.13,
+         -17.78
+        ],
+        [
+         -0.67,
+         -16.91
+        ],
+        [
+         -0.29,
+         -15.98
+        ],
+        [
+         0,
+         -15
+        ],
+        [
+         0.29,
+         -15.98
+        ],
+        [
+         0.67,
+         -16.91
+        ],
+        [
+         1.13,
+         -17.78
+        ],
+        [
+         1.67,
+         -18.59
+        ],
+        [
+         2.29,
+         -19.33
+        ],
+        [
+         3,
+         -20
+        ],
+        [
+         3.79,
+         -20.58
+        ],
+        [
+         4.67,
+         -21.07
+        ],
+        [
+         5.63,
+         -21.47
+        ],
+        [
+         6.67,
+         -21.76
+        ],
+        [
+         7.79,
+         -21.94
+        ],
+        [
+         9,
+         -22
+        ],
+        [
+         10.77,
+         -21.9
+        ],
+        [
+         12.54,
+         -21.59
+        ],
+        [
+         14.3,
+         -21.08
+        ],
+        [
+         16,
+         -20.37
+        ],
+        [
+         17.62,
+         -19.47
+        ],
+        [
+         19.13,
+         -18.38
+        ],
+        [
+         20.48,
+         -17.09
+        ],
+        [
+         21.67,
+         -15.63
+        ],
+        [
+         22.64,
+         -13.98
+        ],
+        [
+         23.38,
+         -12.16
+        ],
+        [
+         23.84,
+         -10.17
+        ],
+        [
+         24,
+         -8
+        ],
+        [
+         23.76,
+         -5.58
+        ],
+        [
+         23.06,
+         -3.29
+        ],
+        [
+         21.94,
+         -1.09
+        ],
+        [
+         20.44,
+         1.04
+        ],
+        [
+         18.62,
+         3.14
+        ],
+        [
+         16.5,
+         5.25
+        ],
+        [
+         14.13,
+         7.4
+        ],
+        [
+         11.56,
+         9.63
+        ],
+        [
+         8.81,
+         11.97
+        ],
+        [
+         5.94,
+         14.45
+        ],
+        [
+         2.99,
+         17.12
+        ],
+        [
+         0,
+         20
+        ],
+        [
+         0,
+         20
+        ]
+       ],
+       "closed": true
+      }
+     ]
+    },
+    {
+     "cls": [
+      "dot"
+     ],
+     "card": false,
+     "tone": true,
+     "t": "circle",
+     "cx": 0,
+     "cy": 0,
+     "r": 2.2
+    }
+   ]
+  }
+ }
+}

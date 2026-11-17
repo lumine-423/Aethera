@@ -1,0 +1,2189 @@
+{
+  "schema_version": 1,
+  "requirements_version": "party-actions-20261027-game-adaptations-01",
+  "authority": "user-confirmed-8-actions-2-forms",
+  "scope": {
+    "party_first": true,
+    "enemy_animations": "deferred",
+    "launch_roster": "undecided",
+    "formal_numbers": "undecided",
+    "idle_required_for_all_actors_and_forms": true
+  },
+  "action_slots": [
+    {
+      "id": "attack",
+      "label": "普攻"
+    },
+    {
+      "id": "skill_1",
+      "label": "技能1"
+    },
+    {
+      "id": "skill_2",
+      "label": "技能2"
+    },
+    {
+      "id": "ultimate",
+      "label": "大招"
+    },
+    {
+      "id": "hit",
+      "label": "受击"
+    },
+    {
+      "id": "guard",
+      "label": "防御"
+    },
+    {
+      "id": "down",
+      "label": "倒地"
+    },
+    {
+      "id": "settlement",
+      "label": "结算"
+    }
+  ],
+  "support_slots": [
+    {
+      "id": "idle",
+      "reason": "connect-actions-and-form-states; not counted in user eight"
+    }
+  ],
+  "confirmed_seven_sins": [
+    {
+      "id": "rin",
+      "name": "凛零",
+      "sin": "傲慢",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/3",
+            "id": 3,
+            "comment": "角色/凛零/变身阶段/日常",
+            "sha256": "d5a5a0db22246baa74f11f07bed310baf7accecc8427008e5c94845b430f74c0"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\凛零\\凛零.png",
+            "exists": true,
+            "sha256": "cf0c77e10d2202515f473a106a220074dc98d3dd1c8a9571fae29812512061a8",
+            "bytes": 3167256,
+            "size": [
+              1248,
+              1872
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "rin.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "rin.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "rin.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "rin.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "rin.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "rin.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "rin.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "rin.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "rin.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "鸟羽",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/4",
+            "id": 4,
+            "comment": "角色/凛零/变身阶段/解放",
+            "sha256": "218b133f139544bfaaabcc4b695e09abe89ddffaa54ea23c298b6209aba5b3c6"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\凛零\\凛零解放.png",
+            "exists": true,
+            "sha256": "07b6cb25c21cde0d87e08c8712feab8cafe6817d6ee72cd590829f7b72e4de98",
+            "bytes": 7325516,
+            "size": [
+              2080,
+              3120
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "rin.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "rin.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "rin.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "rin.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": {
+                "ability_name": "飞星",
+                "design_authority": "E16",
+                "status": "design-authorized-not-implemented",
+                "contract": "docs/gameplay-adaptations.md",
+                "numbers": "undecided"
+              },
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "rin.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "rin.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "rin.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "rin.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "rin.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "rin.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/4",
+          "id": 4,
+          "comment": "角色/凛零/变身阶段/解放",
+          "sha256": "218b133f139544bfaaabcc4b695e09abe89ddffaa54ea23c298b6209aba5b3c6"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "rin"
+    },
+    {
+      "id": "merlin",
+      "name": "梅林",
+      "sin": "懒惰",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/5",
+            "id": 5,
+            "comment": "角色/梅林/变身阶段/日常",
+            "sha256": "d7773c677d16c7b5a1fc8212594051821a31b80e61874ddb16893f2c091cdb8b"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\梅林\\梅林.png",
+            "exists": true,
+            "sha256": "39f5e68c5cb0c5dd4d56d320930abc6ff56879690ea5bae9e9062043f68129aa",
+            "bytes": 4100373,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "merlin.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "merlin.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "merlin.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "merlin.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "merlin.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "merlin.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "merlin.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "merlin.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "merlin.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "乐章",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/6",
+            "id": 6,
+            "comment": "角色/梅林/变身阶段/解放",
+            "sha256": "6624d3bea15860fbacc2c81885fe2a83a61a2ce7f231918c820cb8f111828b04"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\梅林\\梅林解放.png",
+            "exists": true,
+            "sha256": "99d126b499c788dcf705b4cc650267ae18111feef5f8c30420029bfa473a7198",
+            "bytes": 4774767,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "merlin.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "merlin.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "merlin.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "merlin.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": {
+                "ability_name": "降神",
+                "design_authority": "E17",
+                "status": "design-authorized-not-implemented",
+                "contract": "docs/gameplay-adaptations.md",
+                "numbers": "undecided"
+              },
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "merlin.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "merlin.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "merlin.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "merlin.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "merlin.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "merlin.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/6",
+          "id": 6,
+          "comment": "角色/梅林/变身阶段/解放",
+          "sha256": "6624d3bea15860fbacc2c81885fe2a83a61a2ce7f231918c820cb8f111828b04"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "merlin"
+    },
+    {
+      "id": "mohua",
+      "name": "墨华",
+      "sin": "愤怒",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/7",
+            "id": 7,
+            "comment": "角色/墨华/变身阶段/日常",
+            "sha256": "f3bcc0c0c480da4eceec890b5bbf582830976495f0d4f4ab2c0e5cc0f3c5acfb"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\墨华\\墨华.png",
+            "exists": true,
+            "sha256": "859ea4c0b4edc816c68f3bfe07bfc2da20840f5ef4a42b4da7b77f2ad72b9d60",
+            "bytes": 4208572,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "mohua.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "mohua.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "mohua.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "mohua.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "mohua.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "mohua.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "mohua.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "mohua.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "mohua.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "金乌",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/8",
+            "id": 8,
+            "comment": "角色/墨华/变身阶段/解放",
+            "sha256": "5d691ed9f973f943e2a8ca56a57d620e117893c3f61a9b454948843902e1d33d"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\墨华\\墨华解放.png",
+            "exists": true,
+            "sha256": "569196c08f4a396040abb09d373ef14452bee9f8edd19872c79cf477b50db8fd",
+            "bytes": 4508623,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "mohua.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "mohua.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "mohua.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "mohua.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "mohua.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "mohua.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "mohua.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "mohua.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "mohua.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "mohua.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/8",
+          "id": 8,
+          "comment": "角色/墨华/变身阶段/解放",
+          "sha256": "5d691ed9f973f943e2a8ca56a57d620e117893c3f61a9b454948843902e1d33d"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "mohua"
+    },
+    {
+      "id": "bingtang",
+      "name": "冰糖",
+      "sin": "嫉妒",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/9",
+            "id": 9,
+            "comment": "角色/冰糖/变身阶段/日常",
+            "sha256": "c05b346a0b2a268688ba0cb436571733bd2315455c491b9afb9bb9bfd601182e"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\冰糖\\冰糖.png",
+            "exists": true,
+            "sha256": "5da9ca5aa026bad6484dc4662bbbfe960a9965b298780c4a6f03d2ff439269be",
+            "bytes": 5038492,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "bingtang.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "bingtang.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "bingtang.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "bingtang.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "bingtang.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "bingtang.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "bingtang.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "bingtang.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "bingtang.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "孤狼",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/10",
+            "id": 10,
+            "comment": "角色/冰糖/变身阶段/解放",
+            "sha256": "061adb4dca9ad81f5e0a658ecc230048064e0cdc13eea9d623c1c3fef9b75bcf"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\冰糖\\冰糖解放.png",
+            "exists": true,
+            "sha256": "b5234d7f1ac0c7ad9c3526598271f50a14f6607e8ab5e2585a0a193c8dc727b8",
+            "bytes": 6053211,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "bingtang.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "bingtang.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "bingtang.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "bingtang.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "bingtang.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "bingtang.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "bingtang.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "bingtang.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "bingtang.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "bingtang.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/10",
+          "id": 10,
+          "comment": "角色/冰糖/变身阶段/解放",
+          "sha256": "061adb4dca9ad81f5e0a658ecc230048064e0cdc13eea9d623c1c3fef9b75bcf"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "bingtang"
+    },
+    {
+      "id": "anke",
+      "name": "安克",
+      "sin": "贪婪",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/11",
+            "id": 11,
+            "comment": "角色/安克/变身阶段/日常",
+            "sha256": "644e9b9a478abd2fcbfeacd976abac716456c441805637abf59481037ad30f28"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\安克\\安克.png",
+            "exists": true,
+            "sha256": "344444b0278c3911cee054d625be9e78a7101fb456051830e8f3e2cceef50979",
+            "bytes": 5233406,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "anke.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "anke.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "anke.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "anke.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "anke.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "anke.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "anke.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "anke.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "anke.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "造主",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/12",
+            "id": 12,
+            "comment": "角色/安克/变身阶段/解放",
+            "sha256": "94020e69e7690d24394d2795e0d65dc3afe4294c405d75e9d6e381413e591c5e"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\安克\\安克解放.png",
+            "exists": true,
+            "sha256": "0c1df581c5226602e482ac45535498b5a0f8cce50b9fd91e4197d3013a592e25",
+            "bytes": 7207851,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "anke.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "anke.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "anke.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "anke.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "anke.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "anke.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "anke.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "anke.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "anke.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "anke.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/12",
+          "id": 12,
+          "comment": "角色/安克/变身阶段/解放",
+          "sha256": "94020e69e7690d24394d2795e0d65dc3afe4294c405d75e9d6e381413e591c5e"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "anke"
+    },
+    {
+      "id": "castor",
+      "name": "卡斯特",
+      "sin": "色欲",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/13",
+            "id": 13,
+            "comment": "角色/卡斯特/变身阶段/日常",
+            "sha256": "8e4102eb42893436b0b0914e06a81737f7326a3b3f7314ed68227de25f9efbde"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\卡斯特\\卡斯特.png",
+            "exists": true,
+            "sha256": "83fce2d59c2d6ba20519b7e3f0760b306e7bec66dcb75d81ad2fb694b492572a",
+            "bytes": 4390379,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "castor.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "castor.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "castor.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "castor.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "castor.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "castor.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "castor.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "castor.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "castor.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "骑士",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/14",
+            "id": 14,
+            "comment": "角色/卡斯特/变身阶段/解放",
+            "sha256": "71ab33d246f1369acf3923daf2ded38376d4df468819b45dbcd7d893bb6586cf"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\卡斯特\\卡斯特解放.png",
+            "exists": true,
+            "sha256": "b0ce43a456afff9f80513b49353af147ae5d34e1f152454b5a9b2d293007ecd0",
+            "bytes": 4807574,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "castor.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "castor.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "castor.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "castor.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "castor.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "castor.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "castor.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "castor.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "castor.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "castor.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/14",
+          "id": 14,
+          "comment": "角色/卡斯特/变身阶段/解放",
+          "sha256": "71ab33d246f1369acf3923daf2ded38376d4df468819b45dbcd7d893bb6586cf"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "castor"
+    },
+    {
+      "id": "jian",
+      "name": "茧",
+      "sin": "暴食",
+      "production_scope": "confirmed-two-forms",
+      "initially_playable": "undecided",
+      "forms": {
+        "base": {
+          "id": "base",
+          "display_name": "基础",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/15",
+            "id": 15,
+            "comment": "角色/茧/变身阶段/日常",
+            "sha256": "b03dbe045e03f4c99ea82545acc6e5c00b8878c716d1d7c99ac4fd9167904126"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\茧\\茧.png",
+            "exists": true,
+            "sha256": "e9334a5d3ddd8030250ea44b7cc692fbacfef26169aebdbfb612c2132fe84122",
+            "bytes": 4639625,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": false,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "jian.base.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "jian.base.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "jian.base.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "jian.base.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "jian.base.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "jian.base.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "jian.base.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "jian.base.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "jian.base.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        },
+        "released": {
+          "id": "released",
+          "display_name": "佛相",
+          "source_entry": {
+            "pointer": "/data/character_book/entries/16",
+            "id": 16,
+            "comment": "角色/茧/变身阶段/解放",
+            "sha256": "6fcad551f9dfc8de9034e8fc11a9bec0d6b3364c4c781f24643bdbddfd92b304"
+          },
+          "reference": {
+            "path": "F:\\艾瑟拉\\茧\\茧解放.png",
+            "exists": true,
+            "sha256": "69334105cf76382fc108187a897bdba4e0bd32afdb6825f4e65f7c0be67117bd",
+            "bytes": 5380956,
+            "size": [
+              1536,
+              2304
+            ],
+            "visual_reviewed": true,
+            "kind": "illustration-reference-only"
+          },
+          "actions": {
+            "attack": {
+              "clip_id": "jian.released.attack",
+              "label": "普攻",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_1": {
+              "clip_id": "jian.released.skill_1",
+              "label": "技能1",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "skill_2": {
+              "clip_id": "jian.released.skill_2",
+              "label": "技能2",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "ultimate": {
+              "clip_id": "jian.released.ultimate",
+              "label": "大招",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "hit": {
+              "clip_id": "jian.released.hit",
+              "label": "受击",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "guard": {
+              "clip_id": "jian.released.guard",
+              "label": "防御",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "down": {
+              "clip_id": "jian.released.down",
+              "label": "倒地",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            },
+            "settlement": {
+              "clip_id": "jian.released.settlement",
+              "label": "结算",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "gameplay_binding": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          },
+          "support": {
+            "idle": {
+              "clip_id": "jian.released.idle",
+              "status": "not_started",
+              "source_asset": null,
+              "runtime_asset": null,
+              "visual_acceptance": "unverified",
+              "personality_acceptance": "unverified"
+            }
+          }
+        }
+      },
+      "transformation": {
+        "action_id": "liberate",
+        "clip_id": "jian.base_to_released.liberate",
+        "from_form": "base",
+        "to_form": "released",
+        "source_entry": {
+          "pointer": "/data/character_book/entries/16",
+          "id": 16,
+          "comment": "角色/茧/变身阶段/解放",
+          "sha256": "6fcad551f9dfc8de9034e8fc11a9bec0d6b3364c4c781f24643bdbddfd92b304"
+        },
+        "status": "not_started",
+        "source_asset": null,
+        "runtime_asset": null,
+        "gameplay_binding": null,
+        "visual_acceptance": "unverified",
+        "personality_acceptance": "unverified"
+      },
+      "personality_profile": "jian"
+    }
+  ],
+  "other_source_characters": [
+    {
+      "name": "明空",
+      "scope_status": "support_design_authorized",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/17",
+          "id": 17,
+          "comment": "角色/明空/变身阶段/日常",
+          "sha256": "9d1bd335bd7f1f9cae37719afa8c2d835c1aeb7989c373bb2cc15fafdd64de7c"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\明空\\明空.png",
+        "exists": true,
+        "sha256": "90ddeedb6a8a8b716d5b6e54f0cc39970e072a819895aa8eb8baab4a9b1ac0b0",
+        "bytes": 7607750,
+        "size": [
+          2080,
+          3120
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "source_role": "noncombatant-in-v2.0-snapshot",
+      "gameplay_role": "support",
+      "design_authority": "E18",
+      "idle_required": true
+    },
+    {
+      "name": "艾利丝",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/18",
+          "id": 18,
+          "comment": "角色/艾利丝/变身阶段/日常",
+          "sha256": "1fb93a8ab06ba41934a9d59372ea6f78db082f41cbe738fc943f145a8ca12cb9"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\艾利丝\\艾利丝.png",
+        "exists": true,
+        "sha256": "9e6310b2dc320db672e930e0dabe713987ec4eb8c8897010976040e1371808ca",
+        "bytes": 4444135,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    },
+    {
+      "name": "路西法",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/19",
+          "id": 19,
+          "comment": "角色/路西法/变身阶段/日常",
+          "sha256": "f0c799e28ab935cb73088b1b701edb50ea3d6366c62f069dbfa12481ef15e5e2"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\路西法\\路西法.png",
+        "exists": true,
+        "sha256": "3c16d8c336615b4643e067393557c4f81c339b5c4431ea1c5f5672ae857d57e0",
+        "bytes": 5153145,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    },
+    {
+      "name": "暧",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/20",
+          "id": 20,
+          "comment": "角色/暧/变身阶段/日常",
+          "sha256": "86e7ae6d7871de5a31a24e7e569b71912e645ac5d7192b0039c3e2c6b95b04c6"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\暧\\暧.png",
+        "exists": true,
+        "sha256": "9ff7924e5ac42112f5b35954130be14977c61113b8ef156da6f28f471ac1cc57",
+        "bytes": 5425516,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    },
+    {
+      "name": "叶",
+      "scope_status": "support_candidate_authorized",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/21",
+          "id": 21,
+          "comment": "角色/叶/变身阶段/日常",
+          "sha256": "4facf5edea84a138df4b7cc92b8581a8fc6983b929e2ade317662888d840186f"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\叶子\\叶.png",
+        "exists": true,
+        "sha256": "74d75e2bbebd4e86cc422a4ee352ca0c48a83e4211f0d7e7e9c1cea92c6fe183",
+        "bytes": 3555615,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "gameplay_role": "support",
+      "design_authority": "E18",
+      "initially_playable": "undecided",
+      "idle_required": true
+    },
+    {
+      "name": "瓦尔基里",
+      "scope_status": "support_candidate_authorized",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/22",
+          "id": 22,
+          "comment": "角色/瓦尔基里/变身阶段/日常",
+          "sha256": "421a3d47354e0167938f06b3b52c5e5d5c673087ef116fe470bb9e18264cabef"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\瓦尔基里\\瓦尔基里.png",
+        "exists": true,
+        "sha256": "7a062ce61dd9485cc3ca983494b275f9edc88ef2f6b42787f68385c6c7c27b31",
+        "bytes": 4721456,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "gameplay_role": "support",
+      "design_authority": "E18",
+      "initially_playable": "undecided",
+      "idle_required": true
+    },
+    {
+      "name": "阿兰雅",
+      "scope_status": "support_candidate_authorized",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/102",
+          "id": 796073,
+          "comment": "角色/阿兰雅/变身阶段/日常",
+          "sha256": "bd68fa5211bca4206924b4f7a4e02df8ea71d18d6d5b0c5a2c6f928c53a78af9"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\阿兰雅\\阿兰雅.png",
+        "exists": true,
+        "sha256": "38d5157033746f20811243cb991206e8eb4641c4704dd6360ca14a47a70f4412",
+        "bytes": 5121689,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "gameplay_role": "support",
+      "design_authority": "E18",
+      "initially_playable": "undecided",
+      "idle_required": true
+    },
+    {
+      "name": "筏摩娜",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/103",
+          "id": 796074,
+          "comment": "角色/筏摩娜/变身阶段/日常",
+          "sha256": "65ed9509ba4ea510c217f56608597b94a5c81e86809ecb5fe3d6a2efd73c8e9b"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\筏摩娜\\筏摩娜.png",
+        "exists": true,
+        "sha256": "bbf7fe43f87cfd4b1bb28e46605f20beb049bc281227b02d4b4c23668b8c2111",
+        "bytes": 5557643,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    },
+    {
+      "name": "轩辕",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/104",
+          "id": 796075,
+          "comment": "角色/轩辕/变身阶段/日常",
+          "sha256": "e4a9a641d5d07d37d36b512fd6fa38d4e104cab69ca6880123e833beca0e6604"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\轩辕\\轩辕.png",
+        "exists": true,
+        "sha256": "27e27c39cd9168b5889a0e8a2490cff046e85ad1aae5562209c83c30eba6607c",
+        "bytes": 5092214,
+        "size": [
+          1536,
+          2304
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    },
+    {
+      "name": "焰渊",
+      "scope_status": "party_membership_and_action_mapping_pending",
+      "entries": [
+        {
+          "pointer": "/data/character_book/entries/105",
+          "id": 796076,
+          "comment": "角色/焰渊/变身阶段/其一",
+          "sha256": "25f6e69712b171aed86b14220b50c0b5e8a12e1e1a8400bb57a2eb06a6b87d78"
+        },
+        {
+          "pointer": "/data/character_book/entries/106",
+          "id": 796077,
+          "comment": "角色/焰渊/变身阶段/其二",
+          "sha256": "3dc1d1591934c2f871f5cb98b75ffad2908f63b5a2eda7385be9d18c55aebcc6"
+        }
+      ],
+      "reference": {
+        "path": "F:\\艾瑟拉\\焰渊\\焰渊.png",
+        "exists": true,
+        "sha256": "fe396ec2091b4eff0dae8c9ce69daf14f619a784a2fb89c2e3559742207e953e",
+        "bytes": 2256265,
+        "size": [
+          1024,
+          1536
+        ],
+        "visual_reviewed": false,
+        "kind": "illustration-reference-only"
+      },
+      "action_slot_count_if_confirmed": 8,
+      "release_form": "not-established",
+      "idle_required": true
+    }
+  ],
+  "current_study": {
+    "path": "art-source/rin-cast-study/rin-cast-study.aseprite",
+    "status": "draft-not-approved",
+    "counts_as_completed_action": false
+  },
+  "source_audit": "evidence/character-source-audit-03.json",
+  "game_adaptations": {
+    "authority": "latest-direct-user-instruction",
+    "contract": "docs/gameplay-adaptations.md",
+    "source_snapshots": "historical-not-current-design-veto",
+    "flying_star": {
+      "decision": "E16",
+      "design_allowed": true,
+      "definition": "超加速，突破空间限制的大招",
+      "initial_mapping": "rin.released.ultimate"
+    },
+    "descent": {
+      "decision": "E17",
+      "design_allowed": true,
+      "scope": "game-only",
+      "design_requirements": [
+        "高消耗",
+        "高伤害",
+        "高代价"
+      ],
+      "initial_mapping": "merlin.released.ultimate",
+      "permanent_story_cost": false,
+      "numbers": "undecided"
+    },
+    "support_roles": {
+      "decision": "E18",
+      "design_allowed": true,
+      "baseline_action": "基础援护",
+      "possible_effects": [
+        "buff",
+        "healing"
+      ],
+      "launch_roster": "undecided"
+    }
+  },
+  "personality_profiles": "art-source/personality-profiles.json"
+}

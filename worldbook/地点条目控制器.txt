@@ -1,0 +1,53 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 当前地点 = getVal('stat_data.主角组.当前地点') || '';
+if (typeof 当前地点 !== 'string') {
+    当前地点 = String(当前地点 || '');
+}
+var 地点未知 = (!当前地点 || 当前地点.indexOf('待初始化') !== -1 || 当前地点.indexOf('未初始化') !== -1);
+var placeRules = [
+    { keys: ['中央学院'], entry: '地点/中央学院' },
+    { keys: ['卡米洛特'], entry: '地点/卡米洛特宫' },
+    { keys: ['尼德霍格'], entry: '地点/尼德霍格区' },
+    { keys: ['紫宸宫'], entry: '地点/紫宸宫' },
+    { keys: ['灵山'], entry: '地点/灵山' },
+    { keys: ['基捷日'], entry: '地点/基捷日' },
+    { keys: ['阿拉提尔'], entry: '地点/阿拉提尔' },
+    { keys: ['须弥王庭'], entry: '地点/须弥王庭' },
+    { keys: ['塞建陀'], entry: '地点/塞建陀砦' },
+    { keys: ['堤丰之喉'], entry: '地点/堤丰之喉' },
+    { keys: ['库利亚'], entry: '地点/库利亚' },
+    { keys: ['云樱'], entry: '地点/云樱' },
+    { keys: ['地下市场'], entry: '地点/地下市场' },
+    { keys: ['齐哈特'], entry: '地点/齐哈特大沙漠' },
+    { keys: ['梵音林'], entry: '地点/梵音林' },
+    { keys: ['天国岛'], entry: '地点/天国岛' }
+];
+var 地点命中 = [];
+if (!地点未知) {
+    for (var i = 0; i < placeRules.length; i++) {
+        for (var j = 0; j < placeRules[i].keys.length; j++) {
+            if (当前地点.indexOf(placeRules[i].keys[j]) !== -1) {
+                地点命中.push(placeRules[i].entry);
+                break;
+            }
+        }
+    }
+}
+if (地点命中.length > 0) {
+    for (var k = 0; k < 地点命中.length; k++) {
+%>
+<rule_动态内容_<%= 地点命中[k] %>>
+<%- await getwi(地点命中[k]) %>
+</rule_动态内容_<%= 地点命中[k] %>>
+<%
+    }
+}
+%>

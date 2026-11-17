@@ -1,0 +1,1594 @@
+{
+  "schema_version": 1,
+  "catalog_version": "actor-contract-01",
+  "required_actions": {
+    "attack": "普攻",
+    "skill_1": "技能1",
+    "skill_2": "技能2",
+    "ultimate": "大招",
+    "hit": "受击",
+    "guard": "防御",
+    "down": "倒地",
+    "settlement": "结算",
+    "idle": "待机"
+  },
+  "actors": {
+    "rin": {
+      "name": "凛零",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "鸟羽",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": "飞星"
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "merlin": {
+      "name": "梅林",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "乐章",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": "降神"
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "mohua": {
+      "name": "墨华",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "金乌",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "bingtang": {
+      "name": "冰糖",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "孤狼",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "anke": {
+      "name": "安克",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "造主",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "castor": {
+      "name": "卡斯特",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "骑士",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "jian": {
+      "name": "茧",
+      "role": "combat",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        },
+        "released": {
+          "label": "佛相",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {
+        "liberate": {
+          "from": "base",
+          "to": "released",
+          "clip": null
+        }
+      }
+    },
+    "mingkong": {
+      "name": "明空",
+      "role": "support",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "基础援护",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "ye": {
+      "name": "叶",
+      "role": "support",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "基础援护",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "valkyrie": {
+      "name": "瓦尔基里",
+      "role": "support",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "基础援护",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "alanya": {
+      "name": "阿兰雅",
+      "role": "support",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "基础援护",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "alice": {
+      "name": "艾利丝",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "lucifer": {
+      "name": "路西法",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "ai": {
+      "name": "暧",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "vamana": {
+      "name": "筏摩娜",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "xuanyuan": {
+      "name": "轩辕",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    },
+    "yanyuan": {
+      "name": "焰渊",
+      "role": "pending",
+      "forms": {
+        "base": {
+          "label": "基础",
+          "actions": {
+            "attack": {
+              "label": "普攻",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_1": {
+              "label": "技能1",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "skill_2": {
+              "label": "技能2",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "ultimate": {
+              "label": "大招",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "hit": {
+              "label": "受击",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "guard": {
+              "label": "防御",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "down": {
+              "label": "倒地",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "settlement": {
+              "label": "结算",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            },
+            "idle": {
+              "label": "待机",
+              "clip": null,
+              "art_status": "not_started",
+              "ability": null
+            }
+          }
+        }
+      },
+      "transitions": {}
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 当前地点 = getVal('stat_data.主角组.当前地点') || '';
+var 当前时间 = getVal('stat_data.主角组.时间') || '';
+if (typeof 当前地点 !== 'string') {
+    当前地点 = String(当前地点 || '');
+}
+if (typeof 当前时间 !== 'string') {
+    当前时间 = String(当前时间 || '');
+}
+var 地点未知 = (!当前地点 || 当前地点.indexOf('待初始化') !== -1 || 当前地点.indexOf('未初始化') !== -1);
+function 解析时间(s) {
+    var m = String(s).match(/(\d+)\s*[年\-/.]\s*(\d+)\s*[月\-/.]\s*(\d+)/);
+    if (!m) {
+        return NaN;
+    }
+    var y = parseInt(m[1], 10);
+    var mo = parseInt(m[2], 10);
+    var d = parseInt(m[3], 10);
+    if (!isFinite(y) || !isFinite(mo) || !isFinite(d)) {
+        return NaN;
+    }
+    return y * 10000 + mo * 100 + d;
+}
+var 角色组 = getVal('stat_data.角色组');
+if (!角色组 || typeof 角色组 !== 'object' || Array.isArray(角色组)) {
+    角色组 = {};
+}
+function 存在角色(name) {
+    var c = 角色组[name];
+    return !!(c && typeof c === 'object');
+}
+function 好感度(name) {
+    var c = 角色组[name];
+    if (!c || typeof c !== 'object') {
+        return NaN;
+    }
+    var v = Number(c['好感度']);
+    return isFinite(v) ? v : NaN;
+}
+var 已完成事件 = getVal('stat_data.剧情事件.已完成事件');
+var 已完成键 = {};
+if (Array.isArray(已完成事件)) {
+    for (var di = 0; di < 已完成事件.length; di++) {
+        var dn = String(已完成事件[di] == null ? '' : 已完成事件[di]).trim();
+        if (dn) { 已完成键[dn] = true; }
+    }
+} else if (已完成事件 && typeof 已完成事件 === 'object') {
+    for (var dk in 已完成事件) { if (已完成事件[dk]) { 已完成键[dk] = true; } }
+}
+/* 进行中事件：{事件名: 简介}。挂在里面的条目**无条件注入**，
+   不再过地点 / 时间 / 角色三道闸——事件已经开始，正文必须每轮都在。 */
+var 进行中事件 = getVal('stat_data.剧情事件.当前触发事件');
+var 进行中键 = {};
+if (进行中事件 && typeof 进行中事件 === 'object' && !Array.isArray(进行中事件)) {
+    for (var rk in 进行中事件) { if (rk) { 进行中键[String(rk).trim()] = true; } }
+}
+var 事件表 = [
+    { entry: '剧情事件/Project L', places: ['齐哈特'], charsAny: ['凛零', '明空'], note: '奥马努特·齐哈特大沙漠；凛零或明空任一在场' },
+    { entry: '剧情事件/更纪战争—安克', places: ['塞蕾特'], chars: [{ name: '安克', favor: 50 }] },
+    { entry: '剧情事件/更纪战争—冰糖', places: ['塞蕾特'], chars: [{ name: '冰糖', favor: 50 }] },
+    { entry: '剧情事件/更纪战争—瓦尔基里', places: ['塞蕾特'], chars: [{ name: '瓦尔基里', favor: 50 }] },
+    { entry: '剧情事件/更纪战争—叶', places: ['塞蕾特'], chars: [{ name: '叶', favor: 50 }] },
+    { entry: '剧情事件/更纪战争—卡斯特', places: ['塞蕾特'], chars: [{ name: '卡斯特', favor: 50 }] },
+    { entry: '剧情事件/更纪战争—凛零', places: ['塞蕾特'], chars: [{ name: '凛零', favor: 50 }] },
+    { entry: '剧情事件/无法之地', places: ['尼德霍格'], chars: [{ name: '梅林', favor: 50 }], to: '1015-3-31', note: '1015年3月31日之前有效' },
+    { entry: '剧情事件/夜枭', places: ['塞蕾特'], chars: [{ name: '瓦尔基里', favor: 80 }, { name: '卡斯特', favor: 50 }] },
+    { entry: '剧情事件/蛇杖', places: ['塞蕾特'], chars: [{ name: '安克', favor: 80 }, { name: '冰糖', favor: 80 }] },
+    { entry: '剧情事件/平民的尊严', places: ['中央学院'], chars: [{ name: '梅林' }, { name: '凛零' }] },
+    { entry: '剧情事件/非人类开膛手', places: ['奥马努特'], chars: [{ name: '明空', favor: 50 }, { name: '路西法' }, { name: '暧' }], to: '1015-2-28', note: '1015年2月28日之前有效' },
+    { entry: '剧情事件/归巢鸟', places: ['龙渊帝国'], chars: [{ name: '墨华', favor: 50 }], note: '龙渊帝国境内任意地点；墨华在场且好感≥50' },
+    { entry: '剧情事件/埋下未来的种子', places: ['吉万沙克蒂'], chars: [{ name: '阿兰雅', favor: 50 }], note: '吉万沙克蒂境内；阿兰雅好感≥50' },
+    { entry: '剧情事件/森林会记住一切', places: ['梵音林'], chars: [{ name: '阿兰雅', favor: 50 }, { name: '筏摩娜' }], note: '须在吉万沙克蒂·梵音林；阿兰雅好感≥50、筏摩娜在场' },
+    { entry: '剧情事件/早发白帝城', places: ['灵山'], note: '须在龙渊帝国·灵山；无角色与时间条件' },
+    { entry: '剧情事件/立下誓约的那一天', places: ['紫宸宫'], chars: [{ name: '焰渊', favor: 20 }, { name: '轩辕' }, { name: '路西法' }, { name: '暧' }], note: '须在龙渊帝国·紫宸宫；焰渊好感≥20，轩辕/路西法/暧在场' },
+    { entry: '剧情事件/塞建陀砦保卫战', places: ['塞建陀砦'], chars: [{ name: '茧', favor: 20 }], note: '须在吉万沙克蒂·塞建陀砦；茧好感≥20' },
+    { entry: '剧情事件/世界诞生之前', places: ['天国岛'], chars: [{ name: '凛零' }, { name: '明空' }, { name: '路西法' }], note: '须在塞蕾特公国·天国岛；凛零/明空/路西法在场' },
+    { entry: '剧情事件/止水与烈风', places: ['格洛里亚'], chars: [{ name: '拉伦提娅', favor: 50 }, { name: '茧', favor: 50 }], to: '1015-4-1', note: '须在格洛里亚境内；拉伦提娅/茧好感≥50；1015年4月1日之前有效' },
+    { entry: '剧情事件/自灰烬中归来', places: ['格洛里亚'], chars: [{ name: '拉伦提娅', favor: 50 }], note: '须在格洛里亚境内；拉伦提娅好感≥50' },
+    { entry: '剧情事件/钟摆停驻之日', chars: [{ name: '艾利丝', favor: 50 }, { name: '梅林', favor: 50 }, { name: '叶', favor: 50 }, { name: '瓦沙克', favor: 50 }], note: '地点不限；艾利丝/梅林/叶/瓦沙克好感均≥50' },
+    { entry: '剧情事件/落樱与锈刃', places: ['秋津'], chars: [{ name: '安克', favor: 50 }, { name: '阳向', favor: 50 }], note: '须在秋津国境内；安克/阳向好感≥50' },
+    { entry: '剧情事件/衔尾之蛇', places: ['塞蕾特'], chars: [{ name: '艾利丝', favor: 50 }, { name: '瓦沙克', favor: 50 }], note: '须在塞蕾特公国；艾利丝/瓦沙克好感≥50；时空穿越事件' },
+    { entry: '剧情事件/剑与秤的盟约', places: ['龙渊帝国'], chars: [{ name: '瓦尔基里', favor: 20 }, { name: '卡斯特', favor: 20 }, { name: '叶', favor: 20 }, { name: '墨华', favor: 20 }, { name: '焰渊', favor: 20 }, { name: '轩辕', favor: 20 }], note: '须在龙渊帝国；六人好感均≥20' }
+];
+var 命中 = [];
+for (var i = 0; i < 事件表.length; i++) {
+    var ev = 事件表[i] || {};
+    if (!ev.entry) {
+        continue;
+    }
+    var 事件名 = String(ev.entry).replace(/^剧情事件\//, '');
+    if (已完成键[事件名]) {
+        continue;
+    }
+    /* 已挂在进行中：无条件放行，跳过地点 / 时间 / 角色 */
+    if (进行中键[事件名]) {
+        命中.push(ev.entry);
+        continue;
+    }
+    /* 声明了地点就必须对上地点。当前地点未初始化时一律视为对不上——
+       宁可不发，也不在开局把「早发白帝城」这类只有地点条件的事件提前塞进上下文。 */
+    var 地点OK = true;
+    if (ev.places && ev.places.length) {
+        地点OK = false;
+        if (!地点未知) {
+            for (var j = 0; j < ev.places.length; j++) {
+                if (当前地点.indexOf(ev.places[j]) !== -1) {
+                    地点OK = true;
+                    break;
+                }
+            }
+        }
+    }
+    if (!地点OK) {
+        continue;
+    }
+    var 现在 = 解析时间(当前时间);
+    if (isFinite(现在)) {
+        if (ev.from) {
+            var 起 = 解析时间(ev.from);
+            if (isFinite(起) && 现在 < 起) {
+                continue;
+            }
+        }
+        if (ev.to) {
+            var 止 = 解析时间(ev.to);
+            if (isFinite(止) && 现在 > 止) {
+                continue;
+            }
+        }
+    }
+    var 角色OK = true;
+    if (ev.chars && ev.chars.length) {
+        for (var ci = 0; ci < ev.chars.length; ci++) {
+            var 规 = ev.chars[ci] || {};
+            if (!规.name) {
+                continue;
+            }
+            if (!存在角色(规.name)) {
+                角色OK = false;
+                break;
+            }
+            if (规.favor != null) {
+                var 好 = 好感度(规.name);
+                if (!isFinite(好) || 好 < Number(规.favor)) {
+                    角色OK = false;
+                    break;
+                }
+            }
+        }
+    }
+    if (角色OK && ev.charsAny && ev.charsAny.length) {
+        角色OK = false;
+        for (var ai = 0; ai < ev.charsAny.length; ai++) {
+            if (存在角色(ev.charsAny[ai])) {
+                角色OK = true;
+                break;
+            }
+        }
+    }
+    if (!角色OK) {
+        continue;
+    }
+    命中.push(ev.entry);
+}
+for (var k = 0; k < 命中.length; k++) {
+%>
+<rule_剧情事件_<%= 命中[k] %>>
+<%- await getwi(命中[k]) %>
+</rule_剧情事件_<%= 命中[k] %>>
+<%
+}
+%>

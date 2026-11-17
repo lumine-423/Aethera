@@ -1,0 +1,67 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 名册 = getVal('stat_data.角色组');
+if (!名册 || typeof 名册 !== 'object' || Array.isArray(名册)) {
+    名册 = {};
+}
+var 七罪角色 = ['凛零', '梅林', '墨华', '冰糖', '安克', '卡斯特', '茧'];
+var 日常角色 = ['明空', '艾利丝', '路西法', '暧', '叶', '瓦尔基里', '阿兰雅', '筏摩娜', '轩辕', '阳向', '露珐', '瓦沙克'];
+/* 阶段覆盖表：不靠「当前形态」变量，靠剧情事件是否完成来切阶段。
+   焰渊：完成「立下誓约的那一天」之前=其一（在位龙皇），之后=其二（卸下枷锁）。
+   拉伦提娅：完成「自灰烬中归来」之前=其一，之后=其二。 */
+var 阶段覆盖 = {
+    '焰渊': {
+        事件: '立下誓约的那一天',
+        未完成: '其一',
+        已完成: '其二'
+    },
+    '拉伦提娅': {
+        事件: '自灰烬中归来',
+        未完成: '其一',
+        已完成: '其二'
+    }
+};
+var 已完成事件 = getVal('stat_data.剧情事件.已完成事件');
+var 已完成键 = {};
+if (Array.isArray(已完成事件)) {
+    for (var di = 0; di < 已完成事件.length; di++) {
+        var dn = String(已完成事件[di] == null ? '' : 已完成事件[di]).trim();
+        if (dn) { 已完成键[dn] = true; }
+    }
+} else if (已完成事件 && typeof 已完成事件 === 'object') {
+    for (var dk in 已完成事件) { if (已完成事件[dk]) { 已完成键[dk] = true; } }
+}
+var activated = [];
+Object.keys(名册).forEach(function(name) {
+    var 形 = '';
+    try {
+        形 = String((名册[name] && 名册[name].当前形态) || '').trim();
+    } catch(e) {
+        形 = '';
+    }
+    if (七罪角色.indexOf(name) !== -1) {
+        activated.push('角色/' + name + '/变身阶段/' + (形 === '解放' ? '解放' : '日常'));
+    } else if (阶段覆盖[name]) {
+        var 覆 = 阶段覆盖[name];
+        activated.push('角色/' + name + '/变身阶段/' + (已完成键[覆.事件] ? 覆.已完成 : 覆.未完成));
+    } else if (日常角色.indexOf(name) !== -1) {
+        activated.push('角色/' + name + '/变身阶段/日常');
+    }
+});
+if (activated.length > 0) {
+    for (var i = 0; i < activated.length; i++) {
+%>
+<rule_动态内容_<%= activated[i] %>>
+<%- await getwi(activated[i]) %>
+</rule_动态内容_<%= activated[i] %>>
+<%
+    }
+}
+%>

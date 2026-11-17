@@ -1,0 +1,89 @@
+<div class="mvu-p">
+  <div class="mvu-box">
+    <span class="mvu-corner tr"></span><span class="mvu-corner bl"></span>
+    <div class="mvu-head">
+      <span class="mvu-mark"><span class="mvu-spin"></span></span>
+      <span class="mvu-title">变量更新中</span>
+      <span class="mvu-badge">PENDING</span>
+    </div>
+    <div class="mvu-bar"><i></i></div>
+  </div>
+</div>
+
+<style>
+/* ═══ 变量更新中 · 学院风（0919 重做）═══
+   与 `mvu-done` 同结构、同尺寸纪律（宽 min(560px,92%)），只差状态：
+     · 左标 = 旋转圈（不是对勾）
+     · 右端 = PENDING 徽章（呼吸）
+     · 左侧竖线呼吸、底部 2px 进度细线（贴底，不占行高）
+   非折叠块 —— 生成中本来就没有内容可展开（参考文件也只在 done 上用 <details>）。 */
+.mvu-p, .mvu-p * { margin:0; padding:0; box-sizing:border-box; }
+.mvu-p {
+  --ac:#a83226; --ac2:#c9564a;
+  --ac-s:rgba(168,50,38,.10); --ac-l:rgba(168,50,38,.34);
+  --ac-f:rgba(168,50,38,.16);
+  --soft:#55688a; --dim:#8b98ad;
+  width:min(560px,92%); margin:16px auto;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+.mvu-p .mvu-box {
+  position:relative; border:1px solid var(--ac-l);
+  background:transparent;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  overflow:hidden;
+}
+.mvu-p .mvu-box::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--ac),var(--ac2));
+  animation:mvuPulse 1.6s ease-in-out infinite;
+}
+@keyframes mvuPulse { 0%,100%{opacity:.45} 50%{opacity:1} }
+
+.mvu-p .mvu-head {
+  display:flex; align-items:center; gap:8px;
+  padding:8px 12px 10px 15px;      /* 底部多 2px 给进度细线让位 */
+}
+.mvu-p .mvu-mark {
+  flex:0 0 auto; width:18px; height:18px;
+  display:flex; align-items:center; justify-content:center;
+}
+.mvu-p .mvu-spin {
+  flex:none; width:11px; height:11px;
+  border:2px solid var(--ac-f); border-top-color:var(--ac); border-radius:50%;
+  animation:mvuSpin .9s linear infinite;
+}
+@keyframes mvuSpin { to { transform:rotate(360deg); } }
+.mvu-p .mvu-title {
+  flex:1 1 auto; min-width:0;
+  font-size:13px; font-weight:800; letter-spacing:1.6px; color:var(--ac);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.mvu-p .mvu-badge {
+  flex:0 0 auto; font-size:9px; font-weight:700; letter-spacing:1.2px;
+  color:var(--ac); background:var(--ac-s); border:1px solid var(--ac-l);
+  padding:1px 6px; white-space:nowrap;
+  clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px);
+  animation:mvuPulse 1.6s ease-in-out infinite;
+}
+.mvu-p .mvu-corner { position:absolute; width:9px; height:9px; pointer-events:none; }
+.mvu-p .mvu-corner.tr { top:3px; right:3px; border-top:1.5px solid var(--ac); border-right:1.5px solid var(--ac); }
+.mvu-p .mvu-corner.bl { bottom:3px; left:3px; border-bottom:1.5px solid var(--ac); border-left:1.5px solid var(--ac); }
+/* 进度细线：贴底 2px，不占行高（卡片更矮） */
+.mvu-p .mvu-bar {
+  position:absolute; left:12px; right:12px; bottom:2px; height:2px;
+  background:var(--ac-f); border-radius:2px; overflow:hidden; pointer-events:none;
+}
+.mvu-p .mvu-bar i {
+  display:block; height:100%; width:40%;
+  background:linear-gradient(90deg,var(--ac),var(--ac2)); border-radius:2px;
+  animation:mvuSlide 1.4s ease-in-out infinite;
+}
+@keyframes mvuSlide { 0%{transform:translateX(-100%)} 100%{transform:translateX(350%)} }
+
+.sigil-night .mvu-p, body.so-skin-dark .mvu-p {
+  --ac:#d8a84e; --ac2:#c9564a;
+  --ac-s:rgba(216,168,78,.10); --ac-l:rgba(216,168,78,.30);
+  --ac-f:rgba(216,168,78,.16);
+  --soft:#9db0be; --dim:#6b7d8f;
+}
+</style>

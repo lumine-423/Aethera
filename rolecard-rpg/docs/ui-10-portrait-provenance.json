@@ -1,0 +1,359 @@
+[
+  {
+    "id": "rin-avatar",
+    "output": "res://assets/ui/portraits/rin-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/凛零.png"
+  },
+  {
+    "id": "rin",
+    "output": "res://assets/ui/portraits/rin.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/凛零/凛零.png",
+    "source_size": [
+      1248,
+      1872
+    ]
+  },
+  {
+    "id": "merlin-avatar",
+    "output": "res://assets/ui/portraits/merlin-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/梅林.png"
+  },
+  {
+    "id": "merlin",
+    "output": "res://assets/ui/portraits/merlin.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/梅林/梅林.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "mohua-avatar",
+    "output": "res://assets/ui/portraits/mohua-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/墨华.png"
+  },
+  {
+    "id": "mohua",
+    "output": "res://assets/ui/portraits/mohua.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/墨华/墨华.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "bingtang-avatar",
+    "output": "res://assets/ui/portraits/bingtang-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/冰糖.png"
+  },
+  {
+    "id": "bingtang",
+    "output": "res://assets/ui/portraits/bingtang.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/冰糖/冰糖.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "anke-avatar",
+    "output": "res://assets/ui/portraits/anke-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/安克.png"
+  },
+  {
+    "id": "anke",
+    "output": "res://assets/ui/portraits/anke.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/安克/安克.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "castor-avatar",
+    "output": "res://assets/ui/portraits/castor-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/卡斯特.png"
+  },
+  {
+    "id": "castor",
+    "output": "res://assets/ui/portraits/castor.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/卡斯特/卡斯特.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "jian-avatar",
+    "output": "res://assets/ui/portraits/jian-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/茧.png"
+  },
+  {
+    "id": "jian",
+    "output": "res://assets/ui/portraits/jian.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/茧/茧.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "mingkong-avatar",
+    "output": "res://assets/ui/portraits/mingkong-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/明空.png"
+  },
+  {
+    "id": "mingkong",
+    "output": "res://assets/ui/portraits/mingkong.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      1200,
+      1200
+    ],
+    "source": "F:/艾瑟拉/头像/明空.png",
+    "source_size": [
+      1256,
+      1256
+    ]
+  },
+  {
+    "id": "ye-avatar",
+    "output": "res://assets/ui/portraits/ye-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/叶.png"
+  },
+  {
+    "id": "ye",
+    "output": "res://assets/ui/portraits/ye.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      1200,
+      1200
+    ],
+    "source": "F:/艾瑟拉/头像/叶.png",
+    "source_size": [
+      1283,
+      1283
+    ]
+  },
+  {
+    "id": "valkyrie-avatar",
+    "output": "res://assets/ui/portraits/valkyrie-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/瓦尔基里.png"
+  },
+  {
+    "id": "valkyrie",
+    "output": "res://assets/ui/portraits/valkyrie.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/瓦尔基里/瓦尔基里.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "alanya-avatar",
+    "output": "res://assets/ui/portraits/alanya-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/阿兰雅.png"
+  },
+  {
+    "id": "alanya",
+    "output": "res://assets/ui/portraits/alanya.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/阿兰雅/阿兰雅.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "alice-avatar",
+    "output": "res://assets/ui/portraits/alice-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/艾利丝.png"
+  },
+  {
+    "id": "alice",
+    "output": "res://assets/ui/portraits/alice.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/艾利丝/艾利丝.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "lucifer-avatar",
+    "output": "res://assets/ui/portraits/lucifer-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/路西法.png"
+  },
+  {
+    "id": "lucifer",
+    "output": "res://assets/ui/portraits/lucifer.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/路西法/路西法.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "ai-avatar",
+    "output": "res://assets/ui/portraits/ai-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/暧.png"
+  },
+  {
+    "id": "ai",
+    "output": "res://assets/ui/portraits/ai.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/暧/暧.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "vamana-avatar",
+    "output": "res://assets/ui/portraits/vamana-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/筏摩娜.png"
+  },
+  {
+    "id": "vamana",
+    "output": "res://assets/ui/portraits/vamana.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/筏摩娜/筏摩娜.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "xuanyuan-avatar",
+    "output": "res://assets/ui/portraits/xuanyuan-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/轩辕.png"
+  },
+  {
+    "id": "xuanyuan",
+    "output": "res://assets/ui/portraits/xuanyuan.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/轩辕/轩辕.png",
+    "source_size": [
+      1536,
+      2304
+    ]
+  },
+  {
+    "id": "yanyuan-avatar",
+    "output": "res://assets/ui/portraits/yanyuan-avatar.webp",
+    "processing": "256 square thumbnail from user-supplied avatar",
+    "source": "F:/艾瑟拉/头像/焰渊.png"
+  },
+  {
+    "id": "yanyuan",
+    "output": "res://assets/ui/portraits/yanyuan.webp",
+    "processing": "format conversion and bounded resampling only; no generated or repainted content",
+    "rights": "user-supplied project art; commercial release rights not audited",
+    "runtime_size": [
+      800,
+      1200
+    ],
+    "source": "F:/艾瑟拉/焰渊/焰渊.png",
+    "source_size": [
+      1024,
+      1536
+    ]
+  }
+]

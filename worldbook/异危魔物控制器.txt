@@ -1,0 +1,50 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 当前地点 = getVal('stat_data.主角组.当前地点') || '';
+if (typeof 当前地点 !== 'string') {
+    当前地点 = String(当前地点 || '');
+}
+var 异危Rules = [
+    /* 灵山在龙渊帝国境内，必须先于「龙渊」匹配，否则永远命不中腾蛇 */
+    { keys: ['灵山'], entries: ['魔物/特异点/腾蛇'] },
+    { keys: ['塞蕾特'], entries: ['魔物/特异点/奇美拉'] },
+    { keys: ['龙渊'], entries: ['魔物/特异点/巴蛇'] },
+    { keys: ['齐哈特'], entries: ['魔物/特异点/塔阿贝特'] },
+    { keys: ['秋津'], entries: ['魔物/特异点/海坊主'] },
+    { keys: ['格洛里亚', '堤丰之喉'], entries: ['魔物/特异点/赤龙', '魔物/特异点/苏尔特尔'] },
+    { keys: ['梵音林', '吉万沙克蒂'], entries: ['魔物/特异点/舍罗婆'] }
+];
+var matched = [];
+for (var i = 0; i < 异危Rules.length; i++) {
+    for (var j = 0; j < 异危Rules[i].keys.length; j++) {
+        if (当前地点.indexOf(异危Rules[i].keys[j]) !== -1) {
+            matched = 异危Rules[i].entries;
+            break;
+        }
+    }
+    if (matched.length > 0) break;
+}
+/* 已讨伐过滤：/主角组/已讨伐异危 里的魔物名不再注入 */
+var 已讨伐 = getVal('stat_data.主角组.已讨伐异危') || [];
+if (!Array.isArray(已讨伐)) 已讨伐 = [];
+matched = matched.filter(function(entryComment) {
+    var 魔物名 = entryComment.split('/').pop();
+    return 已讨伐.indexOf(魔物名) === -1;
+});
+if (matched.length > 0) {
+    for (var k = 0; k < matched.length; k++) {
+%>
+<rule_动态内容_<%= matched[k] %>>
+<%- await getwi(matched[k]) %>
+</rule_动态内容_<%= matched[k] %>>
+<%
+    }
+}
+%>

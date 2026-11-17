@@ -1,0 +1,580 @@
+{
+  "_note": "Interface sound cues. Default pack 'aic' uses the local Alice In Cradle UI sound assets under res://assets/audio/ui/aic/ (for non-commercial use only). 'mystic' stays available in settings. The old synth pack 'original' was removed from the game on 2026-11-17 (files kept in workspaces/frontend-ui/materials/home-room-interactive-20261117/removed-ui-sfx-original/).",
+  "default_pack": "aic",
+  "packs": {
+    "aic": "爱丽丝的摇篮（AIC）",
+    "mystic": "空灵水晶（重制）"
+  },
+  "cues": {
+    "hover": {
+      "db": -16,
+      "var": 0.06,
+      "cd": 0.035,
+      "bus": "UI"
+    },
+    "focus": {
+      "db": -13,
+      "var": 0.04,
+      "cd": 0.04,
+      "bus": "UI"
+    },
+    "confirm": {
+      "db": -6,
+      "var": 0.03,
+      "cd": 0.05,
+      "bus": "UI"
+    },
+    "confirm_big": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 0.08,
+      "bus": "UI"
+    },
+    "back": {
+      "db": -6,
+      "var": 0.03,
+      "cd": 0.06,
+      "bus": "UI"
+    },
+    "close": {
+      "db": -7,
+      "var": 0.02,
+      "cd": 0.06,
+      "bus": "UI"
+    },
+    "popup": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.1,
+      "bus": "UI"
+    },
+    "toast": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.1,
+      "bus": "UI"
+    },
+    "tab": {
+      "db": -7,
+      "var": 0.05,
+      "cd": 0.05,
+      "bus": "UI"
+    },
+    "deny": {
+      "db": -7,
+      "var": 0.0,
+      "cd": 0.12,
+      "bus": "UI"
+    },
+    "error": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "type": {
+      "db": -17,
+      "var": 0.05,
+      "cd": 0.03,
+      "bus": "UI"
+    },
+    "toggle": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.05,
+      "bus": "UI"
+    },
+    "tick": {
+      "db": -12,
+      "var": 0.0,
+      "cd": 0.025,
+      "bus": "UI"
+    },
+    "reset": {
+      "db": -7,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "save": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI"
+    },
+    "reward": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "SFX"
+    },
+    "count": {
+      "db": -14,
+      "var": 0.0,
+      "cd": 0.045,
+      "bus": "UI"
+    },
+    "recipe": {
+      "db": -7,
+      "var": 0.03,
+      "cd": 0.08,
+      "bus": "UI"
+    },
+    "ready": {
+      "db": -7,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "craft": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "SFX"
+    },
+    "aim": {
+      "db": -8,
+      "var": 0.03,
+      "cd": 0.05,
+      "bus": "SFX"
+    },
+    "lockon": {
+      "db": -9,
+      "var": 0.03,
+      "cd": 0.08,
+      "bus": "SFX"
+    },
+    "wipe": {
+      "db": -8,
+      "var": 0.02,
+      "cd": 0.3,
+      "bus": "UI"
+    },
+    "slide": {
+      "db": -12,
+      "var": 0.04,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "loaded": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI"
+    },
+    "open_book": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "close_book": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "paper": {
+      "db": -10,
+      "var": 0.06,
+      "cd": 0.1,
+      "bus": "UI"
+    },
+    "select": {
+      "db": -9,
+      "var": 0.04,
+      "cd": 0.04,
+      "bus": "UI"
+    },
+    "assign": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.15,
+      "bus": "UI"
+    },
+    "card": {
+      "db": -8,
+      "var": 0.05,
+      "cd": 0.05,
+      "bus": "UI"
+    },
+    "start": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 0.5,
+      "bus": "UI"
+    },
+    "theme": {
+      "db": -7,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "expand": {
+      "db": -9,
+      "var": 0.03,
+      "cd": 0.06,
+      "bus": "UI"
+    },
+    "collapse": {
+      "db": -10,
+      "var": 0.03,
+      "cd": 0.06,
+      "bus": "UI"
+    },
+    "send": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "victory": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 1.0,
+      "bus": "SFX"
+    },
+    "defeat": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 1.0,
+      "bus": "SFX"
+    },
+    "retreat": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 1.0,
+      "bus": "SFX"
+    },
+    "battle_enter": {
+      "db": -4,
+      "var": 0.0,
+      "cd": 0.5,
+      "bus": "SFX"
+    },
+    "turn": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "SFX"
+    },
+    "round": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "SFX"
+    },
+    "hit": {
+      "db": -5,
+      "var": 0.08,
+      "cd": 0.03,
+      "bus": "SFX"
+    },
+    "hit_heavy": {
+      "db": -3,
+      "var": 0.05,
+      "cd": 0.05,
+      "bus": "SFX"
+    },
+    "hit_ally": {
+      "db": -5,
+      "var": 0.06,
+      "cd": 0.04,
+      "bus": "SFX"
+    },
+    "guard": {
+      "db": -6,
+      "var": 0.04,
+      "cd": 0.05,
+      "bus": "SFX"
+    },
+    "heal": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.1,
+      "bus": "SFX"
+    },
+    "slam": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "SFX"
+    },
+    "pop": {
+      "db": -9,
+      "var": 0.0,
+      "cd": 0.04,
+      "bus": "UI"
+    },
+    "advance": {
+      "db": -11,
+      "var": 0.03,
+      "cd": 0.05,
+      "bus": "UI"
+    },
+    "delete": {
+      "db": -7,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI"
+    },
+    "unlock": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI"
+    },
+    "scan": {
+      "db": -20,
+      "var": 0.0,
+      "cd": 0.2,
+      "bus": "UI"
+    },
+    "attach": {
+      "db": -8,
+      "var": 0.03,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "assign"
+    },
+    "place": {
+      "db": -9,
+      "var": 0.04,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "card"
+    },
+    "pick": {
+      "db": -11,
+      "var": 0.05,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "select"
+    },
+    "detach": {
+      "db": -9,
+      "var": 0.03,
+      "cd": 0.06,
+      "bus": "UI",
+      "fallback": "collapse"
+    },
+    "erase": {
+      "db": -8,
+      "var": 0.0,
+      "cd": 0.1,
+      "bus": "UI",
+      "fallback": "delete"
+    },
+    "ignite": {
+      "db": -10,
+      "var": 0.02,
+      "cd": 0.04,
+      "bus": "UI",
+      "fallback": "unlock"
+    },
+    "craft_charge": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI",
+      "fallback": "scan"
+    },
+    "craft_done": {
+      "db": -5,
+      "var": 0.0,
+      "cd": 0.3,
+      "bus": "UI",
+      "fallback": "craft"
+    },
+    "swap": {
+      "db": -8,
+      "var": 0.03,
+      "cd": 0.08,
+      "bus": "UI",
+      "fallback": "slide"
+    },
+    "page": {
+      "db": -8,
+      "var": 0.03,
+      "cd": 0.08,
+      "bus": "UI",
+      "fallback": "paper"
+    },
+    "theme_day": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.15,
+      "bus": "UI",
+      "fallback": "theme"
+    },
+    "theme_night": {
+      "db": -6,
+      "var": 0.0,
+      "cd": 0.15,
+      "bus": "UI",
+      "fallback": "theme"
+    },
+    "hover_soft": {
+      "db": -16,
+      "var": 0.05,
+      "cd": 0.035,
+      "bus": "UI",
+      "fallback": "hover"
+    },
+    "hover_card": {
+      "db": -15,
+      "var": 0.05,
+      "cd": 0.035,
+      "bus": "UI",
+      "fallback": "hover"
+    },
+    "chip": {
+      "db": -8,
+      "var": 0.04,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "confirm"
+    },
+    "ghost": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "select"
+    },
+    "icon_btn": {
+      "db": -8,
+      "var": 0.04,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "confirm"
+    },
+    "toggle_on": {
+      "db": -7,
+      "var": 0.02,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "toggle"
+    },
+    "toggle_off": {
+      "db": -8,
+      "var": 0.02,
+      "cd": 0.05,
+      "bus": "UI",
+      "fallback": "toggle"
+    },
+    "map_open": {
+      "db": -6,
+      "var": 0.02,
+      "cd": 0.12,
+      "bus": "UI",
+      "fallback": "open_book"
+    },
+    "bag_open": {
+      "db": -6,
+      "var": 0.02,
+      "cd": 0.12,
+      "bus": "UI",
+      "fallback": "open_book"
+    },
+    "char_open": {
+      "db": -7,
+      "var": 0.02,
+      "cd": 0.12,
+      "bus": "UI",
+      "fallback": "confirm"
+    },
+    "music_open": {
+      "db": -6,
+      "var": 0.02,
+      "cd": 0.12,
+      "bus": "UI",
+      "fallback": "popup"
+    },
+    "music_pick": {
+      "db": -6,
+      "var": 0.03,
+      "cd": 0.06,
+      "bus": "UI",
+      "fallback": "select"
+    },
+    "room_hover": {
+      "db": -20,
+      "var": 0.04,
+      "cd": 0.12,
+      "file": "res://assets/audio/ui/room/room_hover.ogg"
+    },
+    "room_window_open": {
+      "db": -9,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_window_open.ogg"
+    },
+    "room_window_close": {
+      "db": -11,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_window_close.ogg"
+    },
+    "room_fire": {
+      "db": -8,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_fire.ogg"
+    },
+    "room_star": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_star.ogg"
+    },
+    "room_panel": {
+      "db": -12,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_panel.ogg"
+    },
+    "room_sofa": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_sofa.ogg"
+    },
+    "room_chair": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_chair.ogg"
+    },
+    "room_book": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_book.ogg"
+    },
+    "room_cup": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_cup.ogg"
+    },
+    "room_table": {
+      "db": -10,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_table.ogg"
+    },
+    "room_ui_hide": {
+      "db": -13,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_ui_hide.ogg"
+    },
+    "room_ui_show": {
+      "db": -13,
+      "var": 0.04,
+      "cd": 0.08,
+      "file": "res://assets/audio/ui/room/room_ui_show.ogg"
+    }
+  }
+}

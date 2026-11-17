@@ -1,0 +1,144 @@
+<div class="mp">
+  <span class="mp-p"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="mp-seal">
+    <svg class="mp-so" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+      <circle cx="36" cy="36" r="33.2" stroke="#e8c98a" stroke-width="1.25" opacity=".92"/>
+      <circle cx="36" cy="36" r="30.6" stroke="#e8c98a" stroke-width=".6" opacity=".38"/>
+      <circle cx="36" cy="36" r="26.6" stroke="#e8c98a" stroke-width="1.5" stroke-dasharray="1.6 12.33" opacity=".8"/>
+      <circle cx="36" cy="36" r="20" stroke="#ffe9b8" stroke-width=".7" stroke-dasharray="7 5" opacity=".5"/>
+    </svg>
+    <svg class="mp-si" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+      <path d="M36 14 L55.05 47 L16.95 47 Z" stroke="#e8c98a" stroke-width="1.1" opacity=".85"/>
+      <path d="M36 58 L16.95 25 L55.05 25 Z" stroke="#e8c98a" stroke-width="1.1" opacity=".85"/>
+      <circle cx="36" cy="36" r="22.5" stroke="#ffe9b8" stroke-width=".65" opacity=".45"/>
+      <circle cx="53.68" cy="53.68" r="1.25" fill="#ffe9b8" opacity=".7"/>
+      <circle cx="18.32" cy="53.68" r="1.25" fill="#ffe9b8" opacity=".7"/>
+      <circle cx="18.32" cy="18.32" r="1.25" fill="#ffe9b8" opacity=".7"/>
+      <circle cx="53.68" cy="18.32" r="1.25" fill="#ffe9b8" opacity=".7"/>
+      <circle cx="36" cy="36" r="6" stroke="#e8c98a" stroke-width="1.2" opacity=".9"/>
+      <circle cx="36" cy="36" r="1.9" fill="#fff5dc"/>
+    </svg>
+  </span>
+  <span class="mp-tx">魔法已刻印</span>
+</div>
+
+<style>
+/* ═══ 激活魔法 · 刻印回执（小方块）═══
+   左：魔法阵（外环顺时针 19s / 内环逆时针 12s）
+   右：白色像素字（内联 Zpix 子集，仅含「魔法已刻印」5 字，~1KB，零网络依赖）
+   全块：轻微上浮粒子 + 边框呼吸光
+
+   ★★ 结构铁律：**不要给模板套 html 代码围栏（三反引号那种）**。
+      `script.js:1909` 先跑 `converter.makeHtml()`，`script.js:1940` 才跑 `encodeStyleTags()`。
+      围栏会让 showdown 把 `<style>` 转义成 `&lt;style&gt;`，`encodeStyleTags` 的正则
+      `/<style>(.+?)<\/style>/` 就永远匹配不到 ⇒ 整块渲染成源码文本。
+   ★ CSS 会被 ST 过一遍 `css.parse`/`css.stringify`：每条选择器自动加 `.mes_text ` 前缀、
+     每个 `.cls` 自动改名 `.custom-cls`（与 HTML 侧 DOMPurify 的 class 改名**对称**）。
+      ⇒ 所以 CSS 与 HTML 都写**原类名**，不要手写 `custom-`；也不要依赖 `body`/`html` 选择器
+        （会被拼成 `.mes_text body`，永远不命中）。
+   ★ `@font-face` 的 `src` 用 `data:` —— ST 只过滤含 `://` 的声明，`data:` 能通过。 */
+@font-face{
+  font-family:'Zpix';font-style:normal;font-weight:400;font-display:swap;
+  src:url("data:font/woff2;base64,d09GMgABAAAAAAMgAAoAAAAABmgAAALXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmQAVAqGPIU+ATYCJAMQCw4ABCAFggoHIBspBQgeBW7TM5IYiVNtWme+9Rv896293dfdQ1U9IVJfB4QClHFAuER2pYjwqzQdn9Xfp19rD9WQtjL7MU9SRWTfuebr+wcaR2KInk0/UgnJM2w/ouHdlzXSCY04MNjR3PK3IZ5o4m0QK6WI6D2mvyXwShvESBzZvK9RErFheplmW81L4dA1Ut5LU4glvSqC9PL0Cbu1FuZ1DaGo+WesPf84rif7s9MF/3I9QPwHBSCAsBs7gA5ANwcEIAJDChAwpJAlIFMTSOuzU8GVP+97djqXA/jbw8eDrb267WaeIpC45PkMzIAmgFYBAAnAd5tMk1JOZSJjttSXNPVQ0k2mwpxYydmPn7VyWjKmT1Z5Ka+8fi9n82CxxiOnREDkhnKdEtqLnGCE+czkgVHVYosFCi29WV7k0pr2qxwqp79rVZdqQ50qQM7xOY7flGvLMZFzx1mQOj7Rf2YkY3Jr0SNidkz+zZXfsR8yDlQEI0GW6YhFl4Epx4JV63yQh0cV2pfxNOf/eolHZb6m5Ytycbk0zILoFOQdkWH07Iwaf/ni4TN9KmJw0mpQxlORAmZNs0BPYkNHcxFFov+npBzQgM6lUrIlJOdb9HPxy2GrDYeE0ihHZIa/85moo4Ji0ThbXW/Ln3fdBX7qBpWiVBKhqMRVkbQASGV2ixT7Qs/Qr5EC3C3RgKg86UxOpJKKZFB0BDVre58Oc+7Jhk0qEBI+l2H9nUbRR3PfBgAECCaq9tdazdz/0oL0Avz+OGoA4M/72z50ewqH40/IAIDgzzWLIRDEhcOrohZAxcHKULKPN8OIfRX7ClBqgF1AZlGzaw70cGqOTPNzk9ZcMGInVo7BKZrZB0X0aQYHFxbWKWZTE0OAT7MpAV4utGjMpDHN0oJckhprsPGiiN0AflH2DyOTARxiGnZD2KCLfcSoca7Yhn9SM/kQtGnJSZdZNiOKQIB/DK2aAi4A4aq7iwU=") format("woff2");
+}
+
+.mp,.mp *{margin:0;padding:0;box-sizing:border-box;}
+.mp{
+  position:relative;width:fit-content;max-width:100%;
+  margin:15px auto;padding:12px 22px 12px 14px;
+  display:flex;align-items:center;gap:14px;
+  border:1px solid rgba(232,201,138,.40);
+  background:radial-gradient(circle at 20% 50%,rgba(232,201,138,.12),transparent 64%);
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  overflow:hidden;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  animation:mpGlow 3.6s ease-in-out infinite;
+}
+.mp::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,transparent,#e8c98a,#fff0c4,#e8c98a,transparent);
+  opacity:.85;
+}
+@keyframes mpGlow{
+  0%,100%{box-shadow:0 0 0 rgba(232,201,138,0),inset 0 0 10px rgba(232,201,138,.05);}
+  50%{box-shadow:0 0 15px rgba(232,201,138,.22),inset 0 0 20px rgba(232,201,138,.12);}
+}
+
+/* ── 粒子 ── */
+.mp-p{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;}
+.mp-p i{
+  position:absolute;bottom:5px;width:2px;height:2px;border-radius:50%;
+  background:#ffe9b8;
+  box-shadow:0 0 5px rgba(255,229,150,.95),0 0 10px rgba(232,201,138,.55);
+  opacity:0;animation:mpUp 4.8s linear infinite;
+}
+.mp-p i:nth-child(1){left:11%;animation-delay:0s;}
+.mp-p i:nth-child(2){left:27%;animation-delay:1.1s;}
+.mp-p i:nth-child(3){left:45%;animation-delay:2.3s;}
+.mp-p i:nth-child(4){left:62%;animation-delay:.6s;}
+.mp-p i:nth-child(5){left:78%;animation-delay:3.2s;}
+.mp-p i:nth-child(6){left:92%;animation-delay:4.1s;}
+@keyframes mpUp{
+  0%{transform:translateY(0) scale(.6);opacity:0;}
+  15%{opacity:.95;}
+  70%{opacity:.65;}
+  100%{transform:translateY(-46px) scale(1.05);opacity:0;}
+}
+
+/* ── 魔法阵 ── */
+.mp-seal{position:relative;flex:0 0 auto;width:54px;height:54px;}
+.mp-seal svg{position:absolute;left:0;top:0;width:100%;height:100%;}
+.mp-so{animation:mpSpin 19s linear infinite;}
+.mp-si{animation:mpSpin 12s linear infinite reverse;}
+@keyframes mpSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+
+/* ── 像素字 ── */
+.mp-tx{
+  flex:0 0 auto;white-space:nowrap;
+  font-family:'Zpix','Press Start 2P',monospace;
+  font-size:24px;line-height:1.15;letter-spacing:1px;
+  color:#fff;
+  text-shadow:0 0 6px rgba(255,255,255,.85),0 0 15px rgba(232,201,138,.75),0 0 30px rgba(232,201,138,.40);
+}
+
+/* ═══ 手机档（0923 新增）══════════════════════════════════════════
+   ★ 桌面（>520px）**一个字都没动** —— 全部改动都在下面的媒体查询里。
+   为什么要加：实测真机（dpr2、学院前端已接管）
+     视口 390 ⇒ .mes_text 只有 242px；视口 360 ⇒ 只有 215px。
+   而 24px 那版整块**需要 229px**（54 阵 + 14 间距 + 124 字 + 36 内边距）。
+   ⇒ 在 341~400px 这个「最主流手机宽度带」上，`.mp` 被 `max-width:100%` 夹到容器宽、
+     文字是 `flex:0 0 auto; white-space:nowrap` 不肯缩 ⇒ 右边被 `overflow:hidden`
+     **裁掉**（「印」只露一半 = 驾驶员报的「字跑出框」）。
+   旧的那条 `@media (max-width:340px)` 断点太低 —— 390/360 的手机**根本轮不到**。
+   三层保险：
+     ① 断点提到 520px（手机一定命中，桌面一定不命中）；
+     ② 阵缩小 + 内边距收紧 ⇒ 24px 那版从 **229px 降到 ~188px**
+        （36 阵 + 10 间距 + 120 字 + 22 内边距）⇒ 360 宽（容器 215）也放得下；
+     ③ `.mp-tx` 改成 **`flex:0 1 auto; min-width:0; white-space:normal`** ——
+        有地方就照旧一行、没地方就**换行**，**永远不会被裁**。
+        （`flex-grow:0` 保证块还是「贴合内容」而不是被撑满。）
+   另外补 `text-size-adjust:100%`：Chrome 手机版会给窄容器里的文字做
+   **font boosting**（自动放大），像素字被放大就既不整齐又更容易溢出 —— 关掉它。 */
+@media (max-width:520px){
+  .mp{padding:10px 14px 10px 12px;gap:10px;margin:12px auto;
+      -webkit-text-size-adjust:100%;text-size-adjust:100%;}
+  .mp-seal{width:36px;height:36px;}
+  .mp-tx{
+    flex:0 1 auto;min-width:0;
+    font-size:24px;letter-spacing:0;line-height:1.25;
+    white-space:normal;overflow-wrap:anywhere;
+  }
+}
+/* 更窄（≤340）再降一档：Zpix 原生 12px 点阵 ⇒ 用 1×（**不要 18px 这种 1.5×**，会糊）。
+   为什么定 340：24px 那版收窄后整块只要 ~188px，容器在 350 上下还有富余；
+   340 以下（约 195px）才开始吃紧 —— 而且就算吃紧也不会裁了（上面能换行）。 */
+@media (max-width:340px){
+  .mp{padding:8px 12px 8px 10px;gap:8px;}
+  .mp-seal{width:32px;height:32px;}
+  .mp-tx{font-size:12px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .mp,.mp-p i,.mp-seal svg{animation:none!important;}
+  .mp-p i{opacity:.5;}
+}
+</style>

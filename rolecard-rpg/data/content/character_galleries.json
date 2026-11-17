@@ -1,0 +1,3198 @@
+{
+  "format": "sigil-character-galleries/1",
+  "characters": {
+    "alice": {
+      "id": "alice",
+      "name": "艾利丝",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/alice/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常2.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/alice/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常1.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/alice/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/alice/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/alice/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/alice/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/alice/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝日常7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/alice/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "艾利丝日常8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/alice/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝色图1.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/alice/gallery/erotic_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "艾利丝色图2.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/alice/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "艾利丝色图3.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/alice/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "510345564541916_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/alice/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "355580413961505_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/alice/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "156375043863349_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/alice/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "1008515447888410_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/alice/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "435136658552483_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/alice/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "604763277797010_SeedVR2放大_00001_.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/alice/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "732840971313028_SeedVR2放大_00003_.png"
+        }
+      ]
+    },
+    "ai": {
+      "id": "ai",
+      "name": "暧",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/ai/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/ai/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/ai/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/ai/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/ai/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/ai/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (11).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/ai/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/ai/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/ai/gallery/erotic_01.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/ai/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (4).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/ai/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/ai/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/ai/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/ai/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/ai/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (10).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/ai/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/ai/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/ai/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (6).png"
+        }
+      ]
+    },
+    "anke": {
+      "id": "anke",
+      "name": "安克",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/anke/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/anke/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/anke/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/anke/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/anke/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/anke/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/anke/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/anke/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (11).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/anke/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/anke/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (10).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/anke/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/anke/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/anke/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/anke/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/anke/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/anke/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/anke/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (4).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/anke/gallery/erotic_10.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (5).png"
+        }
+      ]
+    },
+    "bingtang": {
+      "id": "bingtang",
+      "name": "冰糖",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/bingtang/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/bingtang/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (4).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/bingtang/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/bingtang/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/bingtang/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/bingtang/gallery/daily_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/bingtang/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/bingtang/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/bingtang/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/bingtang/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/bingtang/gallery/erotic_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/bingtang/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/bingtang/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/bingtang/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/bingtang/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/bingtang/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/bingtang/gallery/erotic_09.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (11).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/bingtang/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (10).png"
+        }
+      ]
+    },
+    "jian": {
+      "id": "jian",
+      "name": "茧",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/jian/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/jian/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/jian/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (19).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/jian/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/jian/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/jian/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/jian/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/jian/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/jian/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/jian/gallery/erotic_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (11).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/jian/gallery/erotic_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (4).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/jian/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/jian/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/jian/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/jian/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/jian/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/jian/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/jian/gallery/erotic_10.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (2).png"
+        }
+      ]
+    },
+    "castor": {
+      "id": "castor",
+      "name": "卡斯特",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/castor/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/castor/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/castor/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/castor/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/castor/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/castor/gallery/daily_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/castor/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/castor/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (11).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/castor/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/castor/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (10).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/castor/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/castor/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/castor/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/castor/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/castor/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/castor/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/castor/gallery/erotic_09.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/castor/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (4).png"
+        }
+      ]
+    },
+    "rin": {
+      "id": "rin",
+      "name": "凛零",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/rin/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/rin/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常3.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/rin/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "凛零日常4.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/rin/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常5.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/rin/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常6.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/rin/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常7.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/rin/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常8.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/rin/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零日常9.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/rin/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图1.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/rin/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图2.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/rin/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图3.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/rin/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图4.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/rin/gallery/erotic_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "凛零色图5.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/rin/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "凛零色图6.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/rin/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图7.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/rin/gallery/erotic_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "凛零色图10.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/rin/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图8.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/rin/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "凛零色图9.png"
+        }
+      ]
+    },
+    "lucifer": {
+      "id": "lucifer",
+      "name": "路西法",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/lucifer/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/lucifer/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/lucifer/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/lucifer/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/lucifer/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (15).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/lucifer/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/lucifer/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (11).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/lucifer/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/lucifer/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (10).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/lucifer/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/lucifer/gallery/erotic_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (1).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/lucifer/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/lucifer/gallery/erotic_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/lucifer/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/lucifer/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/lucifer/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/lucifer/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/lucifer/gallery/erotic_10.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (4).png"
+        }
+      ]
+    },
+    "merlin": {
+      "id": "merlin",
+      "name": "梅林",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/merlin/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (7).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/merlin/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (4).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/merlin/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (3).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/merlin/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (5).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/merlin/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (12).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/merlin/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (2).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/merlin/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (11).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/merlin/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (15).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/merlin/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (16).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/merlin/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (17).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/merlin/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (8).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/merlin/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (18).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/merlin/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (6).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/merlin/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘图 (9).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/merlin/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (14).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/merlin/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (10).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/merlin/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (13).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/merlin/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘图 (1).png"
+        }
+      ]
+    },
+    "mingkong": {
+      "id": "mingkong",
+      "name": "明空",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/mingkong/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (13).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/mingkong/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (15).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/mingkong/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (16).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/mingkong/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (17).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/mingkong/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (11).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/mingkong/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (18).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/mingkong/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (14).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/mingkong/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (12).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/mingkong/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (8).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/mingkong/gallery/erotic_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (3).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/mingkong/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (4).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/mingkong/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (10).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/mingkong/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (6).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/mingkong/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (9).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/mingkong/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (5).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/mingkong/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (7).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/mingkong/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (2).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/mingkong/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (1).png"
+        }
+      ]
+    },
+    "mohua": {
+      "id": "mohua",
+      "name": "墨华",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/mohua/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (12).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/mohua/gallery/daily_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (11).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/mohua/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (15).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/mohua/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (16).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/mohua/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (10).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/mohua/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (2).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/mohua/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (9).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/mohua/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (6).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/mohua/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (8).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/mohua/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (5).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/mohua/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (3).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/mohua/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (1).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/mohua/gallery/erotic_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (13).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/mohua/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (4).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/mohua/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (14).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/mohua/gallery/erotic_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (7).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/mohua/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (17).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/mohua/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (18).png"
+        }
+      ]
+    },
+    "valkyrie": {
+      "id": "valkyrie",
+      "name": "瓦尔基里",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/valkyrie/gallery/daily_01.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (4).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/valkyrie/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (3).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/valkyrie/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (9).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/valkyrie/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (7).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/valkyrie/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (14).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/valkyrie/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (1).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/valkyrie/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (10).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/valkyrie/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (11).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (12).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (18).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (5).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (17).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (13).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (8).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (2).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (16).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (6).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/valkyrie/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (15).png"
+        }
+      ]
+    },
+    "ye": {
+      "id": "ye",
+      "name": "叶",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/ye/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (18).png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/ye/gallery/daily_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (17).png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/ye/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (16).png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/ye/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (15).png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/ye/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (14).png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/ye/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (13).png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/ye/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (12).png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/ye/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (11).png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/ye/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (8).png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/ye/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (10).png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/ye/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (7).png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/ye/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (6).png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/ye/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (5).png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/ye/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (9).png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/ye/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (4).png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/ye/gallery/erotic_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "立绘 (3).png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/ye/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (2).png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/ye/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "立绘 (1).png"
+        }
+      ]
+    },
+    "alanya": {
+      "id": "alanya",
+      "name": "阿兰雅",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/alanya/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/alanya/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/alanya/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/alanya/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/alanya/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/alanya/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/alanya/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/alanya/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/alanya/gallery/erotic_01.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/alanya/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/alanya/gallery/erotic_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/alanya/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/alanya/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/alanya/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/alanya/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/alanya/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/alanya/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/alanya/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "vamana": {
+      "id": "vamana",
+      "name": "筏摩娜",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/vamana/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/vamana/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/vamana/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/vamana/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/vamana/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/vamana/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/vamana/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/vamana/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/vamana/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/vamana/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/vamana/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/vamana/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/vamana/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/vamana/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/vamana/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/vamana/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/vamana/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/vamana/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "xuanyuan": {
+      "id": "xuanyuan",
+      "name": "轩辕",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/xuanyuan/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/xuanyuan/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "yanyuan": {
+      "id": "yanyuan",
+      "name": "焰渊",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/yanyuan/gallery/daily_01.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/yanyuan/gallery/daily_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/yanyuan/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/yanyuan/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/yanyuan/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/yanyuan/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/yanyuan/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/yanyuan/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/yanyuan/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "larentia": {
+      "id": "larentia",
+      "name": "拉伦提娅",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/larentia/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/larentia/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/larentia/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/larentia/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/larentia/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/larentia/gallery/daily_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/larentia/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/larentia/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/larentia/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/larentia/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/larentia/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/larentia/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/larentia/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/larentia/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/larentia/gallery/erotic_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/larentia/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/larentia/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/larentia/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "yangxiang": {
+      "id": "yangxiang",
+      "name": "阳向",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/yangxiang/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/yangxiang/gallery/daily_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/yangxiang/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/yangxiang/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/yangxiang/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/yangxiang/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/yangxiang/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/yangxiang/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/yangxiang/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "lufa": {
+      "id": "lufa",
+      "name": "露珐",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/lufa/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/lufa/gallery/daily_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/lufa/gallery/daily_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/lufa/gallery/daily_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/lufa/gallery/daily_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/lufa/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/lufa/gallery/daily_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/lufa/gallery/daily_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/lufa/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/lufa/gallery/erotic_02.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/lufa/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/lufa/gallery/erotic_04.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/lufa/gallery/erotic_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/lufa/gallery/erotic_06.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/lufa/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/lufa/gallery/erotic_08.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/lufa/gallery/erotic_09.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/lufa/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    },
+    "washake": {
+      "id": "washake",
+      "name": "瓦沙克",
+      "affection": [
+        {
+          "slot": 1,
+          "need": 25,
+          "res": "res://assets/characters/washake/gallery/daily_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "1.png"
+        },
+        {
+          "slot": 2,
+          "need": 25,
+          "res": "res://assets/characters/washake/gallery/daily_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "2.png"
+        },
+        {
+          "slot": 3,
+          "need": 50,
+          "res": "res://assets/characters/washake/gallery/daily_03.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "3.png"
+        },
+        {
+          "slot": 4,
+          "need": 50,
+          "res": "res://assets/characters/washake/gallery/daily_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "4.png"
+        },
+        {
+          "slot": 5,
+          "need": 75,
+          "res": "res://assets/characters/washake/gallery/daily_05.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "5.png"
+        },
+        {
+          "slot": 6,
+          "need": 75,
+          "res": "res://assets/characters/washake/gallery/daily_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "6.png"
+        },
+        {
+          "slot": 7,
+          "need": 100,
+          "res": "res://assets/characters/washake/gallery/daily_07.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "7.png"
+        },
+        {
+          "slot": 8,
+          "need": 100,
+          "res": "res://assets/characters/washake/gallery/daily_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "8.png"
+        }
+      ],
+      "erotic": [
+        {
+          "slot": 1,
+          "need": 20,
+          "res": "res://assets/characters/washake/gallery/erotic_01.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "9.png"
+        },
+        {
+          "slot": 2,
+          "need": 20,
+          "res": "res://assets/characters/washake/gallery/erotic_02.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "10.png"
+        },
+        {
+          "slot": 3,
+          "need": 40,
+          "res": "res://assets/characters/washake/gallery/erotic_03.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "11.png"
+        },
+        {
+          "slot": 4,
+          "need": 40,
+          "res": "res://assets/characters/washake/gallery/erotic_04.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "12.png"
+        },
+        {
+          "slot": 5,
+          "need": 60,
+          "res": "res://assets/characters/washake/gallery/erotic_05.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "13.png"
+        },
+        {
+          "slot": 6,
+          "need": 60,
+          "res": "res://assets/characters/washake/gallery/erotic_06.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "14.png"
+        },
+        {
+          "slot": 7,
+          "need": 80,
+          "res": "res://assets/characters/washake/gallery/erotic_07.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "15.png"
+        },
+        {
+          "slot": 8,
+          "need": 80,
+          "res": "res://assets/characters/washake/gallery/erotic_08.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "16.png"
+        },
+        {
+          "slot": 9,
+          "need": 100,
+          "res": "res://assets/characters/washake/gallery/erotic_09.webp",
+          "width": 1920,
+          "height": 1280,
+          "source_name": "17.png"
+        },
+        {
+          "slot": 10,
+          "need": 100,
+          "res": "res://assets/characters/washake/gallery/erotic_10.webp",
+          "width": 1280,
+          "height": 1920,
+          "source_name": "18.png"
+        }
+      ]
+    }
+  },
+  "total_images": 378
+}

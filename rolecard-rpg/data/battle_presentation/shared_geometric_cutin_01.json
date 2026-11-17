@@ -1,0 +1,19 @@
+{
+  "id": "shared_geometric_cutin_01",
+  "classification": "shared",
+  "actor_id": null,
+  "form_id": null,
+  "action_id": null,
+  "fps": 24,
+  "duration_seconds": 0.25,
+  "status": "prototype_unverified",
+  "frames": [
+    "res://assets/effects/shared-geometric-cutin-01/frame-01.png",
+    "res://assets/effects/shared-geometric-cutin-01/frame-02.png",
+    "res://assets/effects/shared-geometric-cutin-01/frame-03.png",
+    "res://assets/effects/shared-geometric-cutin-01/frame-04.png",
+    "res://assets/effects/shared-geometric-cutin-01/frame-05.png",
+    "res://assets/effects/shared-geometric-cutin-01/frame-06.png"
+  ],
+  "note": "Raw generated frames insufficiently expand; program reveal is supplemental, not additional generated frames; review required."
+}

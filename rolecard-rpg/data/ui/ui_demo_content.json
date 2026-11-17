@@ -1,0 +1,68 @@
+{
+  "_note": "UI preview data only. Every value here is a placeholder so screens can be reviewed before the database, AI and battle services exist. Nothing here is canon, balance or a frozen design. Real services replace this through scripts/ui/ui_data.gd.",
+  "party_order": ["rin", "mingkong", "ye", "merlin"],
+  "locations": [
+    {"id": "training_ground", "name": "校场", "intro": "学院内用于训练与切磋的场地。", "objective": "击败所有训练目标", "enemies": ["training_guard", "support_drone"], "scene": "training_ground", "unlocked": true},
+    {"id": "workshop", "name": "工坊区", "intro": "刻印与器材加工的区域。（示例简介）", "objective": "示例目标：待按原卡地点数据接入", "enemies": ["support_drone"], "scene": "workshop", "unlocked": true},
+    {"id": "locked_area", "name": "未开放地点", "intro": "达成条件后开放。（示例）", "objective": "", "enemies": [], "scene": "", "unlocked": false}
+  ],
+  "enemies": {
+    "training_guard": {"name": "训练守卫", "hp": 32},
+    "support_drone": {"name": "支援机", "hp": 25}
+  },
+  "items": [
+    {"id": "base_crystal", "name": "基材", "icon": "item_crystal", "count": 12, "tab": "item", "desc": "用于刻印制作。"},
+    {"id": "core_cube", "name": "核心块", "icon": "item_cube", "count": 6, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "alloy_plate", "name": "合金板", "icon": "item_plate", "count": 9, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "raw_ore", "name": "原矿", "icon": "item_ore", "count": 3, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "ring_orb", "name": "环核", "icon": "item_orb", "count": 1, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "tetra_piece", "name": "三棱件", "icon": "item_tetra", "count": 4, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "prism", "name": "棱晶", "icon": "item_prism", "count": 120, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "shards", "name": "碎片", "icon": "item_shards", "count": 27, "tab": "item", "desc": "示例道具说明。"},
+    {"id": "sigil_one", "name": "刻印 · 方案一", "icon": "sigil_a", "count": 1, "tab": "sigil", "desc": "示例刻印，用于战斗。"},
+    {"id": "sigil_two", "name": "刻印 · 方案二", "icon": "sigil_b", "count": 2, "tab": "sigil", "desc": "示例刻印，用于战斗。"}
+  ],
+  "recipes": [
+    {"id": "plan_a", "name": "方案一", "icon": "sigil_a", "result": "刻印", "use": "用于战斗", "desc": "效果说明待刻印工坊规则接入。", "needs": [["base_crystal", 3], ["prism", 10]]},
+    {"id": "plan_b", "name": "方案二", "icon": "sigil_b", "result": "刻印", "use": "用于战斗", "desc": "效果说明待刻印工坊规则接入。", "needs": [["core_cube", 2], ["shards", 5]]},
+    {"id": "plan_c", "name": "方案三", "icon": "sigil_c", "result": "刻印", "use": "用于战斗", "desc": "效果说明待刻印工坊规则接入。", "needs": [["raw_ore", 5]]}
+  ],
+  "chapters": [
+    {"id": "ch1", "kind": "main", "title": "第一章", "subtitle": "示例章节", "state": "open", "progress": 0.4},
+    {"id": "ch2", "kind": "main", "title": "第二章", "subtitle": "达成条件后开放", "state": "locked", "progress": 0.0},
+    {"id": "ev_rin", "kind": "event", "title": "角色事件 · 凛零", "subtitle": "示例事件", "state": "new", "progress": 0.0},
+    {"id": "ev_ming", "kind": "event", "title": "角色事件 · 明空", "subtitle": "示例事件", "state": "open", "progress": 1.0}
+  ],
+  "replays": [
+    {"id": "rp_1", "title": "第一章 · 段落一", "time": "示例记录", "media_ok": true},
+    {"id": "rp_2", "title": "角色事件 · 明空", "time": "示例记录", "media_ok": false}
+  ],
+  "gallery": [
+    {"id": "cg_01", "title": "示例插画一", "unlocked": true},
+    {"id": "cg_02", "title": "示例插画二", "unlocked": true},
+    {"id": "cg_03", "title": "未解锁", "unlocked": false},
+    {"id": "cg_04", "title": "未解锁", "unlocked": false},
+    {"id": "cg_05", "title": "未解锁", "unlocked": false},
+    {"id": "cg_06", "title": "未解锁", "unlocked": false}
+  ],
+  "worldbook": {
+    "地点": [{"title": "校场", "body": "校场：学院内的训练场地。"}, {"title": "工坊区", "body": "工坊区：示例条目，正文待世界书只读接口接入。"}],
+    "角色": [{"title": "凛零", "body": "示例条目，正文待世界书只读接口接入。"}, {"title": "明空", "body": "示例条目，正文待世界书只读接口接入。"}],
+    "刻印": [{"title": "刻印概述", "body": "示例条目，正文待世界书只读接口接入。"}]
+  },
+  "story_demo": [
+    {"speaker": "", "text": "（示例剧情。正式文本由剧情服务 / AI 出文格式提供，本段只用于检查界面。）", "bg": "academy_hall"},
+    {"speaker": "rin", "text": "准备好了的话，就一起出发吧。", "show": ["rin"]},
+    {"speaker": "mingkong", "text": "今天的训练安排在校场。我会在后面照看大家。", "show": ["rin", "mingkong"]},
+    {"speaker": "rin", "text": "……嗯。那就走吧。", "choices": ["「好，现在就出发吧。」先把训练用的刻印检查一遍，再跟在凛零身后去校场。路上顺便问问她今天的状态怎么样。", "「再给我一点时间准备。」回仓库把缺的材料补齐，顺便把上次没做完的刻印收尾。凛零大概会在门口安静地等着。", "「明空也一起来吗？」看向一旁的明空，问她身体是否撑得住今天的训练，如果不行就让她留在后方观察。"], "free_input": true}
+  ],
+  "saves": [
+    {"slot": 1, "title": "第一章 · 校场", "time": "示例存档", "used": true},
+    {"slot": 2, "title": "角色事件 · 明空", "time": "示例存档", "used": true},
+    {"slot": 3, "used": false},
+    {"slot": 4, "used": false},
+    {"slot": 5, "used": false},
+    {"slot": 6, "used": false}
+  ],
+  "tips": ["切换昼夜：右上角的日月开关。", "设置里的「UI布局」只调整留白，不会放大画面。", "Esc 或手机返回键可以退回上一层。", "减弱动态会关闭漂移、扫光和过场。"]
+}

@@ -1,0 +1,40 @@
+{
+  "actor_id": "rin",
+  "form_id": "released",
+  "format_version": 1,
+  "slots": {
+    "idle": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_release_idle_01.tscn",
+      "asset": "res://assets/characters/rin-release-03/release.png",
+      "method": "single_image_procedural_loop"
+    },
+    "attack": {
+      "status": "pose_candidate_effect_not_started",
+      "asset": "res://assets/characters/rin-release-attack-01/attack.png"
+    },
+    "skill_1": {
+      "status": "not_started"
+    },
+    "skill_2": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_release_skill2_v2.tscn"
+    },
+    "ultimate": {
+      "status": "candidate_not_accepted_story_locked",
+      "scene": "res://scenes/rin_flying_star_v7.tscn"
+    },
+    "hit": {
+      "status": "not_started"
+    },
+    "guard": {
+      "status": "not_started"
+    },
+    "down": {
+      "status": "not_started"
+    },
+    "victory": {
+      "status": "not_started"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>刻印激活 · 四段音乐调节台</title>
+<style>
+  :root { --bg:#14121c; --panel:#1d1a28; --line:#3a3550; --ink:#e8e4f2; --muted:#9a93b0; --acc:#e0485a; --gold:#e6c36a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 "Microsoft YaHei","PingFang SC",sans-serif; }
+  header { padding:18px 24px 6px; }
+  h1 { margin:0 0 4px; font-size:22px; font-weight:600; letter-spacing:2px; }
+  .hint { color:var(--muted); font-size:13px; margin:2px 0; }
+  .bar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:10px 24px; }
+  button { background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:18px; padding:6px 16px; font:inherit; cursor:pointer; }
+  button:hover { border-color:var(--acc); }
+  button.main { background:var(--acc); border-color:var(--acc); color:#fff; }
+  label { color:var(--muted); font-size:13px; display:inline-flex; gap:6px; align-items:center; white-space:nowrap; }
+  #wrap { display:grid; grid-template-columns: 380px 1fr; margin:0 24px; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .rows { background:var(--panel); }
+  .row { height:84px; border-bottom:1px solid var(--line); padding:4px 12px; display:grid; grid-template-columns: auto auto; justify-content:start; gap:0 18px; align-items:center; overflow:hidden; }
+  .row .nm { grid-column:1 / 3; font-weight:600; }
+  .row .nm small { color:var(--muted); font-weight:400; margin-left:6px; }
+  .row input[type=number] { width:80px; background:#0f0d16; color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:2px 6px; font:inherit; }
+  .row input[type=range] { width:110px; }
+  .ruler-l, .anim-l { height:30px; border-bottom:1px solid var(--line); padding:5px 12px; color:var(--muted); font-size:13px; }
+  .anim-l { height:44px; border-bottom:none; }
+  #tl { position:relative; overflow-x:auto; background:#0f0d16; }
+  canvas { display:block; }
+  #out { width:calc(100% - 48px); margin:10px 24px; height:110px; background:#0f0d16; color:var(--ink); border:1px solid var(--line); border-radius:8px; font:13px/1.4 Consolas,monospace; padding:8px; }
+  .foot { padding:0 24px 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>刻印激活 · 四段音乐调节台</h1>
+  <p class="hint">拖动色块改每段开始的时间（按住 Shift 拖得更细），右边滑条调音量。点时间轴可以把光标放到那里。</p>
+  <p class="hint">最下面一行是动画会怎么跟着走：铭刻（法阵收缩、盖章）总在第 4 段开始的那一刻。</p>
+  <p class="hint">调好后点「复制设置」把内容发给我，或点「下载设置」，把 activation_mix.json 放进 rolecard-rpg/data/workshop/。</p>
+</header>
+<div class="bar">
+  <button class="main" id="playStart">▶ 从头播放</button>
+  <button id="playCur">▶ 从光标播放</button>
+  <button id="stop">■ 停止</button>
+  <span id="clock" class="hint" style="min-width:120px">0.00 s</span>
+  <label>缩放 <input id="zoom" type="range" min="30" max="200" value="70"></label>
+  <label><input id="auto4" type="checkbox"> 4 自动接在 2、3 都放完之后</label>
+  <button id="reset">恢复为游戏里现在的设置</button>
+</div>
+<div id="wrap">
+  <div class="rows" id="rows">
+    <div class="ruler-l">时间（秒）</div>
+  </div>
+  <div id="tl"><canvas id="cv"></canvas></div>
+</div>
+<div class="bar">
+  <button class="main" id="copy">复制设置</button>
+  <button id="dl">下载设置（activation_mix.json）</button>
+  <span id="msg" class="hint"></span>
+</div>
+<textarea id="out" readonly></textarea>
+<p class="foot hint">这页只放、只调这 4 段原音乐，不加任何别的声音。</p>
+<script>
+const DATA = /*__DATA__*/null;
+const ROLES = ["click", "loop_a", "loop_b", "done"];
+const NAMES = {click: "1 点击激活", loop_a: "2 激活中其一", loop_b: "3 激活中其二", done: "4 激活完成"};
+const COLORS = {click: "#8fa8ff", loop_a: "#e0485a", loop_b: "#e6a24a", done: "#e6c36a"};
+const LANE = 84, RULER = 30, ANIM = 44;
+let ctx = null, buffers = {}, peaks = {}, sources = [], playT0 = 0, playFrom = 0, playing = false, cursor = 0;
+const st = {start: {}, gain: {}, mute: {}, solo: {}};
+const cv = document.getElementById("cv"), g = cv.getContext("2d"), tl = document.getElementById("tl");
+let pps = 70;
+
+function defaults() {
+  const d = r => DATA.clips[r].duration;
+  st.start = {click: 0, loop_a: d("click"), loop_b: d("click"), done: d("click") + Math.max(d("loop_a"), d("loop_b"))};
+  ROLES.forEach(r => { st.gain[r] = 0; st.mute[r] = false; st.solo[r] = false; });
+}
+function load() {
+  defaults();
+  ROLES.forEach(r => { if (DATA.start && r in DATA.start) st.start[r] = +DATA.start[r]; if (DATA.gain_db && r in DATA.gain_db) st.gain[r] = +DATA.gain_db[r]; });
+}
+function b64buf(b) { const s = atob(b); const a = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a.buffer; }
+async function decode() {
+  // decode offline (works before any click); the live AudioContext is made on the first play
+  const dec = new OfflineAudioContext(2, 44100, 44100);
+  for (const r of ROLES) {
+    buffers[r] = await new Promise((ok, bad) => dec.decodeAudioData(b64buf(DATA.clips[r].b64), ok, bad));
+    const ch = buffers[r].getChannelData(0), n = 600, step = Math.max(1, Math.floor(ch.length / n)), p = [];
+    for (let i = 0; i < n; i++) { let m = 0; for (let j = i * step; j < Math.min(ch.length, (i + 1) * step); j++) m = Math.max(m, Math.abs(ch[j])); p.push(m); }
+    peaks[r] = p;
+  }
+}
+function dur(r) { return buffers[r] ? buffers[r].duration : DATA.clips[r].duration; }
+function applyAuto() { if (document.getElementById("auto4").checked) st.start.done = Math.max(st.start.loop_a + dur("loop_a"), st.start.loop_b + dur("loop_b")); }
+function total() { return Math.max(...ROLES.map(r => st.start[r] + dur(r))); }
+
+function buildRows() {
+  const rows = document.getElementById("rows");
+  ROLES.forEach(r => {
+    const d = document.createElement("div"); d.className = "row";
+    d.innerHTML = `<div class="nm" style="color:${COLORS[r]}">${NAMES[r]}<small>${dur(r).toFixed(2)} 秒</small></div>
+      <label>开始 <input type="number" step="0.01" min="0" id="s_${r}"> 秒</label>
+      <label>音量 <input type="range" min="-24" max="6" step="0.5" id="g_${r}"><span id="gv_${r}"></span></label>
+      <label><input type="checkbox" id="m_${r}"> 静音</label>
+      <label><input type="checkbox" id="o_${r}"> 只听这段</label>`;
+    rows.appendChild(d);
+  });
+  const a = document.createElement("div"); a.className = "anim-l"; a.textContent = "动画跟随（预览）"; rows.appendChild(a);
+  ROLES.forEach(r => {
+    document.getElementById("s_" + r).oninput = e => { st.start[r] = Math.max(0, +e.target.value || 0); if (r !== "done") applyAuto(); changed(); };
+    document.getElementById("g_" + r).oninput = e => { st.gain[r] = +e.target.value; changed(); };
+    document.getElementById("m_" + r).onchange = e => { st.mute[r] = e.target.checked; changed(); };
+    document.getElementById("o_" + r).onchange = e => { st.solo[r] = e.target.checked; changed(); };
+  });
+}
+function syncInputs() {
+  ROLES.forEach(r => {
+    document.getElementById("s_" + r).value = st.start[r].toFixed(2);
+    document.getElementById("g_" + r).value = st.gain[r];
+    document.getElementById("gv_" + r).textContent = (st.gain[r] > 0 ? "+" : "") + st.gain[r] + " dB";
+  });
+}
+function exportJson() {
+  const o = {starts: {}, gain_db: {}};
+  ROLES.forEach(r => { o.starts[r] = +st.start[r].toFixed(3); o.gain_db[r] = st.gain[r]; });
+  return JSON.stringify(o, null, 1);
+}
+function changed() {
+  syncInputs(); draw();
+  document.getElementById("out").value = exportJson();
+  if (playing) { const at = now(); stop(); play(at); }
+}
+// animation preview: same rules as the game (workshop_activation_fx.gd)
+function animBeats() {
+  const cl = (v, a, b) => Math.min(Math.max(v, a), b);
+  const T = st.start.done;
+  const R1 = cl(Math.max(st.start.loop_a, st.start.loop_b), 2.0, T - 3.0);
+  const G0 = cl(T - 2.4, R1 + 1.2, T - 0.6);
+  let P = st.start.loop_a + DATA.clips.loop_a.peak;
+  if (P > T || P < G0 + 0.4) P = T;
+  const out = [["启印 · 法阵展开", 0, R1, "#8fa8ff"], ["数据流 · 刻印逐枚点亮", R1, G0, "#e0485a"], ["汇聚", G0, T, "#e6a24a"], ["铭刻 · 名字", T, T + dur("done"), "#e6c36a"]];
+  if (P < T - 0.08) out.push(["2 的高潮", P, P, "#ffffff"]);
+  return out;
+}
+function draw() {
+  const W = Math.max(tl.clientWidth, (total() + 2) * pps), H = RULER + LANE * 4 + ANIM;
+  cv.width = W; cv.height = H;
+  g.fillStyle = "#0f0d16"; g.fillRect(0, 0, W, H);
+  g.font = "12px sans-serif";
+  for (let s = 0; s <= total() + 2; s += 1) {
+    const x = s * pps; g.fillStyle = "#3a3550"; g.fillRect(x, 0, 1, H);
+    g.fillStyle = "#9a93b0"; g.fillText(s + "", x + 3, 18);
+  }
+  ROLES.forEach((r, i) => {
+    const y = RULER + i * LANE, x = st.start[r] * pps, w = dur(r) * pps;
+    g.fillStyle = "#1d1a28"; g.fillRect(0, y, W, LANE - 1);
+    const dim = isMuted(r) ? 0.25 : 1;
+    g.globalAlpha = 0.22 * dim; g.fillStyle = COLORS[r]; g.fillRect(x, y + 6, w, LANE - 13);
+    g.globalAlpha = 0.9 * dim; g.strokeStyle = COLORS[r]; g.strokeRect(x + 0.5, y + 6.5, w - 1, LANE - 14);
+    const p = peaks[r] || [], k = Math.pow(10, st.gain[r] / 20), mid = y + LANE / 2;
+    g.beginPath();
+    for (let j = 0; j < p.length; j++) { const px = x + w * j / p.length, a = Math.min(1, p[j] * k) * (LANE / 2 - 10); g.moveTo(px, mid - a); g.lineTo(px, mid + a); }
+    g.stroke();
+    g.fillStyle = "#ffffff"; g.globalAlpha = 0.6 * dim;
+    DATA.clips[r].onsets.forEach(o => g.fillRect(x + o * pps, y + 6, 1, 8));
+    g.globalAlpha = 1; g.fillStyle = COLORS[r]; g.fillText(NAMES[r] + "  " + st.start[r].toFixed(2) + "s", x + 6, y + 20);
+  });
+  const ay = RULER + LANE * 4;
+  animBeats().forEach(([nm, a, b, c]) => {
+    g.fillStyle = c;
+    if (b <= a) { g.fillRect(a * pps - 1, ay + 4, 3, ANIM - 8); g.fillText(nm, a * pps + 5, ay + ANIM - 8); return; }
+    g.globalAlpha = 0.3; g.fillRect(a * pps, ay + 6, (b - a) * pps, ANIM - 14); g.globalAlpha = 1;
+    g.fillText(nm, a * pps + 5, ay + 22);
+  });
+  const cx = (playing ? now() : cursor) * pps;
+  g.fillStyle = "#ffffff"; g.fillRect(cx, 0, 2, H);
+}
+function isMuted(r) { const anySolo = ROLES.some(q => st.solo[q]); return st.mute[r] || (anySolo && !st.solo[r]); }
+function now() { return playing ? playFrom + (ctx.currentTime - playT0) : cursor; }
+function play(from) {
+  if (!buffers.done) { document.getElementById("msg").textContent = "音乐还在读取，稍等一下"; return; }
+  if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+  if (ctx.state === "suspended") ctx.resume();
+  stop();
+  playFrom = from; playT0 = ctx.currentTime + 0.05;
+  ROLES.forEach(r => {
+    if (isMuted(r)) return;
+    const s = st.start[r], e = s + dur(r);
+    if (e <= from) return;
+    const src = ctx.createBufferSource(); src.buffer = buffers[r];
+    const gn = ctx.createGain(); gn.gain.value = Math.pow(10, st.gain[r] / 20);
+    src.connect(gn).connect(ctx.destination);
+    const when = playT0 + Math.max(0, s - from), off = Math.max(0, from - s);
+    src.start(when, off); sources.push(src);
+  });
+  playing = true; tick();
+}
+function stop() { sources.forEach(s => { try { s.stop(); } catch (e) {} }); sources = []; if (playing) cursor = Math.min(now(), total()); playing = false; draw(); }
+function tick() {
+  if (!playing) return;
+  const t = now(); document.getElementById("clock").textContent = Math.max(0, t).toFixed(2) + " s";
+  if (t > total() + 0.2) { playing = false; cursor = 0; draw(); return; }
+  draw(); requestAnimationFrame(tick);
+}
+// drag clips
+let drag = null;
+cv.addEventListener("mousedown", e => {
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  const lane = Math.floor((y - RULER) / LANE);
+  if (y > RULER && lane >= 0 && lane < 4) {
+    const role = ROLES[lane], x0 = st.start[role] * pps;
+    if (x >= x0 && x <= x0 + dur(role) * pps) { drag = {role, dx: x - x0}; return; }
+  }
+  cursor = Math.max(0, x / pps); document.getElementById("clock").textContent = cursor.toFixed(2) + " s"; draw();
+});
+window.addEventListener("mousemove", e => {
+  if (!drag) return;
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left;
+  const step = e.shiftKey ? 0.001 : 0.01;
+  st.start[drag.role] = Math.max(0, Math.round(((x - drag.dx) / pps) / step) * step);
+  if (drag.role !== "done") applyAuto();
+  syncInputs(); draw();
+});
+window.addEventListener("mouseup", () => { if (drag) { drag = null; changed(); } });
+document.getElementById("zoom").oninput = e => { pps = +e.target.value; draw(); };
+document.getElementById("auto4").onchange = () => { applyAuto(); changed(); };
+document.getElementById("reset").onclick = () => { load(); document.getElementById("auto4").checked = false; changed(); };
+document.getElementById("playStart").onclick = () => play(0);
+document.getElementById("playCur").onclick = () => play(cursor);
+document.getElementById("stop").onclick = () => stop();
+document.getElementById("copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(exportJson()); document.getElementById("msg").textContent = "已复制，发给我就行"; }
+  catch (e) { const o = document.getElementById("out"); o.select(); document.execCommand("copy"); document.getElementById("msg").textContent = "已复制"; }
+};
+document.getElementById("dl").onclick = () => {
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([exportJson()], {type: "application/json"}));
+  a.download = "activation_mix.json"; a.click();
+};
+document.addEventListener("keydown", e => { if (e.code === "Space" && e.target.tagName !== "INPUT") { e.preventDefault(); playing ? stop() : play(cursor); } });
+// show the timeline at once (lengths from the cue sheet), then fill in the waveforms
+load(); buildRows();
+pps = Math.max(30, Math.min(200, Math.floor(tl.clientWidth / (total() + 1))));
+document.getElementById("zoom").value = pps;
+changed();
+document.getElementById("msg").textContent = "正在读取音乐…";
+decode().then(() => { document.getElementById("msg").textContent = "音乐已就绪，可以播放"; changed(); })
+  .catch(e => { document.getElementById("msg").textContent = "读取音乐失败：" + e + "（请用 Edge 或 Chrome 打开）"; });
+</script>
+</body>
+</html>

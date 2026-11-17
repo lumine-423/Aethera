@@ -1,0 +1,25 @@
+{
+  "_note": "Mystic geometry palette (2026-11-14): day = white paper / thin gray lines / crimson accents; night = black / warm gray lines / gold accents. Solid 'accent' and 'block' plates are drawn as light tinted outlines, so on_accent / on_block are readable text colors on those light plates.",
+  "day": {
+    "surface": "fcfcfb",
+    "surface2": "f1f0ee",
+    "line": "d2d1ce",
+    "hair": "bdbcb9",
+    "block": "ecebe8",
+    "on_accent": "a50f28",
+    "on_block": "2b2b30",
+    "glass": "ffffffd9",
+    "glow": "ffffff"
+  },
+  "night": {
+    "surface": "141418",
+    "surface2": "1a1a1f",
+    "line": "36353a",
+    "hair": "4a4840",
+    "block": "1f1e22",
+    "on_accent": "f3d27a",
+    "on_block": "ece8de",
+    "glass": "141418d9",
+    "glow": "fff4d0"
+  }
+}

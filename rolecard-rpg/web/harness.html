@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>角色卡 RPG · 双入口技术验证</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;color:#e8eef5;background:#101722}
+    *{box-sizing:border-box}body{max-width:1240px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 10px}
+    p{color:#b6c5d3;line-height:1.65;margin:8px 0 18px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+    button{font:inherit;color:#f4f0e5;border:1px solid #6f7f8f;background:#26374a;padding:11px 17px;border-radius:5px;cursor:pointer}
+    button:disabled{opacity:.45;cursor:wait}button:focus-visible{outline:3px solid #e0c48e;outline-offset:3px}
+    iframe{display:block;width:100%;height:min(66vw,650px);min-height:390px;border:1px solid #607183;background:#101722}
+    #status{color:#e0c48e;min-height:27px}details{margin-top:18px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#162230;padding:16px;max-height:260px;overflow:auto;font-size:13px}
+    @media(max-width:640px){body{padding:12px}iframe{min-height:440px}h1{font-size:21px}}
+  </style>
+</head>
+<body>
+  <h1>角色卡游戏：双入口验证</h1>
+  <p>本页模拟角色卡的游戏板块和剧情消息。两个入口进入同一 Godot 测试战斗，结果回到同一个宿主。这里尚未连接真实聊天、MVU 或正式素材。</p>
+  <div class="toolbar">
+    <label>测试分支 <select id="context"><option value="a">A</option><option value="b">B</option><option value="c">C · 新版测试</option></select></label>
+    <button id="manual" disabled>主动进入测试战斗</button>
+    <button id="story" disabled>模拟剧情指令唤起</button>
+    <button id="duplicate" disabled>重发同一请求</button>
+    <button id="invalid" disabled>检查未知任务拒绝</button>
+    <button id="reload" disabled>重载引擎并恢复</button>
+    <a href="/art-study" target="_blank">查看像素动作样板</a>
+  </div>
+  <div id="status" role="status">正在启动 Godot，请等待引擎就绪。</div>
+  <iframe id="game" title="Godot 角色卡战斗技术样片" allow="autoplay; fullscreen"></iframe>
+  <details open><summary>验证记录（开发用）</summary><pre id="log"></pre></details>
+  <script type="module">
+    import {CHANNEL, TASK_ID, parseStoryDirective} from '/protocol.mjs';
+    import {HostCoordinator, createLocalProbeStore} from '/host-coordinator.mjs';
+    let token = crypto.randomUUID();
+    const frame = document.querySelector('#game');
+    const status = document.querySelector('#status');
+    const log = document.querySelector('#log');
+    const buttons = [...document.querySelectorAll('button')];
+    let coordinator;
+    let lastRequest = null;
+    const notes = [];
+    const record = (label, data) => {
+      notes.unshift(`${label}\n${JSON.stringify(data, null, 2)}`);
+      log.textContent = notes.slice(0, 12).join('\n\n');
+    };
+    function mount() {
+      coordinator = new HostCoordinator(createLocalProbeStore(localStorage), {card_id:'lab-card',chat_id:'lab-chat',branch_id:document.querySelector('#context').value});
+      token = crypto.randomUUID(); lastRequest = null;
+      buttons.forEach(button => button.disabled=true);
+      frame.src = `/game/index.html?parent_origin=${encodeURIComponent(location.origin)}&token=${token}`;
+      status.textContent='正在加载当前测试分支的引擎。';
+    }
+    function sendCommand(command) {
+      frame.contentWindow.postMessage({channel:CHANNEL,version:1,token,...command},location.origin);
+      record('发送引擎命令',command);
+    }
+    function send(opened) {
+      if (opened.result) {
+        status.textContent=`该剧情任务已经结束，保持原结果 ${opened.result.outcome}，不会重新开战。`;
+        record('读取已提交结果',opened.result); return;
+      }
+      const request=opened.request;
+      lastRequest = request;
+      sendCommand({type:'start_task',request});
+      document.querySelector('#duplicate').disabled = false;
+    }
+    const attempt = operation => { try { operation(); } catch(error) { status.textContent=`未执行：${error.message}`;record('拒绝/持久化错误',{error:error.message}); } };
+    document.querySelector('#manual').onclick = () => attempt(()=>send(coordinator.openManual()));
+    document.querySelector('#story').onclick = () => {
+      const directive = parseStoryDirective({role:'assistant', finalized:true,
+        text:'这是一段测试剧情。\n<RpgBattle>{"task_id":"probe.basic","event_key":"probe.story"}</RpgBattle>'});
+      record('已解析测试剧情指令', directive);
+      attempt(()=>send(coordinator.openStory({message_id:0,swipe_id:0,content_fingerprint:'lab-story-01',event_key:directive.event_key})));
+    };
+    document.querySelector('#duplicate').onclick = () => { if (lastRequest) sendCommand({type:'start_task',request:lastRequest}); };
+    document.querySelector('#invalid').onclick = () => sendCommand({type:'start_task',request:{protocol_version:1, request_id:crypto.randomUUID(), task_id:'not-allowlisted', source:'story'}});
+    document.querySelector('#reload').onclick = () => attempt(mount);
+    document.querySelector('#context').onchange = () => attempt(mount);
+    addEventListener('message', event => {
+      const value = event.data;
+      if (event.source !== frame.contentWindow || event.origin !== location.origin ||
+          !value || value.channel !== CHANNEL || value.version !== 1 || value.token !== token) return;
+      if (value.type === 'engine_ready') {
+        buttons.forEach(button => { button.disabled = button.id === 'duplicate'; });
+        status.textContent = '引擎已就绪。可以分别从主动入口和剧情入口开始。';
+        attempt(()=> { const resume=coordinator.resumeCommand();if(resume){lastRequest=resume.request;sendCommand(resume);document.querySelector('#duplicate').disabled=false;} });
+      } else if (value.type === 'task_ack') {
+        status.textContent = value.duplicate ? '重复请求已去重，当前状态保持。' : '任务请求已接收。请在游戏画面完成验证。';
+      } else if (value.type === 'checkpoint') {
+        attempt(()=>coordinator.saveCheckpoint(value.request_id,value.checkpoint));
+      } else if (value.type === 'task_result') {
+        try {
+          const committed = coordinator.commit(value.result);
+          status.textContent = committed.duplicate ? `重复结果已去重，共接收 ${committed.total} 个唯一结果。` : `任务结果已回传：${value.result.outcome}，共接收 ${committed.total} 个唯一结果。`;
+        } catch (error) { status.textContent = `结果未提交：${error.message}`; }
+      } else if (value.type === 'request_rejected') {
+        status.textContent = `请求已拒绝：${value.reason}`;
+      }
+      record('收到引擎事件', value);
+    });
+    attempt(mount);
+    setTimeout(() => {
+      if (document.querySelector('#manual').disabled) status.textContent = '引擎尚未就绪，请查看加载画面或浏览器错误；这不是接入成功。';
+    }, 30000);
+  </script>
+</body>
+</html>

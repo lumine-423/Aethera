@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "content_version": "technical-fixture-02",
+  "actor_id": "rin",
+  "player_max_hp": 10,
+  "enemy_max_hp": 9,
+  "initial_energy": 100,
+  "attack_damage": 3,
+  "retaliation_damage": 3,
+  "guard_retaliation_damage": 1,
+  "liberate_cost": 20,
+  "ultimate_cost": 60,
+  "ultimate_damage": 8,
+  "note": "Technical integration values only; not approved formal balance. No story effects."
+}

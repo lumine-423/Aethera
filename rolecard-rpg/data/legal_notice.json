@@ -1,0 +1,19 @@
+{
+  "format": "aethera-notice/2",
+  "version": "2026-11-17",
+  "title": "使用与版权声明",
+  "intro": "《艾瑟拉》由作者【明星荧荧Hotaru】免费发布，仅限个人免费游玩。严禁任何形式的二次传播与商业用途。",
+  "terms": "1. 严禁二次传播：禁止将游戏本体、安装包、音频、立绘、图集、世界书或预设文件搬运外传、二次发布或拆包单独分发。\n2. 严禁商业用途：禁止将本作及其中任何内容用于售卖、收费解锁、带货引流或任何营利性活动。\n3. 第三方资源归属：开源组件、音乐、美术与衍生预设均保留原作者权利；违规传播或商用导致的法律责任由行为人自行承担。",
+  "preset": "游戏内置游玩提示词预设二改自【创世回廊】与【kunlun】，感谢原预设作者；二改内容同样禁止二次传播与商用。",
+  "music": "游戏中使用的背景音乐、开场曲与音效著作权均归原作曲者、演奏者及版权方所有，严禁单独提取音频文件二次传播或商用。来源包括：\n· HOYO-MiX / 陈致逸（《原神》《崩坏：星穹铁道》）：《风带来的圣歌》《寒光裂涛》《永夜的悼挽》《海滨小城》《神狐的祝福》《北国的宝库》《倦飞之鸟》《恒静之梦》《葳蕤林野间》《灼燃的残光》《嵾峨之冠》《边地的守望者》《孤客之旅》《远行的思愿》《蚀形的灾祲》《能指链条》《细语回萦》\n· Binary Haze Interactive / Mili / Yamato Kasai（《ENDER LILIES》《ENDER MAGNOLIA》）：《Main Theme》《Harmonious》《Humidity》《Old City ~ Respite》《Old City Market》《The Witch's Breath》\n· 削除（Sakuzyo）：开场曲《Crystar》\n· 重返未来 / The 1999：《人工梦游》《瑞尼尔雪山的丧钟》\n· 神前暁 / 髙田龍一（MONACA）/ 中山真斗：《いつもの風景から始まる物語》《ぷわぷわり》\n· 高梨康治：《にぎやかな街》；高橋邦幸：《誠に遺憾ながら、知り合い》；タニウチヒデキ：《L》\n· Gustaf Tivander：《Goat Chill》《Cabrito Park》；Louie Zong：《Good Morning》；無力P：《Frozen World》；灵空音乐：《皇家萌卫》\n· Alice In Cradle：《luminous》《degree45》及界面交互 / 刻印激活参考音效来源\n· Francis Goya：《Old Marple》《Song for Alexandra》《Beloved Forest》；Chinmaya Dunster：《The Mountain》；Jack Jezzro：《Santa Lucia》；Roland Rizzo：《Rome》；Cosmo Sheldrake / Andrea Vargas：《Orby》；Pandrezz：《Purr》；Team Astro：《Better, Together, Forever》；ENRA / sleepermane：《Tomorrows That Follow》；Shiroi-Ice：《Maplecamp☆》；花飞飞：《紫禁城里的端庄猫》；单曲《白昼天晴》《温柔夜色》",
+  "art": "角色与设定由作者设计，部分立绘与图集素材取自原角色卡并结合 AI 工具辅助整理，头像与界面编排由作者完成，仅限在本作界面内浏览。",
+  "components": [
+    {"name":"Godot Engine 4.7.2", "purpose":"游戏界面与视听渲染", "license":"MIT", "url":"https://godotengine.org/license/"},
+    {"name":"SillyTavern / ST-Prompt-Template", "purpose":"提示词模板与预设规范参考", "license":"GNU AGPL-3.0", "url":"https://github.com/SillyTavern/SillyTavern"},
+    {"name":"JS-Slash-Runner / tavern_resource", "purpose":"脚本与变量交互规范参考", "license":"PolyForm Noncommercial 1.0.0（仅限非商用）", "url":"https://github.com/N0VI028/JS-Slash-Runner"},
+    {"name":"MVU (MagVarUpdate)", "purpose":"变量结构化更新协议参考", "license":"MIT", "url":"https://github.com/MagicalAstrogy/MagVarUpdate"},
+    {"name":"Electron 43.3.0 / Chromium", "purpose":"桌面端打包运行环境", "license":"MIT / Chromium 原许可", "url":"https://www.electronjs.org/"}
+  ],
+  "other": "字体采用 Noto Serif SC / Noto Sans SC（SIL OFL 1.1）；房间交互音效为本地合成，《空灵水晶》及《Alice In Cradle》界面音效仅作免费游玩使用。",
+  "privacy": "所有 API 密钥、配置、世界书修改、预设调整与存档仅保存在玩家本地目录；游玩中由 AI 生成的剧情文本为虚构内容，不代表作者或任何版权方立场。"
+}

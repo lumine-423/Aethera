@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>凛零 · 像素动作制作样板</title>
+<style>body{background:#121c29;color:#e6edf3;font:17px/1.6 system-ui,sans-serif;max-width:1100px;padding:24px;margin:auto}h1{font-size:25px}button,select,input{font:inherit;padding:8px;margin:4px;color:inherit;background:#26384a;border:1px solid #60788e}canvas{width:min(480px,100%);image-rendering:pixelated;border:1px solid #60788e}main{display:flex;gap:24px;flex-wrap:wrap}section{min-width:280px;flex:1}p{color:#bdcbd8}a{color:#d6bd8e}#frame{width:min(430px,90%)}li{margin-bottom:8px}</style>
+<h1>凛零：待机与攻击修稿检查</h1>
+<p>全角色/全形态都需要待机。新稿含 4 帧待机和 12 帧攻击候选；新攻击有约 12 像素前脚漂移，已拦下，当前游戏保留旧攻击。所有画稿均未通过正式自然动作验收。</p>
+<label>检查对象 <select id="asset" aria-label="检查对象"><option value="idle">新待机候选（游戏已接）</option><option value="attack">新攻击候选（失败对照）</option><option value="previous">旧攻击草稿（游戏暂用）</option></select></label>
+<main><section><canvas id="stage" width="480" height="480"></canvas><br>
+<button id="play">暂停</button><select id="speed" aria-label="播放速度"><option value="1">正常速度</option><option value="0.25">四分之一速度</option><option value="2">两倍速度</option></select>
+<label><input id="guides" type="checkbox" checked>显示地面与后脚锚点</label><br>
+<input id="frame" type="range" min="0" max="5" value="0" aria-label="逐帧查看"><div id="info" role="status"></div></section>
+<section><h2>这次具体在看什么</h2><ul>
+<li>身份：银蓝长发、冰蓝眼睛、白制服深蓝镶边、蓝领带、百褶裙、黑长袜。</li>
+<li>像素：160×160 画布、25 色、二值透明、整数倍率；不是把高分辨率插画直接放进游戏。</li>
+<li>动作：预备、发力、随动、回收。后脚对齐只解决显示锚点，不证明前脚和重心自然。</li>
+<li>重点缺口：攻击前脚无意漂移、躯干/手臂跳变与回待机衔接；待机还需核查体积和循环接缝。多帧不等于动作合格。</li>
+<li>参考分工：艾瑟拉原画定角色；AIC 定像素语言与场景层次；用户视频定动作动力学；多娜多娜/P5/逆转/弹丸研究界面与演出。</li></ul>
+<p>首轮不合格处继续返工；图集导出成功不会自动升级为“美术完成”。</p><a href="/">返回双入口样片</a></section></main>
+<script type="module">
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
+let frames=[],total=1,image=null,time=0,previous=performance.now(),playing=true,index=0;
+const scrub=document.querySelector('#frame'),info=document.querySelector('#info');
+document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'暂停':'播放';};
+scrub.oninput=()=>{playing=false;document.querySelector('#play').textContent='播放';index=Number(scrub.value);time=frames.slice(0,index).reduce((sum,f)=>sum+f.duration,0);paint();};
+async function selectAsset(){playing=false;const kind=document.querySelector('#asset').value;
+const old=kind==='previous',metadata=await (await fetch(old?'/art-data.json':'/motion-data.json')).json();
+const next=new Image();next.src=old?'/art-sheet.png':'/motion-sheet.png';await next.decode();
+frames=old?metadata.frames:metadata.frames.slice(kind==='idle'?0:4,kind==='idle'?4:16);image=next;total=frames.reduce((sum,f)=>sum+f.duration,0);
+time=0;index=0;scrub.max=frames.length-1;scrub.value=0;previous=performance.now();playing=true;document.querySelector('#play').textContent='暂停';paint();}
+document.querySelector('#asset').onchange=()=>selectAsset().catch(error=>info.textContent='加载失败：'+error.message);
+await selectAsset();
+function paint(){
+ctx.fillStyle='#182838';ctx.fillRect(0,0,480,480);const r=frames[index].frame;ctx.drawImage(image,r.x,r.y,r.w,r.h,0,0,480,480);
+if(document.querySelector('#guides').checked){ctx.strokeStyle='#8eabbd';ctx.beginPath();ctx.moveTo(0,433);ctx.lineTo(480,433);ctx.stroke();ctx.strokeStyle='#e5bc70';ctx.strokeRect(58*3-3,144*3-3,6,6);}
+info.textContent=`第 ${index+1} / ${frames.length} 帧，停留 ${frames[index].duration} ms；总时长 ${total} ms；后脚锚点 (58,144)；未通过正式验收`;}
+function render(now){if(playing){time=(time+(now-previous)*Number(document.querySelector('#speed').value))%total;let until=0;index=0;for(let i=0;i<frames.length;i++){until+=frames[i].duration;if(time<until){index=i;break;}}scrub.value=index;}previous=now;paint();requestAnimationFrame(render);}requestAnimationFrame(render);
+</script></html>

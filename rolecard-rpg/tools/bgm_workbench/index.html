@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AETHERA · BGM 配乐匹配工作台</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-sigil" aria-hidden="true">✦</span>
+        <div>
+          <h1>AETHERA 配乐匹配工作台</h1>
+          <p class="subtitle">拖入音频即自动归档到项目目录，AI 可直接读取 <code>bgm_assignments.json</code></p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button id="btnAddSlot" class="btn btn-ghost" type="button">+ 新增板块</button>
+        <button id="btnOriginals" class="btn btn-ghost" type="button">已有原卡 14 首</button>
+        <button id="btnExport" class="btn btn-ghost" type="button">查看已配清单</button>
+        <button id="btnOpenInbox" class="btn btn-accent" type="button">打开存放目录</button>
+        <button id="btnStopServer" class="btn btn-ghost btn-danger-text" type="button" title="关闭本地工作台后台服务">停止服务</button>
+        <button id="btnTheme" class="btn btn-icon" type="button" title="切换昼/夜外观">☾</button>
+      </div>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-pill">
+        <span class="stat-label">新曲完成</span>
+        <strong id="statMatched">0 / 48</strong>
+      </div>
+      <div class="stat-pill highlight">
+        <span class="stat-label">第一批重点 (21)</span>
+        <strong id="statBatch1">0 / 21</strong>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label">暂用原卡覆盖</span>
+        <strong id="statFallback">0</strong>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label">仍待寻找</span>
+        <strong id="statMissing">48</strong>
+      </div>
+      <div class="progress-wrap" aria-label="总体匹配进度">
+        <div id="progressMatched" class="progress-seg matched"></div>
+        <div id="progressFallback" class="progress-seg fallback"></div>
+      </div>
+      <span id="saveIndicator" class="save-badge">本地已就绪</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section id="poolSection" class="pool-panel" aria-label="音频暂存池">
+      <div class="pool-header">
+        <div>
+          <h2>音频暂存池 <span id="poolCount" class="count-chip">0</span></h2>
+          <p class="pool-tip">可以把找好的一堆音乐先拖进这里，再把下面的曲卡拖进任意板块（也可直接往下方各个板块卡片上拖文件）</p>
+        </div>
+        <div class="pool-actions">
+          <label class="btn btn-ghost btn-sm upload-label">
+            批量选文件入池
+            <input id="poolFileInput" type="file" accept=".mp3,.ogg,.wav,.flac,.m4a,.aac,.opus,.webm,audio/*" multiple hidden />
+          </label>
+          <button id="btnTogglePool" class="btn btn-ghost btn-sm" type="button">收起/展开</button>
+        </div>
+      </div>
+      <div id="poolDropzone" class="pool-dropzone">
+        <div id="poolList" class="pool-list"></div>
+      </div>
+    </section>
+
+    <section class="filters-bar" aria-label="筛选与分类">
+      <div class="filter-group" role="tablist" aria-label="状态筛选">
+        <button class="chip active" data-status="all" type="button">全部</button>
+        <button class="chip" data-status="missing" type="button">仅看未配乐</button>
+        <button class="chip chip-hot" data-status="batch1" type="button">第一批高优 (21)</button>
+        <button class="chip" data-status="matched" type="button">已配新曲</button>
+        <button class="chip" data-status="fallback" type="button">暂用原卡</button>
+      </div>
+
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="搜索编号、国家、乐器、曲风或已配曲名（如 FAC-04 / 秋津 / 钢琴）..." />
+      </div>
+
+      <div id="categoryTabs" class="cat-tabs" role="tablist" aria-label="分类导航"></div>
+    </section>
+
+    <section id="slotsGrid" class="slots-grid" aria-live="polite"></section>
+  </main>
+
+  <footer id="playerBar" class="player-bar hidden" aria-label="底部试听播放器">
+    <div class="player-inner">
+      <button id="playerPlayBtn" class="player-play" type="button" aria-label="播放或暂停">▶</button>
+      <div class="player-meta">
+        <div class="player-title-row">
+          <span id="playerBadge" class="mini-badge">新曲</span>
+          <strong id="playerTitle">未选择曲目</strong>
+        </div>
+        <span id="playerSub" class="player-sub">点击任意曲目的播放按钮即可试听</span>
+      </div>
+      <div class="player-controls">
+        <span id="playerCurTime" class="time-text">00:00</span>
+        <input id="playerSeek" type="range" min="0" max="1000" value="0" aria-label="播放进度" />
+        <span id="playerDurTime" class="time-text">00:00</span>
+      </div>
+      <div class="player-right">
+        <button id="playerLoopBtn" class="btn btn-sm btn-ghost active" type="button" title="切换单曲循环（适合测BGM无缝循环）">循环: 开</button>
+        <label class="vol-wrap" title="音量">
+          <span>音量</span>
+          <input id="playerVol" type="range" min="0" max="1" step="0.02" value="0.75" />
+        </label>
+      </div>
+    </div>
+    <audio id="audioEl" preload="metadata"></audio>
+  </footer>
+
+  <!-- Modal / Drawer Backdrop -->
+  <div id="modalBackdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modalTitle">标题</h3>
+        <button id="modalClose" class="btn btn-icon" type="button" aria-label="关闭">✕</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <input id="slotFileInput" type="file" accept=".mp3,.ogg,.wav,.flac,.m4a,.aac,.opus,.webm,audio/*" multiple hidden />
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

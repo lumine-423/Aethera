@@ -1,0 +1,44 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 当前地点 = getVal('stat_data.主角组.当前地点') || '';
+if (typeof 当前地点 !== 'string') {
+    当前地点 = String(当前地点 || '');
+}
+var 地点未知 = (!当前地点 || 当前地点.indexOf('待初始化') !== -1 || 当前地点.indexOf('未初始化') !== -1);
+var nationRules = [
+    { keys: ['塞蕾特'], entry: '国家/塞蕾特公国' },
+    { keys: ['龙渊'], entry: '国家/龙渊帝国' },
+    { keys: ['哥塔薇亚'], entry: '国家/哥塔薇亚帝国' },
+    { keys: ['秋津'], entry: '国家/秋津国' },
+    { keys: ['吉万沙克蒂', '梵音林'], entry: '国家/吉万沙克蒂' },
+    { keys: ['格洛里亚'], entry: '国家/格洛里亚' },
+    { keys: ['奥马努特'], entry: '国家/奥马努特' },
+    { keys: ['齐哈特'], entry: '国家/奥马努特' }
+];
+var 国家命中 = '';
+if (!地点未知) {
+    for (var i = 0; i < nationRules.length; i++) {
+        for (var j = 0; j < nationRules[i].keys.length; j++) {
+            if (当前地点.indexOf(nationRules[i].keys[j]) !== -1) {
+                国家命中 = nationRules[i].entry;
+                break;
+            }
+        }
+        if (国家命中) break;
+    }
+}
+if (国家命中) {
+%>
+<rule_动态内容_<%= 国家命中 %>>
+<%- await getwi(国家命中) %>
+</rule_动态内容_<%= 国家命中 %>>
+<%
+}
+%>

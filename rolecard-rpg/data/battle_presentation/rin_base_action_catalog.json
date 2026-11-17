@@ -1,0 +1,49 @@
+{
+  "actor_id": "rin",
+  "form_id": "base",
+  "format_version": 1,
+  "slots": {
+    "idle": {
+      "status": "selected_single_image_shader",
+      "scene": "res://scenes/rin_idle_mad_01.tscn",
+      "asset": "res://assets/characters/rin-idle-mad-02/rin-base.png"
+    },
+    "attack": {
+      "status": "direction_accepted",
+      "scene": "res://scenes/rin_attack_mad_06.tscn"
+    },
+    "skill_1": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_skill1_sample_01.tscn"
+    },
+    "skill_2": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_skill2_sample_01.tscn"
+    },
+    "ultimate": {
+      "status": "video_direction_accepted_godot_pending_review",
+      "scene": "res://scenes/rin_base_ultimate_template_01.tscn",
+      "config": "res://data/battle_presentation/rin_base_ultimate_demo.json"
+    },
+    "hit": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_reaction_sample_01.tscn",
+      "asset": "res://assets/characters/rin-reactions-01/hit.png"
+    },
+    "guard": {
+      "status": "corrected_candidate_not_accepted",
+      "scene": "res://scenes/rin_guard_sample_01.tscn",
+      "asset": "res://assets/characters/rin-guard-02/guard.png"
+    },
+    "down": {
+      "status": "candidate_not_accepted_background_check_required",
+      "scene": "res://scenes/rin_reaction_sample_01.tscn",
+      "asset": "res://assets/characters/rin-reactions-01/down.png"
+    },
+    "victory": {
+      "status": "candidate_not_accepted",
+      "scene": "res://scenes/rin_reaction_sample_01.tscn",
+      "asset": "res://assets/characters/rin-reactions-01/victory.png"
+    }
+  }
+}

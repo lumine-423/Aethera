@@ -1,0 +1,155 @@
+@@preprocessing
+<%
+function getVal(path) {
+    try {
+        return getvar(path, { defaults: undefined });
+    } catch(e) {
+        return undefined;
+    }
+}
+var 已完成事件 = getVal('stat_data.剧情事件.已完成事件');
+/* 0919 起已完成事件改为数组 [事件名]；旧形状是对象 {事件名:true} —— 两种都归一成键集合 */
+var 已完成键 = {};
+if (Array.isArray(已完成事件)) {
+    for (var di = 0; di < 已完成事件.length; di++) {
+        var dn = String(已完成事件[di] == null ? '' : 已完成事件[di]).trim();
+        if (dn) { 已完成键[dn] = true; }
+    }
+} else if (已完成事件 && typeof 已完成事件 === 'object') {
+    for (var dk in 已完成事件) { if (已完成事件[dk]) { 已完成键[dk] = true; } }
+}
+var 当前时间 = getVal('stat_data.主角组.时间') || '';
+if (typeof 当前时间 !== 'string') {
+    当前时间 = String(当前时间 || '');
+}
+/* 「公纪1013年11月3日 21:40」「1013-11-3」「1013/11/3」都能解析成 YYYYMMDD 数字 */
+function 解析时间(s) {
+    var m = String(s).match(/(\d+)\s*[年\-/.]\s*(\d+)\s*[月\-/.]\s*(\d+)/);
+    if (!m) {
+        return NaN;
+    }
+    var y = parseInt(m[1], 10);
+    var mo = parseInt(m[2], 10);
+    var d = parseInt(m[3], 10);
+    if (!isFinite(y) || !isFinite(mo) || !isFinite(d)) {
+        return NaN;
+    }
+    return y * 10000 + mo * 100 + d;
+}
+var 现在 = 解析时间(当前时间);
+/* 持有物闸门：/主角组/持有物品 是 {物品名: {描述, 数量}}。
+   写成 holds: ['物品名'] 时，持有其中**任意一件**才注入（键名包含匹配，防止括号后缀差异）。 */
+var 持有物品 = getVal('stat_data.主角组.持有物品');
+var 持有键 = [];
+if (Array.isArray(持有物品)) {
+    for (var hi = 0; hi < 持有物品.length; hi++) {
+        var hn = String(持有物品[hi] == null ? '' : 持有物品[hi]).trim();
+        if (hn) { 持有键.push(hn); }
+    }
+} else if (持有物品 && typeof 持有物品 === 'object') {
+    for (var hk in 持有物品) {
+        if (!hk) { continue; }
+        if (持有物品[hk] === false || 持有物品[hk] == null) { continue; }
+        持有键.push(String(hk).trim());
+    }
+}
+function 持有(x) {
+    if (x == null) {
+        return false;
+    }
+    var arr = Array.isArray(x) ? x : [x];
+    for (var a = 0; a < arr.length; a++) {
+        var want = String(arr[a]).trim();
+        if (!want) { continue; }
+        for (var b = 0; b < 持有键.length; b++) {
+            if (持有键[b] === want || 持有键[b].indexOf(want) !== -1) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+function 已做(x) {
+    if (x == null) {
+        return false;
+    }
+    var arr = Array.isArray(x) ? x : [x];
+    for (var i = 0; i < arr.length; i++) {
+        if (已完成键[String(arr[i]).trim()]) {
+            return true;
+        }
+    }
+    return false;
+}
+function 全未做(x) {
+    if (x == null) {
+        return true;
+    }
+    return !已做(x);
+}
+/* ══════════════════ 后剧情表 ══════════════════
+   字段（全部可选，同时出现时是「与」关系）：
+     entry   : 要注入的世界书条目 comment（getwi 按它取内容）——**必填**
+     when    : 已完成事件名（或数组）；命中其一才注入
+     notDone : 事件名（或数组）；**都不在**已完成里才注入（反向条件）
+     after   : 时间下限，/主角组/时间 **严格晚于** 该日期才注入
+     before  : 时间上限，**不晚于** 该日期才注入
+     note    : 只给自己看的备注，不参与判断
+   规则：
+     · after / before 在时间读不出来（待初始化 / 格式不对）时**一律不注入** ——
+       宁可不发，也不要凭错误时间把剧透设定提前塞进去
+     · 命中后**全部注入**（不设「只取第一条」）
+   ═══════════════════════════════════════════ */
+var 因果表 = [
+    { entry: '后剧情条目/蛇杖', when: '蛇杖', note: '完成「蛇杖」事件后，改用新版蛇杖设定' },
+    { entry: '后剧情条目/塞蕾特公国政治现状', when: '夜枭', note: '完成「夜枭」事件后' },
+    { entry: '后剧情条目/尼德霍格区现状', after: '1015-3-31', notDone: '无法之地', note: '时间超过1015年3月31日、且「无法之地」未完成' },
+    { entry: '后剧情条目/中央学院学生现状', when: '平民的尊严', note: '完成「平民的尊严」事件后' },
+    { entry: '后剧情条目/奥马努特现状', when: '非人类开膛手', note: '完成「非人类开膛手」事件后' },
+    { entry: '后剧情条目/吉万沙克蒂现状', when: '埋下未来的种子', note: '完成「埋下未来的种子」事件后' },
+    { entry: '后剧情条目/地虫异变', when: '立下誓约的那一天', note: '完成「立下誓约的那一天」事件后' },
+    { entry: '后剧情条目/以太多面体', holds: ['完合的正四面体·缺遗', '无限的正六面体·界域', '无序的正八面体·均和', '真理的正十二面体·幻梦', '平止的正二十面体·悸动'], note: '持有任一以太多面体时' },
+    { entry: '组织/蛇杖', notDone: '蛇杖', note: '「蛇杖」事件未完成期间一直注入（旧版设定）' },
+    { entry: '后剧情条目/格洛里亚现状', when: '自灰烬中归来', note: '完成「自灰烬中归来」事件后，战争结束' },
+    { entry: '后剧情条目/秋津国现状', when: '落樱与锈刃', note: '完成「落樱与锈刃」事件后，佐藤家改头换面' },
+    { entry: '后剧情条目/塞蕾特与龙渊外交现状', when: '剑与秤的盟约', note: '完成「剑与秤的盟约」事件后，两国建交贸易' }
+];
+var 因果命中 = [];
+for (var i = 0; i < 因果表.length; i++) {
+    var row = 因果表[i] || {};
+    if (!row.entry) {
+        continue;
+    }
+    if (row.when != null && !已做(row.when)) {
+        continue;
+    }
+    if (row.notDone != null && !全未做(row.notDone)) {
+        continue;
+    }
+    if (row.holds != null && !持有(row.holds)) {
+        continue;
+    }
+    if (row.after != null) {
+        var 下 = 解析时间(row.after);
+        if (!isFinite(现在) || !isFinite(下) || 现在 <= 下) {
+            continue;
+        }
+    }
+    if (row.before != null) {
+        var 上 = 解析时间(row.before);
+        if (!isFinite(现在) || !isFinite(上) || 现在 > 上) {
+            continue;
+        }
+    }
+    因果命中.push(row.entry);
+}
+if (因果命中.length > 0) {
+    for (var k = 0; k < 因果命中.length; k++) {
+%>
+<rule_因果_<%= 因果命中[k] %>>
+<%- await getwi(因果命中[k]) %>
+</rule_因果_<%= 因果命中[k] %>>
+<%
+    }
+}
+%>

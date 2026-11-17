@@ -1,0 +1,318 @@
+{
+ "pack": "mystic",
+ "note": "Synthesized from scratch by tools/build_ui_sfx_mystic.py; no samples.",
+ "cues": {
+  "hover": {
+   "seconds": 1.02,
+   "sha256": "eb88df0f218700261cf5214325cb9c31e1115ccbfa90a0e96f5cb7ced8c25dc0"
+  },
+  "focus": {
+   "seconds": 0.617,
+   "sha256": "b17adfceab4335a096112e1d99f35d56b3a74b4a3c6d810624ef37440198557c"
+  },
+  "tick": {
+   "seconds": 0.339,
+   "sha256": "f929b1e363b041869133e96cb5420c94a14727eb239f531885baa51938dc58be"
+  },
+  "type": {
+   "seconds": 0.35,
+   "sha256": "2fe9ced1f0413da5f05277e794779df2225ef220f814ad8691be04e740236892"
+  },
+  "select": {
+   "seconds": 1.515,
+   "sha256": "f8f462d2345575a517ce9db981074ec846fea90c1e78e3e6784ba498eaf146e2"
+  },
+  "confirm": {
+   "seconds": 2.14,
+   "sha256": "feed2726b6a4567a8bbe68945c435ec975876c8d5f66c5fae12346e1712300f3"
+  },
+  "confirm_big": {
+   "seconds": 3.16,
+   "sha256": "ab334432332d3d40e8800af6acb6e35da51247b05f2acfa05a4c6171dfbe4400"
+  },
+  "back": {
+   "seconds": 1.58,
+   "sha256": "72bd75f3f77325b377262863cded04dabddaa454326e9b2730ef913e38bbafb6"
+  },
+  "close": {
+   "seconds": 1.29,
+   "sha256": "8a224e6311ca852396a82ceb63577112f92afe61b526e8d3bf88967c2b6c309b"
+  },
+  "popup": {
+   "seconds": 1.521,
+   "sha256": "5206fdac5eb02aef686b890b1702f2bb858470271c3c0712d34af4edcbe74c86"
+  },
+  "toast": {
+   "seconds": 1.606,
+   "sha256": "b6f24d3b01ef73d25d1dd28ccdf7eeaab130500f6b1fdf052e27f25fa9d31db9"
+  },
+  "tab": {
+   "seconds": 1.26,
+   "sha256": "ae3aa38d6c14707c984ffb0ea16f1975db756f90cc5bbe3e074d03e8e4504031"
+  },
+  "toggle": {
+   "seconds": 0.94,
+   "sha256": "55ac405a777bd8798cd58c8d058889ae4c915e37bf091911eaa711168fade268"
+  },
+  "deny": {
+   "seconds": 1.19,
+   "sha256": "f379246040a0bb649ce7fefd26f64f88782e6398711eb8a4f8fea6a2925154e3"
+  },
+  "error": {
+   "seconds": 2.28,
+   "sha256": "3ef31334eafd9f1e2412da345354fadb61eba6cda200cd0bce498995a0b80ea3"
+  },
+  "reset": {
+   "seconds": 1.449,
+   "sha256": "4c0661c12e7fcbe84984fef31d73316bc6255ffd13931c9893c3c41cb4516147"
+  },
+  "save": {
+   "seconds": 2.11,
+   "sha256": "4a04df38ea0020262da91a469fadc79d4811109c1b358a27ffcd47b46885c8ad"
+  },
+  "reward": {
+   "seconds": 2.658,
+   "sha256": "a26407aa3f54d4f5326e089e9ca0d638d9860c7f4c7e9ca58beb25329b8c4410"
+  },
+  "count": {
+   "seconds": 0.515,
+   "sha256": "ea2f788d67020c9e45d59984187eb22aced8941a2473acd5839519ea419d54f0"
+  },
+  "recipe": {
+   "seconds": 1.73,
+   "sha256": "ca48183f81543013a56ca2645e0075cf34951cb9b4b0eb45439c35e3679037ad"
+  },
+  "ready": {
+   "seconds": 1.899,
+   "sha256": "fc0418c4c22db39f2ad8f577b271df6f321cd4d5f44177f312b88ac8b6cbea4f"
+  },
+  "craft": {
+   "seconds": 3.004,
+   "sha256": "3421480d684521795814165c0066a496bed99975d4ffb9840512796a1770168d"
+  },
+  "aim": {
+   "seconds": 0.489,
+   "sha256": "135629c0541b281f503392088e78543eb12cc70a1f845b4dc98788d13553d353"
+  },
+  "lockon": {
+   "seconds": 1.21,
+   "sha256": "c0088baa01521f18c505df9103d47c73599500d7d240c2cc116d6d4437ab17c7"
+  },
+  "wipe": {
+   "seconds": 2.75,
+   "sha256": "920003480586cd209b7ddc1a29da3d22c14274d2177d4da2a8145f7fd2202b2a"
+  },
+  "slide": {
+   "seconds": 0.929,
+   "sha256": "f55cfc3c62424a814d134227ea185858ed7e9b8c31fa14aaaf3d312684e12d82"
+  },
+  "loaded": {
+   "seconds": 2.25,
+   "sha256": "8ffd9534b11d10ac6521b6186be3d12c9e1fddc6eff1d10646378ee64b05203a"
+  },
+  "open_book": {
+   "seconds": 1.359,
+   "sha256": "489550b49dfe44156767f73fbe55ee7c82f5ec22bd2e4e03d2b2f12e62999ad5"
+  },
+  "close_book": {
+   "seconds": 1.69,
+   "sha256": "329e4454768d4289390e83bceaf753acaaff292063e1504c7a309ce73cb3d141"
+  },
+  "paper": {
+   "seconds": 0.749,
+   "sha256": "a8231e62e0b19161fffe1b73138ed2ee41f098121c98eb7abff27e04835a07c8"
+  },
+  "assign": {
+   "seconds": 1.72,
+   "sha256": "9e3faebad62921359873847a9cbc9e11ded8a205952f7ba54abab5edfcd7d94f"
+  },
+  "card": {
+   "seconds": 1.05,
+   "sha256": "f57973c650ea5d040c63f9c9a1df5f10af55e783d805c9c9135b7e55c35866f3"
+  },
+  "start": {
+   "seconds": 3.64,
+   "sha256": "dc0ae767638ab98ab7bc6d61d931fe10b51c1318ee5a02845286f4c8f240c785"
+  },
+  "theme": {
+   "seconds": 2.8,
+   "sha256": "65cd225a69bf68eb84d7f11fae740b54b3df6ecba27c5ae68f24da2e0fc8414b"
+  },
+  "expand": {
+   "seconds": 1.08,
+   "sha256": "f50f06416c853039188a5d1d7e4f0486c0d97b7cc77cf57412f92d737f46f3ed"
+  },
+  "collapse": {
+   "seconds": 1.08,
+   "sha256": "dbf29df2e433a09d6e5747c51ef221f8e8cc26d112d7d783c609ce79b8c0a11f"
+  },
+  "send": {
+   "seconds": 1.667,
+   "sha256": "2e7a7619cb47f4d17bfa2ad764cf515840234e1fa22317903ecf9e496637c45e"
+  },
+  "victory": {
+   "seconds": 5.1,
+   "sha256": "608dbabcc5f96992bf5e4d500e3afe40b0fcc7737d79a6d4a4b0a5c18cda6a81"
+  },
+  "defeat": {
+   "seconds": 4.53,
+   "sha256": "711f40cf99b7e996530072ef967eabe5f6a97fbd7031a9b018578dd22b35d3ea"
+  },
+  "retreat": {
+   "seconds": 2.0,
+   "sha256": "b01e426f4d79e2700f2cc447e67562eac5e86b83f0e82397ce37af8d6703457c"
+  },
+  "battle_enter": {
+   "seconds": 2.142,
+   "sha256": "c9c19085be48ed05d329c5659d339b19526d22d6570dd5a95bea2c48cf196051"
+  },
+  "turn": {
+   "seconds": 1.481,
+   "sha256": "f8340827da458401ae849084a4a7ee080eb43266cb5b28e905c744abcd57f346"
+  },
+  "round": {
+   "seconds": 2.46,
+   "sha256": "ddd539ff93ce4ba0500008de4f100fc968a5ad1870c2c9a1c1d398f964da7c9e"
+  },
+  "hit": {
+   "seconds": 0.73,
+   "sha256": "b4401b1afdcc62fc231c2c7276e6177c659a2b05ee1f332b3c061d64f1a86a38"
+  },
+  "hit_heavy": {
+   "seconds": 1.84,
+   "sha256": "a9c9a9d7aa23bb69cf66e8ee198cc9709c12267b65c9ebcc9a5293a5cae05198"
+  },
+  "hit_ally": {
+   "seconds": 1.31,
+   "sha256": "722d23729fb6ce0e087f35f4eacdd2bbbdaf52ca7e2ab4af9e50177bb51b7f65"
+  },
+  "guard": {
+   "seconds": 2.15,
+   "sha256": "81bf56dc98f65f735effb85e89e97c5895ed69f25b815cab01bff4e1b6b0cd0d"
+  },
+  "heal": {
+   "seconds": 2.409,
+   "sha256": "f5566bbee35a5cecd02c51ae8ac8bee5cd263c1ff1504268bf0d12c26f5d2912"
+  },
+  "slam": {
+   "seconds": 1.663,
+   "sha256": "127dc8ac3986f9880f41cc1515f01697f1ef91b5c640c92cdb2e65c9e9967790"
+  },
+  "pop": {
+   "seconds": 1.02,
+   "sha256": "c00f10d1caf46741d6dc8c65864d400d919eab9c5b15efac2ceacd6ee1d0f8c5"
+  },
+  "advance": {
+   "seconds": 1.35,
+   "sha256": "fcbdb2e51f32d3094c771f4eb392871c448394953551650eb1ada2e1f4fd810f"
+  },
+  "delete": {
+   "seconds": 1.427,
+   "sha256": "0efd93c4b63e57fac32b9c8759bfed2979e0067cdf5c2fc8b1bf0e44418aad38"
+  },
+  "unlock": {
+   "seconds": 2.51,
+   "sha256": "25ce42dd0af6889515f99c15bb1307d2510e1b0027994d1190839ef7cc8eae42"
+  },
+  "scan": {
+   "seconds": 1.097,
+   "sha256": "5a20c1d51085d0564e2d029ca878e89ca72fc8cf6d81a0a866f94a289d959bf7"
+  },
+  "attach": {
+   "seconds": 1.61,
+   "sha256": "c12959b4a5a3a050b8ebe3cf0288751ba1a90b1fe0ddf0abc9064d39991be25e"
+  },
+  "place": {
+   "seconds": 1.31,
+   "sha256": "30c8ba245273884ac26a0a4c431661fc7f76b704154dd754260bb1278c576713"
+  },
+  "pick": {
+   "seconds": 0.89,
+   "sha256": "a36882afa736016d61b868c7b894df6ca49be6292f604477db6d7f2799894d25"
+  },
+  "detach": {
+   "seconds": 1.19,
+   "sha256": "df5cfb2d328a0a6612e889544dc179fe5ca02d118ed4a532f1410796f63bbbf1"
+  },
+  "erase": {
+   "seconds": 1.364,
+   "sha256": "bff60187c108c3d6736b6e10dab37b4711a6d8c156b4662f22706aa1d9d90297"
+  },
+  "ignite": {
+   "seconds": 1.63,
+   "sha256": "cadf00158d0f0a88223a10d9e94dd7efc033e750e367246e386fcd8743b89c5b"
+  },
+  "craft_charge": {
+   "seconds": 2.77,
+   "sha256": "5fe7b9865cf30bb5f3e7f389c2899c288550a68654d2019107a8d4debb31f4b1"
+  },
+  "craft_done": {
+   "seconds": 4.169,
+   "sha256": "f986f704d33cfbc7f61b8751240fff457b2e6f8411f5ed7fcb0e9715b2add392"
+  },
+  "swap": {
+   "seconds": 1.32,
+   "sha256": "b2e6291c32f6b69fdb7c85af196dd39020552e4bb9906a048ceef4e730fb280f"
+  },
+  "page": {
+   "seconds": 1.065,
+   "sha256": "c89563c0cba424a5495c15a88f640ce59c6af0d562efd85170791630f8d05ff1"
+  },
+  "theme_day": {
+   "seconds": 1.98,
+   "sha256": "6a5bbcef8292a274d38b7ff96c730d3fd0215904b86c04789c53f8b86eeb6b76"
+  },
+  "theme_night": {
+   "seconds": 2.19,
+   "sha256": "92b8776877629f45fd6493290b40d0ddaaafe281cd9bb50ad94a4cf60b5da3fc"
+  },
+  "hover_soft": {
+   "seconds": 0.487,
+   "sha256": "ddb6aaf31b5d46c44df64be2fbee84cadb823b96c747470d0e0db54a8f3b32b2"
+  },
+  "hover_card": {
+   "seconds": 0.935,
+   "sha256": "3c77048f48a9851446abd756b2e654800a809085f2b5b3529ae0a0e906f70988"
+  },
+  "chip": {
+   "seconds": 1.14,
+   "sha256": "562a04747934ece3b6c679838287bec6a06d3c4b0194a811c9e6e613815360c9"
+  },
+  "ghost": {
+   "seconds": 0.573,
+   "sha256": "8da35b6d12b56da71ff9b532434cda33628a281cb7ab2271495d6bca561e7268"
+  },
+  "icon_btn": {
+   "seconds": 1.06,
+   "sha256": "834dede060f9a60dd1c9a4f9debb4193ed2846242cbff761536d448ddbce0ab5"
+  },
+  "toggle_on": {
+   "seconds": 1.01,
+   "sha256": "c4c51e764b3afbf0b271d8490ee40b09a52bf660459f760caee50ad9d37a65be"
+  },
+  "toggle_off": {
+   "seconds": 0.591,
+   "sha256": "f1e8f6988a002e9973583d69c0121ac9ee79efe463a2af855572456ac08a7ccd"
+  },
+  "map_open": {
+   "seconds": 2.01,
+   "sha256": "9eb24c36491a6c93012ec393e8284379c2fc5fb05de06a3926e150d253a2d263"
+  },
+  "bag_open": {
+   "seconds": 1.53,
+   "sha256": "e03f6c6c348a5ddac6d1b214f8d182c8c8ec1153dc98b006d89a95bf94f4fb77"
+  },
+  "char_open": {
+   "seconds": 1.46,
+   "sha256": "8f601e28ec4ce459b38fa596db70eca12b8167d30e4a3f4b75e663e5ea3607b5"
+  },
+  "music_open": {
+   "seconds": 1.861,
+   "sha256": "6945fb7db3f5439ad8a536a17745e18df8e8e37a1dbb892804f3f6cc77edac0d"
+  },
+  "music_pick": {
+   "seconds": 1.98,
+   "sha256": "d8a1f9eb4b4695c92be79b199390d5d96229c4cf7bb5d886772fe15d94310a24"
+  }
+ }
+}

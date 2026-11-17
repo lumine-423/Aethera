@@ -1,0 +1,1543 @@
+{
+  "format": "aethera-music/3",
+  "edition": "full-expanded",
+  "source": "SillyTavern 艾瑟拉原卡保留 14 首 + 用户严选扩充曲库（势力/地点/工坊/主页/日常/夜谈/危机，共 36 首入库 + 1 首开场预留）",
+  "usage_note": "非商用个人独立项目使用：全部新曲均已转码为 44.1kHz 立体声 -16 LUFS Ogg Vorbis 写入 assets/audio/bgm/custom/；原卡 14 首保留在 assets/audio/bgm/original/。工坊激活 4 段新音频保存在 assets/audio/ui/workshop_activation/。",
+  "title_track": "Main Theme",
+  "ui_screen_tracks": {
+    "home_day": "白昼天晴",
+    "home_night": "温柔夜色",
+    "workshop": "人工梦游"
+  },
+  "story_tracks": [
+    "luminous",
+    "degree45",
+    "Good Morning",
+    "Goat Chill",
+    "Cabrito Park",
+    "皇家萌卫",
+    "Humidity",
+    "Harmonious",
+    "Windborne Hymn",
+    "Combat Beneath the Waves",
+    "Frozen World",
+    "Seaside Town",
+    "Everlasting Dirge",
+    "にぎやかな街",
+    "紫禁城里的端庄猫",
+    "Old Marple",
+    "神狐的祝福",
+    "The Mountain",
+    "Rome",
+    "Santa Lucia",
+    "L",
+    "誠に遺憾ながら、知り合い",
+    "Old City ~ Respite",
+    "Old City Market",
+    "北国的宝库",
+    "倦飞之鸟",
+    "Song for Alexandra",
+    "Beloved Forest",
+    "葳蕤林野间",
+    "灼燃的残光",
+    "嵾峨之冠",
+    "边地的守望者",
+    "恒静之梦",
+    "The Witch's Breath",
+    "孤客之旅",
+    "远行的思愿",
+    "瑞尼尔雪山的丧钟",
+    "Orby",
+    "蚀形的灾祲",
+    "いつもの風景から始まる物語",
+    "ぷわぷわり",
+    "能指链条",
+    "细语回萦",
+    "Purr",
+    "Better, Together, Forever",
+    "Tomorrows That Follow",
+    "Maplecamp☆"
+  ],
+  "location_tracks": [
+    {
+      "keyword": "中央学院",
+      "title": "誠に遺憾ながら、知り合い"
+    },
+    {
+      "keyword": "卡米洛特",
+      "title": "Windborne Hymn"
+    },
+    {
+      "keyword": "尼德霍格",
+      "title": "Old City ~ Respite"
+    },
+    {
+      "keyword": "天国岛",
+      "title": "瑞尼尔雪山的丧钟"
+    },
+    {
+      "keyword": "紫宸宫",
+      "title": "北国的宝库"
+    },
+    {
+      "keyword": "灵山",
+      "title": "倦飞之鸟"
+    },
+    {
+      "keyword": "基捷日",
+      "title": "Song for Alexandra"
+    },
+    {
+      "keyword": "阿拉提尔",
+      "title": "Beloved Forest"
+    },
+    {
+      "keyword": "须弥王庭",
+      "title": "葳蕤林野间"
+    },
+    {
+      "keyword": "塞建陀",
+      "title": "灼燃的残光"
+    },
+    {
+      "keyword": "梵音林",
+      "title": "远行的思愿"
+    },
+    {
+      "keyword": "堤丰之喉",
+      "title": "嵾峨之冠"
+    },
+    {
+      "keyword": "库利亚",
+      "title": "边地的守望者"
+    },
+    {
+      "keyword": "云樱",
+      "title": "恒静之梦"
+    },
+    {
+      "keyword": "地下市场",
+      "title": "The Witch's Breath"
+    },
+    {
+      "keyword": "齐哈特",
+      "title": "孤客之旅"
+    },
+    {
+      "keyword": "蛇杖",
+      "title": "L"
+    },
+    {
+      "keyword": "塞蕾特",
+      "title": "にぎやかな街"
+    },
+    {
+      "keyword": "龙渊",
+      "title": "紫禁城里的端庄猫"
+    },
+    {
+      "keyword": "哥塔薇亚",
+      "title": "Old Marple"
+    },
+    {
+      "keyword": "秋津",
+      "title": "神狐的祝福"
+    },
+    {
+      "keyword": "吉万沙克蒂",
+      "title": "The Mountain"
+    },
+    {
+      "keyword": "格洛里亚",
+      "title": "Rome"
+    },
+    {
+      "keyword": "奥马努特",
+      "title": "Santa Lucia"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "orig-qm0aff",
+      "title": "Main Theme",
+      "original_title": "Main Theme",
+      "artist": "Binary Haze Interactive/Mili",
+      "album": "ENDER LILIES: Quietus of the Knights Original Soundtrack",
+      "catbox_id": "qm0aff",
+      "role": "标题曲（开场层与主页专用）",
+      "aliases": [
+        "qm0aff",
+        "main theme",
+        "待初始化",
+        "氷龍の夢"
+      ],
+      "res": "res://assets/audio/bgm/original/qm0aff.ogg",
+      "source_mp3": "_out/bgm/Main Theme__qm0aff.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/qm0aff.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/qm0aff.mp3"
+      ],
+      "tail_repaired": true,
+      "source_sha256": "32f74722aa80c308e95a9c0c2f946b4ebe1d3050623742173ac53bcd04b0855d",
+      "sha256": "1ecb48f5b62931a7aa37c12119f3f75194eec9a4a36aeae2edb8cb6cf1a3f189",
+      "bytes": 1150183,
+      "duration_seconds": 63.374,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-wv3ff4",
+      "title": "luminous",
+      "original_title": "luminous_particle",
+      "artist": "",
+      "album": "Alice In Cradle",
+      "catbox_id": "wv3ff4",
+      "role": "思考 · 研究 · 工作 · 旅途 · 进行时",
+      "aliases": [
+        "luminous_particle",
+        "wv3ff4"
+      ],
+      "res": "res://assets/audio/bgm/original/wv3ff4.ogg",
+      "source_mp3": "_out/bgm/luminous__wv3ff4.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/wv3ff4.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/wv3ff4.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "771c0a56fac7fffa2d1a2a273294bd1888acab18075a2155e9cd060a77713e5a",
+      "sha256": "6e123f520c23b5e67de653a85f2aa96b0515c18f15b56bde33cccf78fc0f2e5e",
+      "bytes": 2502312,
+      "duration_seconds": 138.321,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-aqwirj",
+      "title": "degree45",
+      "original_title": "45度だけ開けた世界 (degree45)",
+      "artist": "",
+      "album": "Alice In Cradle",
+      "catbox_id": "aqwirj",
+      "role": "回忆 · 过去 · 思念 · 悲哀 · 伤心",
+      "aliases": [
+        "45度だけ開けた世界 (degree45)",
+        "aqwirj"
+      ],
+      "res": "res://assets/audio/bgm/original/aqwirj.ogg",
+      "source_mp3": "_out/bgm/degree45__aqwirj.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/aqwirj.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/aqwirj.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "bc1129593517c84e3867da1ad38cf70d5ab11da82ff299946e358e7a4c681f7c",
+      "sha256": "aeeeae807c717071671f65b11059d45cc42c75343b1944603bbe23e558584f38",
+      "bytes": 449343,
+      "duration_seconds": 87.864,
+      "sample_rate": 11025,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-60bdkb",
+      "title": "Good Morning",
+      "original_title": "Good Morning (Omori)",
+      "artist": "Louie Zong",
+      "album": "New Places",
+      "catbox_id": "60bdkb",
+      "role": "日常 · 悠闲 · 放松 · 平静 · 开心",
+      "aliases": [
+        "Good Morning (Omori)",
+        "60bdkb",
+        "good morning"
+      ],
+      "res": "res://assets/audio/bgm/original/60bdkb.ogg",
+      "source_mp3": "_out/bgm/Good Morning__60bdkb.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/60bdkb.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/60bdkb.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "c021f00fb726cc198e115d9e5817cb751d7acca446b063457ea5ef6ed3fe448d",
+      "sha256": "a7d8094d33578c201d037015de1fa4be21dc185c214b632a32146818077017f9",
+      "bytes": 1309300,
+      "duration_seconds": 91.951,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-nnl2k1",
+      "title": "Goat Chill",
+      "original_title": "Goat Chill",
+      "artist": "Gustaf Tivander",
+      "album": "Goat Simulator: Original Soundtrack",
+      "catbox_id": "nnl2k1",
+      "role": "日常 · 悠闲 · 放松 · 平静 · 开心（搞怪向）",
+      "aliases": [
+        "nnl2k1",
+        "goat chill"
+      ],
+      "res": "res://assets/audio/bgm/original/nnl2k1.ogg",
+      "source_mp3": "_out/bgm/Goat Chill__nnl2k1.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/nnl2k1.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/nnl2k1.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "61194bb2d54710f855edcf9031a2b03c64f739556ffe921c3f33053667aaf475",
+      "sha256": "0b631221aac0713d34d5a7df1cb7d91d0a01e253ce8c9e57860293c0863dac43",
+      "bytes": 7015914,
+      "duration_seconds": 374.114,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-frple8",
+      "title": "Cabrito Park",
+      "original_title": "Cabrito Park",
+      "artist": "Gustaf Tivander",
+      "album": "Goat Simulator: Original Soundtrack",
+      "catbox_id": "frple8",
+      "role": "不安 · 诡异 · 精神污染",
+      "aliases": [
+        "frple8",
+        "cabrito park"
+      ],
+      "res": "res://assets/audio/bgm/original/frple8.ogg",
+      "source_mp3": "_out/bgm/Cabrito Park__frple8.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/frple8.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/frple8.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "8df92ce679f1cd76323a4c08c207190e21dbfd39dd00873a7bf424da58caf046",
+      "sha256": "9ce5f0420066d23b99ded020141430e7f5e3fc9e1023d2d4d80e51b797df4764",
+      "bytes": 1488358,
+      "duration_seconds": 73.37,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-dw5gq3",
+      "title": "皇家萌卫",
+      "original_title": "皇家萌卫",
+      "artist": "灵空音乐",
+      "album": "皇家萌卫",
+      "catbox_id": "dw5gq3",
+      "role": "温馨 · 可爱 · 放松 · 愉快 · 开心",
+      "aliases": [
+        "dw5gq3"
+      ],
+      "res": "res://assets/audio/bgm/original/dw5gq3.ogg",
+      "source_mp3": "_out/bgm/皇家萌卫__dw5gq3.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/dw5gq3.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/dw5gq3.mp3"
+      ],
+      "tail_repaired": true,
+      "source_sha256": "4cc019dda6fe3b379af69cb1530ec31a697e7956f7f794abbf4dfae7517f74ef",
+      "sha256": "df0c10e9154a1af17452387063448dcf37f60180fc057af1d5b04e93c6447159",
+      "bytes": 3632127,
+      "duration_seconds": 208.798,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-477ql6",
+      "title": "Humidity",
+      "original_title": "Humidity",
+      "artist": "Mili/Yamato Kasai",
+      "album": "ENDER MAGNOLIA: Bloom in the Mist Original Soundtrack",
+      "catbox_id": "477ql6",
+      "role": "神秘 · 调查 · 思考 · 紧张 · 压迫感",
+      "aliases": [
+        "477ql6",
+        "humidity"
+      ],
+      "res": "res://assets/audio/bgm/original/477ql6.ogg",
+      "source_mp3": "_out/bgm/Humidity__477ql6.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/477ql6.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/477ql6.mp3"
+      ],
+      "tail_repaired": true,
+      "source_sha256": "15b3d666ac3fe7b2b7de73780b43126543e98aab676f76d0d54ba3b759745cb3",
+      "sha256": "37991d1e65f975915af36896cddcec9a6b9737429af7564e9f594a0d46b97edc",
+      "bytes": 1962508,
+      "duration_seconds": 124.825,
+      "sample_rate": 48000,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-9v5bny",
+      "title": "Harmonious",
+      "original_title": "Harmonious",
+      "artist": "Binary Haze Interactive/Mili",
+      "album": "ENDER LILIES: Quietus of the Knights Original Soundtrack",
+      "catbox_id": "9v5bny",
+      "role": "悲伤 · 平静 · 忧伤 · 创伤",
+      "aliases": [
+        "9v5bny",
+        "harmonious"
+      ],
+      "res": "res://assets/audio/bgm/original/9v5bny.ogg",
+      "source_mp3": "_out/bgm/Harmonious__9v5bny.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/9v5bny.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/9v5bny.mp3"
+      ],
+      "tail_repaired": true,
+      "source_sha256": "3cce777d8aafa606da1108435b84d3b04199b6db179baebe66195a29b3fdde4b",
+      "sha256": "94aa0154c51584606d9dea6c1c9c0eaeea7d9a5fb8fbd59f94ee1193202057ea",
+      "bytes": 3093723,
+      "duration_seconds": 188.292,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-plgpzp",
+      "title": "Windborne Hymn",
+      "original_title": "风带来的圣歌 Windborne Hymn",
+      "artist": "陈致逸/HOYO-MiX",
+      "album": "原神-风与牧歌之城 City of Winds and Idylls",
+      "catbox_id": "plgpzp",
+      "role": "神圣 · 庄严 · 严肃 · 圣洁",
+      "aliases": [
+        "风带来的圣歌 Windborne Hymn",
+        "plgpzp",
+        "windborne hymn"
+      ],
+      "res": "res://assets/audio/bgm/original/plgpzp.ogg",
+      "source_mp3": "_out/bgm/Windborne Hymn__plgpzp.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/plgpzp.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/plgpzp.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "8c86fb8286aa695bbf8b0a6ff59302d43df92b62cf2bd1924cbef8c2165aa9af",
+      "sha256": "710cb219e1a6ad6e4ae215ee1230cd9b7f088f07bde37ee83aa83d66e5c5e3c8",
+      "bytes": 2000196,
+      "duration_seconds": 108.008,
+      "sample_rate": 48000,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-wh5xjl",
+      "title": "Combat Beneath the Waves",
+      "original_title": "寒光裂涛 Combat Beneath the Waves",
+      "artist": "HOYO-MiX",
+      "album": "原神-佚落迁忘之岛 Islands of the Lost and Forgotten",
+      "catbox_id": "wh5xjl",
+      "role": "战斗 · 对峙 · 常规战斗",
+      "aliases": [
+        "寒光裂涛 Combat Beneath the Waves",
+        "wh5xjl",
+        "combat beneath the waves"
+      ],
+      "res": "res://assets/audio/bgm/original/wh5xjl.ogg",
+      "source_mp3": "_out/bgm/Combat Beneath the Waves__wh5xjl.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/wh5xjl.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/wh5xjl.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "8c9b4346e43fa0b7662cca89a34e23534e86bbb78a8815fb68b48509f28acb3a",
+      "sha256": "3968b8d67d26d6dd1413124b4d97c41f3e8338d8d289724240ddde46621ef6b9",
+      "bytes": 5001530,
+      "duration_seconds": 246.594,
+      "sample_rate": 48000,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-kfj3k4",
+      "title": "Frozen World",
+      "original_title": "Frozen World",
+      "artist": "無力P",
+      "album": "Resonance",
+      "catbox_id": "kfj3k4",
+      "role": "决战 · 战斗高潮 · 大战",
+      "aliases": [
+        "kfj3k4",
+        "frozen world"
+      ],
+      "res": "res://assets/audio/bgm/original/kfj3k4.ogg",
+      "source_mp3": "_out/bgm/Frozen World__kfj3k4.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/kfj3k4.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/kfj3k4.mp3"
+      ],
+      "tail_repaired": true,
+      "source_sha256": "f0a52358009115f2432ecf799bf4494cd79e9856b870454b41a415770ccd13ab",
+      "sha256": "99f7437792dfdf1a0880f021b4d07dfa19beff1dce646a36d81edea42e4b80e9",
+      "bytes": 5926632,
+      "duration_seconds": 302.995,
+      "sample_rate": 44100,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-ekgpx5",
+      "title": "Seaside Town",
+      "original_title": "海滨小城 Seaside Town",
+      "artist": "HOYO-MiX",
+      "album": "崩坏星穹铁道-神说要有笑（中篇） Let There Be Laughter (Part 2)",
+      "catbox_id": "ekgpx5",
+      "role": "夜晚 · 夜深人静（偏静）",
+      "aliases": [
+        "海滨小城 Seaside Town",
+        "ekgpx5",
+        "seaside town"
+      ],
+      "res": "res://assets/audio/bgm/original/ekgpx5.ogg",
+      "source_mp3": "_out/bgm/Seaside Town__ekgpx5.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/ekgpx5.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/ekgpx5.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "e86845ccacf1877a49c7dd1bb35c548b5f65ebdc7b9b233baca71a88c344fadf",
+      "sha256": "69b6c5e550c81c6b7f0890632e5579648828b663fd90c95b78fa14d7a4ed70fa",
+      "bytes": 1871529,
+      "duration_seconds": 116.505,
+      "sample_rate": 48000,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "orig-sadsiw",
+      "title": "Everlasting Dirge",
+      "original_title": "永夜的悼挽 Everlasting Dirge",
+      "artist": "HOYO-MiX",
+      "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+      "catbox_id": "sadsiw",
+      "role": "夜晚 · 夜深人静（偏悲）",
+      "aliases": [
+        "永夜的悼挽 Everlasting Dirge",
+        "sadsiw",
+        "everlasting dirge"
+      ],
+      "res": "res://assets/audio/bgm/original/sadsiw.ogg",
+      "source_mp3": "_out/bgm/Everlasting Dirge__sadsiw.mp3",
+      "source_urls": [
+        "https://files.catbox.moe/sadsiw.mp3",
+        "https://workshop.hotaruworkshop.l.cd/bgm/sadsiw.mp3"
+      ],
+      "tail_repaired": false,
+      "source_sha256": "5ddbc0811e9e911a3a6abc0175cd0891b79473ebe7af8c751fea91cae892b569",
+      "sha256": "b3e459edd442ea5121add0137dfe1b530ab018dd292bb7fc03a2d9295a0a3a1b",
+      "bytes": 1845888,
+      "duration_seconds": 117.633,
+      "sample_rate": 48000,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0,
+      "category": "original"
+    },
+    {
+      "id": "cust-ui03-day",
+      "title": "白昼天晴",
+      "original_title": "白昼天晴 单曲版",
+      "artist": "",
+      "role": "室内交互主页 · 白昼模式（UI-03）",
+      "category": "ui",
+      "slots": [
+        "UI-03"
+      ],
+      "aliases": [
+        "白昼天晴 单曲版"
+      ],
+      "res": "res://assets/audio/bgm/custom/ui03_home_day.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/白昼天晴 单曲版__c46b8ba0.mp3",
+      "source_sha256": "c46b8ba094e02a28bb7ce50d02536e32bb8e1770b2fe4c2ab4eb8930ca4cf609",
+      "sha256": "ff07280c2493a16ef10225ad8d299ff7abd14a65ac9254168297c09c7915e725",
+      "bytes": 1301300,
+      "duration_seconds": 69.2,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-ui03-night",
+      "title": "温柔夜色",
+      "original_title": "温柔夜色 单曲版",
+      "artist": "",
+      "role": "室内交互主页 · 夜间模式（UI-03）",
+      "category": "ui",
+      "slots": [
+        "UI-03"
+      ],
+      "aliases": [
+        "温柔夜色 单曲版"
+      ],
+      "res": "res://assets/audio/bgm/custom/ui03_home_night.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/温柔夜色 单曲版__cf6ad8d6.mp3",
+      "source_sha256": "cf6ad8d6d611338f5ebc02a97aac769fafa2577b45f13112a4f2c330fb49279e",
+      "sha256": "65670c8ea55886d23216b8da2e20da4d8cc9b312a1cf7a8d4ea6fa0fb3ea1ab3",
+      "bytes": 1263485,
+      "duration_seconds": 66.2,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-ui04-workshop",
+      "title": "人工梦游",
+      "original_title": "人工梦游",
+      "artist": "The 1999",
+      "role": "刻印工坊 · 常驻思考背景曲（UI-04）",
+      "category": "ui",
+      "slots": [
+        "UI-04"
+      ],
+      "aliases": [
+        "The 1999 - 人工梦游"
+      ],
+      "res": "res://assets/audio/bgm/custom/ui04_workshop_idle.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/The 1999 - 人工梦游__7bed0e8e.mp3",
+      "source_sha256": "7bed0e8ec08b8a37a5d857f5710176fa45b830d3acd297d4004de9f3fdfdc3b1",
+      "sha256": "3db587e08ea4c377dad73fde2cc186375a6eab59248bc3d6d72b8df11c3118f2",
+      "bytes": 1982141,
+      "duration_seconds": 118.0,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac01",
+      "title": "にぎやかな街",
+      "original_title": "にぎやかな街",
+      "artist": "高梨康治",
+      "role": "塞蕾特公国 · 势力主曲（FAC-01）",
+      "category": "world",
+      "slots": [
+        "FAC-01"
+      ],
+      "aliases": [
+        "高梨康治 - にぎやかな街"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac01_sereth.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/高梨康治 - にぎやかな街__a96ca6eb.mp3",
+      "source_sha256": "a96ca6eb201d527e4bee6276c5407439b0b5077009d1dd14dbf9ecf0f734e327",
+      "sha256": "7ad9ee70492e1ab5297e9b01958dac833d6d30264245e82ee76efc0702a038b0",
+      "bytes": 1798756,
+      "duration_seconds": 85.2,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac02",
+      "title": "紫禁城里的端庄猫",
+      "original_title": "紫禁城里的端庄猫",
+      "artist": "花飞飞",
+      "role": "龙渊帝国 · 势力主曲（FAC-02）",
+      "category": "world",
+      "slots": [
+        "FAC-02"
+      ],
+      "aliases": [
+        "花飞飞 - 紫禁城里的端庄猫"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac02_longyuan.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/花飞飞 - 紫禁城里的端庄猫__be10b95c.mp3",
+      "source_sha256": "be10b95c8599005ca88f614442a78914314cb5b306bf8451b6a2d4e685d57b22",
+      "sha256": "d9b1e6ce6a5507bc04b4e5b7aa34c3df27f00d0f2c46b18f606d8dc09f45e4f2",
+      "bytes": 3637003,
+      "duration_seconds": 215.4,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac03",
+      "title": "Old Marple",
+      "original_title": "Old Marple",
+      "artist": "Francis Goya",
+      "role": "哥塔薇亚帝国 · 势力主曲（FAC-03）",
+      "category": "world",
+      "slots": [
+        "FAC-03"
+      ],
+      "aliases": [
+        "Francis Goya - Old Marple"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac03_gotavia.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Francis Goya - Old Marple__370cda45.mp3",
+      "source_sha256": "370cda4584e1e4eb91e2514806c42fcd360d153f0f55b3f564537f49688fdf2d",
+      "sha256": "3253e4744da0ce05668788f2bc6f6a5e47e88a936e73dc604dc53e426ff147c6",
+      "bytes": 3588091,
+      "duration_seconds": 184.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac04",
+      "title": "神狐的祝福",
+      "original_title": "神狐的祝福 Hakushin's Lullaby",
+      "artist": "陈致逸 / HOYO-MiX",
+      "role": "秋津国 · 势力主曲（FAC-04）",
+      "category": "world",
+      "slots": [
+        "FAC-04"
+      ],
+      "aliases": [
+        "Hakushin's Lullaby",
+        "神狐的祝福 Hakushin's Lullaby"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac04_akitsu.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/陈致逸,HOYO-MiX - 神狐的祝福 Hakushin's Lullaby__545ef50f.mp3",
+      "source_sha256": "545ef50f2e2b0ea609852895d39fae9587d6e669df8814b73a3ed58fc67dad94",
+      "sha256": "1b63df3cb6a2311f3ce280eedcc8af931010d7a21c9c66e9ee50dba41a07b4d7",
+      "bytes": 2403212,
+      "duration_seconds": 129.0,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac05",
+      "title": "The Mountain",
+      "original_title": "The Mountain",
+      "artist": "Chinmaya Dunster",
+      "role": "吉万沙克蒂 · 势力主曲（FAC-05）",
+      "category": "world",
+      "slots": [
+        "FAC-05"
+      ],
+      "aliases": [
+        "Chinmaya Dunster - The Mountain"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac05_jwanshakti.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Chinmaya Dunster - The Mountain__d7e86d9f.mp3",
+      "source_sha256": "d7e86d9f3e183cb91d41da90e2fb9ab5a7ec1bedc15e516e45395683d0bc74cd",
+      "sha256": "74ffe4151ba99579a0a5f0a27542fe56406d1a1e8d52e6f115398bc02bcd1cce",
+      "bytes": 8452577,
+      "duration_seconds": 393.4,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac06",
+      "title": "Rome",
+      "original_title": "Rome (The Medieval Era)",
+      "artist": "Roland Rizzo",
+      "role": "格洛里亚 · 势力主曲（FAC-06）",
+      "category": "world",
+      "slots": [
+        "FAC-06"
+      ],
+      "aliases": [
+        "Rome (The Medieval Era)",
+        "Roland Rizzo - Rome (The Medieval Era)"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac06_gloria.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Roland Rizzo - Rome (The Medieval Era)__03a9d36c.mp3",
+      "source_sha256": "03a9d36c6bef27ed4d766a11442c71c6db4171bd61b94b0b614e3b8b91df860d",
+      "sha256": "ecde990af0faa467adb2a61e19f6b72759c3a48d21c6128ee249a2c1f975a6ea",
+      "bytes": 4450732,
+      "duration_seconds": 218.8,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac07",
+      "title": "Santa Lucia",
+      "original_title": "Santa Lucia (Romance In Venice Album Version)",
+      "artist": "Jack Jezzro",
+      "role": "奥马努特 · 势力主曲（FAC-07）",
+      "category": "world",
+      "slots": [
+        "FAC-07"
+      ],
+      "aliases": [
+        "Santa Lucia (Romance In Venice Album Version)"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac07_omanut.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Jack Jezzro - Santa Lucia (Romance In Venice Alb__1f52f151.mp3",
+      "source_sha256": "1f52f1517ed1518a461063da77e87f1d7c255a1aa99c66f5d1bb6777ad49b940",
+      "sha256": "3133701985dd9b32a42a00428c6bcc1599dc029bc7d049f26aec7e27eba79b28",
+      "bytes": 5131029,
+      "duration_seconds": 222.0,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-fac08",
+      "title": "L",
+      "original_title": "Ｌ",
+      "artist": "タニウチヒデキ",
+      "role": "蛇杖 · 跨国禁忌组织（FAC-08）",
+      "category": "world",
+      "slots": [
+        "FAC-08"
+      ],
+      "aliases": [
+        "Ｌ",
+        "タニウチヒデキ - Ｌ"
+      ],
+      "res": "res://assets/audio/bgm/custom/fac08_serpent_staff.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/タニウチヒデキ - Ｌ__eb142ad6.mp3",
+      "source_sha256": "eb142ad6eb5371c3756b57ea8931d68b489de7325058f3be8f4a1398d99bff8f",
+      "sha256": "a2e987fce24644a17ba652a185cdd68c192984565606921306d92b869eb33a74",
+      "bytes": 2029422,
+      "duration_seconds": 116.3,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc01",
+      "title": "誠に遺憾ながら、知り合い",
+      "original_title": "誠に遺憾ながら、知り合い",
+      "artist": "高橋邦幸",
+      "role": "塞蕾特·中央学院（LOC-01） / 日常治愈轮换（CHAR-01）",
+      "category": "world",
+      "slots": [
+        "LOC-01",
+        "CHAR-01"
+      ],
+      "aliases": [
+        "高橋邦幸 - 誠に遺憾ながら、知り合い"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc01_academy.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/高橋邦幸 - 誠に遺憾ながら、知り合い__c96cb901.mp3",
+      "source_sha256": "c96cb901bd2878231659cb7deeffccc3f50a76008aeb423cc79a679bf24b5628",
+      "sha256": "ed187f9e604171b75ffea1cce65113720a9587e11fe22886e537ac77cd22ea0d",
+      "bytes": 2350032,
+      "duration_seconds": 124.7,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc03-a",
+      "title": "Old City ~ Respite",
+      "original_title": "Old City ~ Respite",
+      "artist": "Mili",
+      "role": "塞蕾特·尼德霍格区（首选，LOC-03）",
+      "category": "world",
+      "slots": [
+        "LOC-03"
+      ],
+      "aliases": [
+        "Old City Respite",
+        "Mili - Old City ~ Respite"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc03_nidhogg_respite.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Mili - Old City ~ Respite__294b4ff2.mp3",
+      "source_sha256": "294b4ff2e2474a28f33289d49e59dbd6bfc6e566dbc04b5cac0ede1a3e569bb6",
+      "sha256": "57421999b85c48d756b26ae4680e44733a5cc4233414879ead31891e123b7be5",
+      "bytes": 2376186,
+      "duration_seconds": 156.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc03-b",
+      "title": "Old City Market",
+      "original_title": "Old City Market",
+      "artist": "Mili",
+      "role": "塞蕾特·尼德霍格区集市/暗巷（LOC-03）",
+      "category": "world",
+      "slots": [
+        "LOC-03"
+      ],
+      "aliases": [
+        "Mili - Old City Market"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc03_nidhogg_market.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Mili - Old City Market__c7cec70f.mp3",
+      "source_sha256": "c7cec70f0113fac9292be739ec3cc3616b7f4fd17dd4e0a08a3cb11bd76fcfbd",
+      "sha256": "9a8837bb95faff3ffd31797bbb336de238344a1ab0aa378179ba45b4433fd7b8",
+      "bytes": 2382838,
+      "duration_seconds": 156.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc04",
+      "title": "北国的宝库",
+      "original_title": "北国的宝库 Treasury From the Northland",
+      "artist": "陈致逸 / HOYO-MiX",
+      "role": "龙渊·紫宸宫（LOC-04）",
+      "category": "world",
+      "slots": [
+        "LOC-04"
+      ],
+      "aliases": [
+        "Treasury From the Northland",
+        "北国的宝库 Treasury From the Northland"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc04_zichen.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/陈致逸,HOYO-MiX - 北国的宝库 Treasury From the Northland__16c297f7.mp3",
+      "source_sha256": "16c297f725d1100b59e21e2d3558fc580f410de6bce9deea45051c75917ed9c4",
+      "sha256": "ea884af407030cc7379b361223013103fc8eb2d3405561d4d9f6788b0333f09d",
+      "bytes": 1524514,
+      "duration_seconds": 77.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc05",
+      "title": "倦飞之鸟",
+      "original_title": "倦飞之鸟 Wandering Flight",
+      "artist": "陈致逸 / HOYO-MiX",
+      "role": "龙渊·灵山（LOC-05）",
+      "category": "world",
+      "slots": [
+        "LOC-05"
+      ],
+      "aliases": [
+        "Wandering Flight",
+        "倦飞之鸟 Wandering Flight"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc05_lingshan.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/陈致逸,HOYO-MiX - 倦飞之鸟 Wandering Flight__12182909.mp3",
+      "source_sha256": "121829098c9c6142658d959e69f8d2fef9445d95eb7bd2332435fa6e4ebf2f13",
+      "sha256": "e96f0021f70864e6235635843a8e4ea1c42e0cb9adcea26f790fa2867f17f301",
+      "bytes": 1538955,
+      "duration_seconds": 85.5,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc06",
+      "title": "Song for Alexandra",
+      "original_title": "Song for Alexandra",
+      "artist": "Francis Goya",
+      "role": "哥塔薇亚·基捷日（LOC-06）",
+      "category": "world",
+      "slots": [
+        "LOC-06"
+      ],
+      "aliases": [
+        "Francis Goya - Song for Alexandra"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc06_kitezh.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Francis Goya - Song for Alexandra__954a5f24.mp3",
+      "source_sha256": "954a5f243b8b3611637bfef925ba304d26fd3a416f282242072d1cd16701688f",
+      "sha256": "8ab8c0c60f6bd92d452e6e20b47605c9547216feffb3e883516a923411fd1903",
+      "bytes": 3837863,
+      "duration_seconds": 200.7,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc07",
+      "title": "Beloved Forest",
+      "original_title": "Beloved Forest",
+      "artist": "Francis Goya",
+      "role": "哥塔薇亚·阿拉提尔（LOC-07）",
+      "category": "world",
+      "slots": [
+        "LOC-07"
+      ],
+      "aliases": [
+        "Francis Goya - Beloved Forest"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc07_alatyr.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Francis Goya - Beloved Forest__8218acbf.mp3",
+      "source_sha256": "8218acbfd4d1a03ba38186a16bbe92e35337afedbf4003a925ac3a484e79123f",
+      "sha256": "e29be6f64e7b7c82c6caa93df21c42076b08672bb5f11fb667d417833481ec79",
+      "bytes": 5759697,
+      "duration_seconds": 295.7,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc08",
+      "title": "葳蕤林野间",
+      "original_title": "葳蕤林野间 Village Surrounded by Green",
+      "artist": "HOYO-MiX",
+      "role": "吉万沙克蒂·须弥王庭（LOC-08）",
+      "category": "world",
+      "slots": [
+        "LOC-08"
+      ],
+      "aliases": [
+        "Village Surrounded by Green",
+        "葳蕤林野间 Village Surrounded by Green"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc08_sumeru_court.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 葳蕤林野间 Village Surrounded by Green__f9f2f0f6.mp3",
+      "source_sha256": "f9f2f0f6bace859ae821c7660b8bdf52a712c3b420be44a491fdb186b57744a6",
+      "sha256": "ca6c8e0a28ec13eeb163efe5289a73643fcf2420f56a2a44537624a7e224c9fc",
+      "bytes": 2853944,
+      "duration_seconds": 152.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc09",
+      "title": "灼燃的残光",
+      "original_title": "灼燃的残光 Smoldering Glow",
+      "artist": "HOYO-MiX",
+      "role": "吉万沙克蒂·塞建陀砦（LOC-09）",
+      "category": "world",
+      "slots": [
+        "LOC-09"
+      ],
+      "aliases": [
+        "Smoldering Glow",
+        "灼燃的残光 Smoldering Glow"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc09_skanda_fort.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 灼燃的残光 Smoldering Glow__fcb46204.mp3",
+      "source_sha256": "fcb46204c0171dd6bbd4ec83f26c88b177709cf4d5e904082e86a69eb78e5df6",
+      "sha256": "d43948068349d40701f35a7330aef3d409bff5f4b724d132de3e7636b8abfb30",
+      "bytes": 1943840,
+      "duration_seconds": 97.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc10",
+      "title": "嵾峨之冠",
+      "original_title": "嵾峨之冠 Skyfire Circlet",
+      "artist": "HOYO-MiX",
+      "role": "格洛里亚·堤丰之喉（LOC-10）",
+      "category": "world",
+      "slots": [
+        "LOC-10"
+      ],
+      "aliases": [
+        "Skyfire Circlet",
+        "嵾峨之冠 Skyfire Circlet"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc10_typhon.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 嵾峨之冠 Skyfire Circlet__204c8c39.mp3",
+      "source_sha256": "204c8c3948fa445a188da37f3c6477cd32fd4f222d8279d0e085ca2e80736a97",
+      "sha256": "ddce261a4d63b57310fe7864251fa003d853df779532e8600321383756b14ab8",
+      "bytes": 2306691,
+      "duration_seconds": 123.4,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc11",
+      "title": "边地的守望者",
+      "original_title": "边地的守望者 The Watcher by the Edge",
+      "artist": "HOYO-MiX",
+      "role": "格洛里亚·库利亚（LOC-11）",
+      "category": "world",
+      "slots": [
+        "LOC-11"
+      ],
+      "aliases": [
+        "The Watcher by the Edge",
+        "边地的守望者 The Watcher by the Edge"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc11_curia.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 边地的守望者 The Watcher by the Edge__53b79899.mp3",
+      "source_sha256": "53b79899893c22cdaa3e7b381df9bf9af884472e612ebd9514649d8a7cd497f0",
+      "sha256": "7d52e2b71873faaad88b5cf69243c09e91792ffadb0ed2e910d34bac7d5a9514",
+      "bytes": 2517620,
+      "duration_seconds": 125.3,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc12",
+      "title": "恒静之梦",
+      "original_title": "恒静之梦 Blue Dream",
+      "artist": "陈致逸 / HOYO-MiX",
+      "role": "秋津国·云樱（LOC-12）",
+      "category": "world",
+      "slots": [
+        "LOC-12"
+      ],
+      "aliases": [
+        "Blue Dream",
+        "恒静之梦 Blue Dream"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc12_kumosakura.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/陈致逸,HOYO-MiX - 恒静之梦 Blue Dream__970b075c.mp3",
+      "source_sha256": "970b075c42fa255f7945c1fa784b969e38229e0fe43c1d0367b1209812ddeaff",
+      "sha256": "012b3b05264567a382a9777cc6c944c6537983981d91ef10e798e98a9d5043e2",
+      "bytes": 1435648,
+      "duration_seconds": 82.3,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc13",
+      "title": "The Witch's Breath",
+      "original_title": "The Witch's Breath",
+      "artist": "Binary Haze Interactive / Mili",
+      "role": "奥马努特·地下市场（LOC-13）",
+      "category": "world",
+      "slots": [
+        "LOC-13"
+      ],
+      "aliases": [
+        "Binary Haze Interactive,Mili - The Witch's Breath"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc13_black_market.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Binary Haze Interactive,Mili - The Witch's Breat__58b030bf.mp3",
+      "source_sha256": "58b030bf3434cb4992236bc9c167f3fd4c36a4a1a1139cc12404ea355552cfc8",
+      "sha256": "630a33505dd50a0a6fea8acfab865d720a0527de00c8f26ff149a7bcc81e7001",
+      "bytes": 3011853,
+      "duration_seconds": 140.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc14",
+      "title": "孤客之旅",
+      "original_title": "孤客之旅 Lonesome Road",
+      "artist": "HOYO-MiX",
+      "role": "奥马努特西·齐哈特大沙漠（LOC-14）",
+      "category": "world",
+      "slots": [
+        "LOC-14"
+      ],
+      "aliases": [
+        "Lonesome Road",
+        "孤客之旅 Lonesome Road"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc14_zihad_desert.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 孤客之旅 Lonesome Road__a4885622.mp3",
+      "source_sha256": "a48856227c30771a0a6dee09f8dae013988838460627b4d94a4f660b272861ba",
+      "sha256": "cba930a313ce190c960618f88f71c3da3518b3135371241199abedd4475dfdb0",
+      "bytes": 1674903,
+      "duration_seconds": 89.8,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc15",
+      "title": "远行的思愿",
+      "original_title": "远行的思愿 Distant Yearning",
+      "artist": "HOYO-MiX",
+      "role": "吉万沙克蒂深处·梵音林（LOC-15）",
+      "category": "world",
+      "slots": [
+        "LOC-15"
+      ],
+      "aliases": [
+        "Distant Yearning",
+        "远行的思愿 Distant Yearning"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc15_brahma_forest.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 远行的思愿 Distant Yearning__75d2effa.mp3",
+      "source_sha256": "75d2effa6ccc43ab142d8b8bb7f771c358d1304230f6854019a290d895984ac9",
+      "sha256": "ce8d37a4a1e8628b998abf5dc567b7d21f4eb3055352f8170b2f9ee55eac9da6",
+      "bytes": 2151458,
+      "duration_seconds": 120.1,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-loc16",
+      "title": "瑞尼尔雪山的丧钟",
+      "original_title": "瑞尼尔雪山的丧钟",
+      "artist": "The 1999",
+      "role": "塞蕾特海域·天国岛（LOC-16）",
+      "category": "world",
+      "slots": [
+        "LOC-16"
+      ],
+      "aliases": [
+        "The 1999 - 瑞尼尔雪山的丧钟"
+      ],
+      "res": "res://assets/audio/bgm/custom/loc16_heaven_island.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/The 1999 - 瑞尼尔雪山的丧钟__4d498c3f.mp3",
+      "source_sha256": "4d498c3f3f9edb4cc76830684dc9f11e3b8d1a4e0e33fa277694f1a5106cfea5",
+      "sha256": "a1b9fd06159105c610c30a9b9f91162c74a3efa382007dbbca309c8f6d6c52fb",
+      "bytes": 4781819,
+      "duration_seconds": 255.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-boss03",
+      "title": "Orby",
+      "original_title": "Orby",
+      "artist": "Cosmo Sheldrake / Andrea Vargas",
+      "role": "远古神兽试炼 · 舍罗婆（BOSS-03）",
+      "category": "story",
+      "slots": [
+        "BOSS-03"
+      ],
+      "aliases": [
+        "Cosmo Sheldrake,Andrea Vargas - Orby"
+      ],
+      "res": "res://assets/audio/bgm/custom/boss03_sarabha.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Cosmo Sheldrake,Andrea Vargas - Orby__64c7667d.mp3",
+      "source_sha256": "64c7667d8b3fb7c48292e99fae8a0ce655b8a866672b468fd739dd37669b1c09",
+      "sha256": "5732b6488cf905c2eab0f6a72b9c0596053052a8a7833188e53fa42d0d82573e",
+      "bytes": 4290138,
+      "duration_seconds": 232.6,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-boss04",
+      "title": "蚀形的灾祲",
+      "original_title": "蚀形的灾祲 Vitas Corrodens Pestis",
+      "artist": "HOYO-MiX",
+      "role": "熔岩巨人与狂龙天灾决战 · 苏尔特尔/赤龙（BOSS-04）",
+      "category": "story",
+      "slots": [
+        "BOSS-04"
+      ],
+      "aliases": [
+        "Vitas Corrodens Pestis",
+        "蚀形的灾祲 Vitas Corrodens Pestis"
+      ],
+      "res": "res://assets/audio/bgm/custom/boss04_apocalypse.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 蚀形的灾祲 Vitas Corrodens Pestis__566fb3db.mp3",
+      "source_sha256": "566fb3db8940d683aa80c225f7136a262a8bd519f7c18182449265f8ca502284",
+      "sha256": "80e6fae3a44e8acd0cb6babcc6e51bb3bdbe09ea3b98c94dfec77d2b767a9d04",
+      "bytes": 4878601,
+      "duration_seconds": 257.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char01-a",
+      "title": "いつもの風景から始まる物語",
+      "original_title": "いつもの風景から始まる物語",
+      "artist": "神前暁 / 髙田龍一（MONACA)",
+      "role": "日常治愈 · 下午茶/闲聊首选（CHAR-01）",
+      "category": "story",
+      "slots": [
+        "CHAR-01"
+      ],
+      "aliases": [
+        "神前暁,髙田龍一（MONACA) - いつもの風景から始まる物語"
+      ],
+      "res": "res://assets/audio/bgm/custom/char01_daily_monaca.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/神前暁,髙田龍一（MONACA) - いつもの風景から始まる物語__2b3ba185.mp3",
+      "source_sha256": "2b3ba185b905382d6d971df641f3f3717b56dc2677e712ab25c8e75185dc6ef5",
+      "sha256": "93adc559e215a9225f261aa30dcf18eeed6144434e65e5548520eeeec9021403",
+      "bytes": 4722504,
+      "duration_seconds": 231.8,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char01-b",
+      "title": "ぷわぷわり",
+      "original_title": "ぷわぷわり",
+      "artist": "中山真斗",
+      "role": "日常治愈 · 轻松逛街/温馨陪伴（CHAR-01）",
+      "category": "story",
+      "slots": [
+        "CHAR-01"
+      ],
+      "aliases": [
+        "中山真斗 - ぷわぷわり"
+      ],
+      "res": "res://assets/audio/bgm/custom/char01_daily_puwapuwari.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/中山真斗 - ぷわぷわり__05b1d487.mp3",
+      "source_sha256": "05b1d487e6deb4d5f33c3f2ae3fc6fc813d65c4fe1f5aa2602749ee970983fab",
+      "sha256": "12bfe0f6439250861ad73808ef24673973015eda0a9190f120830d1f8abaceb6",
+      "bytes": 1790714,
+      "duration_seconds": 95.8,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char03-a",
+      "title": "能指链条",
+      "original_title": "能指链条 Chaîne Signifiante",
+      "artist": "HOYO-MiX",
+      "role": "黑化/真相崩溃/高压对峙首选（CHAR-03）",
+      "category": "story",
+      "slots": [
+        "CHAR-03"
+      ],
+      "aliases": [
+        "Chaîne Signifiante",
+        "Chaine Signifiante",
+        "能指链条 Chaîne Signifiante"
+      ],
+      "res": "res://assets/audio/bgm/custom/char03_chaine_signifiante.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 能指链条 Chaîne Signifiante__4eebf60f.mp3",
+      "source_sha256": "4eebf60f7ced1756ffe2f6626255c96bb2f50760a7eef425a847361e4a31f87e",
+      "sha256": "66d023bdaeeb2285af78231e01ee90965dd5b6597d795bf44d0c3f08a912f9c8",
+      "bytes": 1797702,
+      "duration_seconds": 103.4,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char03-b",
+      "title": "细语回萦",
+      "original_title": "细语回萦 Whispers of Immensity",
+      "artist": "HOYO-MiX",
+      "role": "黑化/精神侵蚀/深度压迫备选（CHAR-03）",
+      "category": "story",
+      "slots": [
+        "CHAR-03"
+      ],
+      "aliases": [
+        "Whispers of Immensity",
+        "细语回萦 Whispers of Immensity"
+      ],
+      "res": "res://assets/audio/bgm/custom/char03_whispers_immensity.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/HOYO-MiX - 细语回萦 Whispers of Immensity__abc8695c.mp3",
+      "source_sha256": "abc8695c67f51fee9491d7878e322414a9b7c37b8605bd0e89633bad75b04c8a",
+      "sha256": "4adc023dbe86379c6022199e0098098a370786f68b01d317df57ded1f6de0b8f",
+      "bytes": 1736333,
+      "duration_seconds": 96.1,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char04-a",
+      "title": "Purr",
+      "original_title": "Purr",
+      "artist": "Pandrezz",
+      "role": "温柔夜谈与亲密悸动首选（CHAR-04）",
+      "category": "story",
+      "slots": [
+        "CHAR-04"
+      ],
+      "aliases": [
+        "Pandrezz - Purr"
+      ],
+      "res": "res://assets/audio/bgm/custom/char04_night_purr.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Pandrezz - Purr__228d4500.flac",
+      "source_sha256": "228d4500e91677fada26e13a80e6afaf165b5f44ee0db3f7ef9e64bf1ea32379",
+      "sha256": "c3e610225999812a6ed1b1ead0ddcbd21d35df9191d61631bb0c6dbfb47fa548",
+      "bytes": 3304734,
+      "duration_seconds": 182.3,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char04-b",
+      "title": "Better, Together, Forever",
+      "original_title": "Better, Together, Forever",
+      "artist": "Team Astro",
+      "role": "温柔夜谈与亲密悸动备选一（CHAR-04）",
+      "category": "story",
+      "slots": [
+        "CHAR-04"
+      ],
+      "aliases": [
+        "Better Together Forever",
+        "Team Astro - Better, Together, Forever"
+      ],
+      "res": "res://assets/audio/bgm/custom/char04_night_better_together.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Team Astro - Better, Together, Forever__229042fe.flac",
+      "source_sha256": "229042fe96ddcd644aa0cadb97949458e406d2e5a613a79e690f5c8a014fb198",
+      "sha256": "c7750dcd5c6020db47af28c8870e08fe38a44d24880677a2f951ce8026bfd1d6",
+      "bytes": 3384946,
+      "duration_seconds": 178.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char04-c",
+      "title": "Tomorrows That Follow",
+      "original_title": "Tomorrows That Follow",
+      "artist": "ENRA / sleepermane",
+      "role": "温柔夜谈与亲密悸动备选二（CHAR-04）",
+      "category": "story",
+      "slots": [
+        "CHAR-04"
+      ],
+      "aliases": [
+        "ENRA,sleepermane - Tomorrows That Follow"
+      ],
+      "res": "res://assets/audio/bgm/custom/char04_night_tomorrows.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/ENRA,sleepermane - Tomorrows That Follow__6350c2b5.flac",
+      "source_sha256": "6350c2b52ee6b89d2a191dcb8ba94aeb964436254200b9f7106ffbd89d20fbda",
+      "sha256": "a36643b511dcca510dbec121a65899a2bc18b528f13287c8ee348f48e0da5947",
+      "bytes": 1845775,
+      "duration_seconds": 107.9,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    },
+    {
+      "id": "cust-char05",
+      "title": "Maplecamp☆",
+      "original_title": "Maplecamp☆",
+      "artist": "Shiroi-Ice",
+      "role": "凯旋 / 新章启程鼓舞曲（CHAR-05）",
+      "category": "story",
+      "slots": [
+        "CHAR-05"
+      ],
+      "aliases": [
+        "Maplecamp",
+        "Shiroi-Ice - Maplecamp☆"
+      ],
+      "res": "res://assets/audio/bgm/custom/char05_maplecamp.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/Shiroi-Ice - Maplecamp☆__f70c8457.mp3",
+      "source_sha256": "f70c845771d76d5cc3718880a24f12b0cd74a39d7f827b891735c6715af729d6",
+      "sha256": "2e1f6ddedcec68b15dfc2c668958be8f3ef0b253ea02f5652cff5fb301ea1874",
+      "bytes": 5264802,
+      "duration_seconds": 231.8,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    }
+  ],
+  "reserved_tracks": [
+    {
+      "id": "cust-ui01-opening",
+      "title": "Crystar",
+      "original_title": "Crystar",
+      "artist": "削除",
+      "role": "开场手书预留曲（UI-01，交由后续完整开场动画合片接入）",
+      "category": "reserved",
+      "slots": [
+        "UI-01"
+      ],
+      "aliases": [
+        "削除 - Crystar"
+      ],
+      "res": "res://assets/audio/bgm/custom/crystar.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/削除 - Crystar__a4827916.mp3",
+      "source_sha256": "a4827916b67f394188e67b438fa2fe9fa9af70aef2099f8deed46993f989cb16",
+      "sha256": "c43a05b02d52076a28fecd266d8d0801016663faebc67a542ca50b6b51608702",
+      "bytes": 2819318,
+      "duration_seconds": 139.2,
+      "sample_rate": 44100,
+      "lufs_target": -16,
+      "loop_offset_seconds": 0.0,
+      "gain_db": -10.0
+    }
+  ],
+  "workshop_activation": [
+    {
+      "role": "click",
+      "desc": "03 点击激活后触发音效（已去尾静音）",
+      "res": "res://assets/audio/ui/workshop_activation/activate_click.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/03_magicdevice_1__97ce1b15.wav",
+      "source_sha256": "97ce1b1582b5dd296d31eb34c9a3b4025439c7dd0c7c6640d0bed8d72e3c0ced",
+      "sha256": "0f2325d3afd6aadc14f8543ae81d524f03663483704f7c5444e70f141b44c842",
+      "trimmed": true,
+      "duration_seconds": 5.1,
+      "sample_rate": 44100,
+      "bytes": 100936
+    },
+    {
+      "role": "loop_a",
+      "desc": "04 激活中音乐其一（已去首尾静音）",
+      "res": "res://assets/audio/ui/workshop_activation/activate_loop_a.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/04_magicdevice_2_1__e51be271.wav",
+      "source_sha256": "e51be2714261667ff5bed7b609834b460a98927ff0cfe00cf1de780d2ea8e0e7",
+      "sha256": "f007bbea961353c37e6233c6815963a3fffb48955d0666d8f12702e6d1fd603f",
+      "trimmed": true,
+      "duration_seconds": 10.3,
+      "sample_rate": 44100,
+      "bytes": 266401
+    },
+    {
+      "role": "loop_b",
+      "desc": "05 激活中音乐其二",
+      "res": "res://assets/audio/ui/workshop_activation/activate_loop_b.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/05_magicdevice_2_2__8b11a627.wav",
+      "source_sha256": "8b11a627b89c702f6cad24fbe10291a54c7111ebfa97ea19ee041fd87433c3e9",
+      "sha256": "d2dae94df77a6d507ef56975023d091f4f0022663612370c94b6e7ca8e8b3740",
+      "trimmed": true,
+      "duration_seconds": 5.4,
+      "sample_rate": 44100,
+      "bytes": 115882
+    },
+    {
+      "role": "done",
+      "desc": "06 激活完成音效（已去尾静音）",
+      "res": "res://assets/audio/ui/workshop_activation/activate_done.ogg",
+      "source_inbox": "rolecard-rpg/workspaces/frontend-ui/materials/bgm-matcher-inbox/files/06_magicdevice_3_0__d9fbdd80.wav",
+      "source_sha256": "d9fbdd80cff9ad186058544d9cc7ec7767ff5fd1e06f9b7217960212975fd2e7",
+      "sha256": "9cfa730c5977242a0437bdf3b93f7fcea7463bbde2c3facf072694f8723cc334",
+      "trimmed": true,
+      "duration_seconds": 4.6,
+      "sample_rate": 44100,
+      "bytes": 91928
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+    "app_name":  "艾瑟拉",
+    "version":  "1.0.0",
+    "version_code":  1,
+    "github_owner":  "lumine-423",
+    "github_repo":  "Aethera",
+    "github_branch":  "main",
+    "configured":  true,
+    "manifest_rel_path":  "rolecard-rpg/data/app_update.json",
+    "changelog":  "初始发版：支持手机端（Android .apk）与电脑端（Windows/macOS/Linux .pck/.zip/.exe）GitHub 检查更新、拉取更新清单与流式下载更新。",
+    "platforms":  {
+                      "android":  {
+                                      "label":  "手机版 (Android .apk)",
+                                      "extensions":  [
+                                                         ".apk"
+                                                     ]
+                                  },
+                      "windows":  {
+                                      "label":  "电脑版 (Windows)",
+                                      "extensions":  [
+                                                         ".pck",
+                                                         ".zip",
+                                                         ".exe",
+                                                         ".msi"
+                                                     ]
+                                  },
+                      "macos":  {
+                                    "label":  "电脑版 (macOS)",
+                                    "extensions":  [
+                                                       ".pck",
+                                                       ".dmg",
+                                                       ".zip"
+                                                   ]
+                                },
+                      "linux":  {
+                                    "label":  "电脑版 (Linux)",
+                                    "extensions":  [
+                                                       ".pck",
+                                                       ".appimage",
+                                                       ".x86_64",
+                                                       ".tar.gz",
+                                                       ".zip"
+                                                   ]
+                                }
+                  }
+}

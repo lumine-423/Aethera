@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "shared.speedline.neutral.v1",
+      "classification": "shared",
+      "type": "screen_speedline",
+      "status": "16_frames_visual_unverified",
+      "sequence": "res://data/battle_presentation/shared_speedline_neutral.json"
+    },
+    {
+      "id": "rin.base.attack.body_trail.v1",
+      "classification": "character_specific",
+      "actor_id": "rin",
+      "form_id": "base",
+      "action_id": "attack",
+      "type": "body_motion_trail",
+      "status": "11_frames_visual_unverified",
+      "sequence": "res://data/battle_presentation/rin_base_attack_body_trail.json"
+    },
+    {
+      "id": "rin.base.attack.space_cut",
+      "classification": "character_specific",
+      "actor_id": "rin",
+      "form_id": "base",
+      "action_id": "attack",
+      "type": "spatial_cut",
+      "sequence": "res://data/battle_presentation/rin_base_attack_space_cut.json",
+      "status": "15_frames_visual_failed_or_pending"
+    },
+    {
+      "id": "shared.hit.outline.02",
+      "classification": "shared",
+      "type": "static_hit_ring",
+      "asset": "res://assets/effects/shared-hit-outline-02/impact.png",
+      "status": "candidate_not_accepted",
+      "animation": "single still with local shake"
+    }
+  ]
+}

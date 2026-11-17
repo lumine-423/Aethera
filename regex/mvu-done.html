@@ -1,0 +1,118 @@
+<details class="mvu-d">
+  <summary class="mvu-head">
+    <span class="mvu-shine"></span>
+    <span class="mvu-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path class="mvu-check" d="M4 12 L10 18 L20 6"/></svg></span>
+    <span class="mvu-title">变量更新完成</span>
+    <span class="mvu-end">完成 &#10003;</span>
+    <span class="mvu-chev"></span>
+  </summary>
+  <div class="mvu-body">$1</div>
+</details>
+
+<style>
+/* ═══ 变量更新块 · 学院风（0919 重做）═══
+   参考 `regex-[美化]完整变量更新.json` 的**块模式**：
+     <details> 折叠块 = 标题栏（左标 / 中标题 / 右状态 / 箭头）+ 展开内容区
+   保留结构，皮肤换成艾瑟拉的金色切角描边（和气泡/资料库卡片同一套语言）。
+
+   ★ 为什么换掉 0919 之前的「窄横条」：
+     横条是 `summary` 里塞四段（图标/标题/状态/箭头）靠 `flex:1 + min-width:0` 硬撑一行。
+     窄屏上四段抢宽，标题被 `text-overflow:ellipsis` 截断，状态段与箭头一起挤在最右边；
+     驾驶员实测「字直接竖起来了」。块模式在手机上早已验证可用（参考文件自带 92% 宽兜底）。
+   ★ 尺寸纪律（块模式的核心）：
+     ① 宽 `min(560px, 92%)` —— 桌面不铺满、手机留边；
+     ② 内容区 `max-height:320px; overflow-y:auto` —— 变量再多也不撑破一屏；
+     ③ 标题栏**不换行**（nowrap）—— 三段各管一段，绝不折成两行。
+   ★★ 0919a 修：`<summary>` 必须是 `<details>` 的**直接子元素**。
+     上一版写成 `<details><div class="mvu-box"><summary>…</summary></div></details>` ——
+     `<summary>` 被外面那层 div 隔开，浏览器**不认它是 summary**（当普通内容渲染），
+     折叠整个失效、`list-style:none` / `::-webkit-details-marker` / `::marker` 三条白写。
+     ⇒ 现在框（边框 + 切角 + 左侧竖线 + 流光）**全部画在 `.mvu-d` 自己身上**，中间不再夹盒子。 */
+.mvu-d, .mvu-d * { margin:0; padding:0; box-sizing:border-box; }
+.mvu-d {
+  --ac:#a83226; --ac2:#c9564a;
+  --ac-s:rgba(168,50,38,.10); --ac-l:rgba(168,50,38,.34);
+  --soft:#55688a; --dim:#8b98ad; --line:rgba(168,50,38,.20);
+  width:min(560px,92%); margin:16px auto;
+  position:relative; border:1px solid var(--ac-l);
+  /* 内部**透明** —— 背景是什么颜色就透出什么颜色，只留描边与装饰（0916b 定稿） */
+  background:transparent;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  overflow:hidden;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+/* 左侧竖线 */
+.mvu-d::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--ac),var(--ac2));
+}
+/* 顶边流光（只在标题栏上方那一条，不占布局） */
+.mvu-d .mvu-shine {
+  position:absolute; left:0; top:0; width:100%; height:1.5px; pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--ac),var(--ac2),transparent);
+  transform:translateX(-100%); animation:mvuFlow 4.6s cubic-bezier(.4,0,.2,1) infinite;
+}
+@keyframes mvuFlow { 0%{transform:translateX(-100%)} 58%,100%{transform:translateX(100%)} }
+
+/* ── 标题栏：三段式，nowrap，绝不折行 ── */
+.mvu-d .mvu-head {
+  list-style:none; cursor:pointer; user-select:none;
+  display:flex; align-items:center; gap:8px;
+  padding:8px 12px 8px 15px;
+}
+.mvu-d .mvu-head::-webkit-details-marker { display:none; }
+.mvu-d .mvu-head::marker { content:''; }
+.mvu-d .mvu-head:hover { background:rgba(168,50,38,.05); }
+/* 左：对勾方标 */
+.mvu-d .mvu-mark {
+  flex:0 0 auto; width:18px; height:18px;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid var(--ac-l); background:var(--ac-s); color:var(--ac);
+  clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px);
+}
+.mvu-d .mvu-mark svg { width:11px; height:11px; flex:none; }
+.mvu-d .mvu-check { stroke-dasharray:30; stroke-dashoffset:30; animation:mvuCheck .5s ease forwards .15s; }
+@keyframes mvuCheck { to { stroke-dashoffset:0; } }
+/* 中：标题（唯一可伸缩段；min-width:0 让它肯收缩，否则整行溢出） */
+.mvu-d .mvu-title {
+  flex:1 1 auto; min-width:0;
+  font-size:13px; font-weight:800; letter-spacing:1.6px; color:var(--ac);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+/* 右：状态 + 箭头（都不许换行、不许被挤走） */
+.mvu-d .mvu-end {
+  flex:0 0 auto; font-size:10.5px; letter-spacing:.6px; color:var(--dim);
+  white-space:nowrap;
+}
+.mvu-d .mvu-chev {
+  flex:none; width:6px; height:6px; margin:0 2px 3px 1px;
+  border-right:1.5px solid var(--ac); border-bottom:1.5px solid var(--ac);
+  transform:rotate(45deg); transition:transform .25s; opacity:.85;
+}
+.mvu-d[open] .mvu-chev { transform:rotate(-135deg); margin-bottom:0; margin-top:3px; }
+
+/* ── 内容区：独立滚动，320px 封顶 ── */
+.mvu-d .mvu-body {
+  display:none;
+  border-top:1px dashed var(--line);
+  padding:11px 14px 13px 15px;
+  max-height:320px; overflow-y:auto; -webkit-overflow-scrolling:touch;
+  font-size:12.5px; line-height:1.85; letter-spacing:.2px; color:var(--soft);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Noto Sans SC",monospace;
+  white-space:pre-wrap; word-break:break-word;
+}
+.mvu-d[open] .mvu-body { display:block; }
+.mvu-d .mvu-body::-webkit-scrollbar { width:8px; }
+.mvu-d .mvu-body::-webkit-scrollbar-track { background:rgba(168,50,38,.06); }
+.mvu-d .mvu-body::-webkit-scrollbar-thumb { background:rgba(168,50,38,.32); border-radius:4px; }
+
+/* 窄屏：状态段先让位（它最不必须），标题与箭头留下 */
+@media (max-width:340px) { .mvu-d .mvu-end { display:none; } }
+
+/* 夜模式（前端统一给 <html> 加 .sigil-night，ST 只有 body.so-skin-dark；两条都认） */
+.sigil-night .mvu-d, body.so-skin-dark .mvu-d {
+  --ac:#d8a84e; --ac2:#c9564a;
+  --ac-s:rgba(216,168,78,.10); --ac-l:rgba(216,168,78,.30);
+  --soft:#9db0be; --dim:#6b7d8f; --line:rgba(216,168,78,.20);
+}
+</style>

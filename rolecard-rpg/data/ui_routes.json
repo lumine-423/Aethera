@@ -1,0 +1,20 @@
+{
+  "schema":1,
+  "layers":{"0":"启动/资源/错误恢复","1":"主枢纽与一级功能","2":"详情/准备/编队","3":"暂停/确认/设置弹层","4":"反馈与演出覆盖层"},
+  "routes":{
+    "home":{"title":"行动室","layer":1,"parent":"","view":"lobby_view.gd"},
+    "missions":{"title":"作战终端","layer":1,"parent":"home","view":"operation_views.gd"},
+    "mission_detail":{"title":"行动详情","layer":2,"parent":"missions","view":"operation_views.gd"},
+    "prepare":{"title":"出击准备","layer":2,"parent":"mission_detail","view":"operation_views.gd"},
+    "roster":{"title":"角色档案","layer":1,"parent":"home","view":"roster_views.gd"},
+    "actor_detail":{"title":"角色详情","layer":2,"parent":"roster","view":"roster_views.gd"},
+    "party":{"title":"编队","layer":2,"parent":"home","view":"roster_views.gd"},
+    "battle":{"title":"战斗","layer":1,"parent":"prepare","view":"battle_view.gd","back_policy":"pause-confirm"},
+    "result":{"title":"行动结算","layer":1,"parent":"home","view":"archive_views.gd"},
+    "records":{"title":"行动战报","layer":1,"parent":"home","view":"archive_views.gd"},
+    "report_detail":{"title":"战报详情","layer":2,"parent":"records","view":"archive_views.gd"},
+    "settings":{"title":"设置与恢复","layer":1,"parent":"home","view":"system_views.gd"},
+    "help":{"title":"操作说明","layer":1,"parent":"home","view":"system_views.gd"}
+  },
+  "not_adopted":["抽卡","充值","商店","装备养成","经营","社交","内置剧情与探索"]
+}
